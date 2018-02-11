@@ -1,0 +1,252 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import java.util.Scanner;\nimport java.io.FileReader;\nimport java.io.FileNotFoundException;\n\nclass LabOneA {\n\n  /**\n   * Event encapsulations information about the time an event is supposed to occur, and its type.\n   */\n  static class Event {\n    public double time; // The time this event will occur\n    public int eventType; // The type of event, indicates what should happen when an event occurs.\n  }\n\n  /**\n   * We support two types of events for now, when a customer arrives, and when a customer leaves.\n   */\n  public static final int CUSTOMER_ARRIVE = 1;\n  public static final int CUSTOMER_DONE = 2;\n\n\n  /**\n   * Simulator encapsulates all the information relevant to the current simulation.\n   */\n  static class Simulator {\n\n    // The first two members are constants, used to configure the simulator.\n    public static final int MAX_NUMBER_OF_EVENTS = 100; // Maximum number of events\n    public static final double SERVICE_TIME = 1.0; // Time spent serving a customer\n?\n\n\n\n\n\n    // The next two members are used to store scheduled events\n    public Event[] events; // Array of events, order of events not guaranteed.\n    public int numOfEvents; // The number of events in the event array.\n\n    // The next three members are used to record the states of the simulation\n    public boolean customerBeingServed; // is a customer currently being served?\n    public boolean customerWaiting; // is a customer currently waiting?\n    public double timeStartedWaiting; // the time the current waiting customer started waiting\n\n    // The next three members are used to keep track of simulation statistics\n    public double totalWaitingTime; // total time everyone spent waiting\n    public int totalNumOfServedCustomer; // how many customer has waited\n    public int totalNumOfLostCustomer; // how many customer has been lost\n\n    // The next three members are used to identify customer\n    public int lastCustomerId; // starts from 0 and increases as customer arrives.\n    public int servedCustomerId; // id of the customer being served, if any\n    public int waitingCustomerId; // id of the customer currently waiting, if any\n  }\n\n  /**\n   * The main method for LabOneA.\n   * Reads arrival time from either stdin or a file and insert the arrival event into an array\n   * in the simulator.  Then, run the simulator.\n   */\n  public static void main(String[] args) {\n    Simulator sim = createSimulator();\n    Scanner s = createScanner(args);\n    if (s == null) {\n      return;\n    }\n\n    // The input file consists of a sequence of arrival timestamp\n    // (not necessary in order).\n    while (s.hasNextDouble()) {\n      Event e = createEvent(s.nextDouble(), CUSTOMER_ARRIVE);\n      boolean ok = scheduleEventInSimulator(e, sim);\n      if (!ok) {\n        System.err.printf(\"warning: too many events.  Skipping the rest.\");\n        s.close();\n        break;\n      }\n    }\n    s.close();\n\n    // Then run the simulator\n    runSimulator(sim);\n\n    // Print stats as three numbers:\n    // <avg waiting time> <number of served customer> <number of lost customer>\n    System.out.printf(\"%.3f %d %d\\n\", sim.totalWaitingTime / sim.totalNumOfServedCustomer,\n        sim.totalNumOfServedCustomer, sim.totalNumOfLostCustomer);\n  }\n\n  /**\n   * Create and return a scanner.  If a command line arguement is given,\n   * treat the argument as a file, and open a scanner on the file.  Else,\n   * open a scanner that reads from standard input.\n   *\n   * @return a scanner or `null` if a filename is given but cannot be open.\n   */\n  static Scanner createScanner(String[] args) {\n    Scanner s = null;\n    try {\n      // Read from stdin if no filename is given, otherwise\n      // read from the given file.\n      if (args.length == 0) {\n        s = new Scanner(System.in);\n      } else {\n        FileReader f = new FileReader(args[0]);\n        s = new Scanner(f);\n      }\n    } catch (FileNotFoundException ex) {\n      System.err.println(\"Unable to open file \" + args[0] + \" \" + ex + \"\\n\");\n    } finally {\n      return s;\n    }\n  }\n\n  /**\n   * Create a simulator, initialize the value and return it.\n   *\n   * @return A newly created simulator.\n   */\n  static Simulator createSimulator() {\n    Simulator sim = new Simulator();\n    sim.events = new Event[sim.MAX_NUMBER_OF_EVENTS];\n    sim.numOfEvents = 0;\n    sim.customerWaiting = false;\n    sim.customerBeingServed = false;\n    sim.lastCustomerId = 0;\n    sim.servedCustomerId = -1;\n    sim.waitingCustomerId = -1;\n    return sim;\n  }\n\n  /**\n   * Create an event and initialize it.\n   *\n   * @return A new event of type `type` that happens `when`\n   */\n  static Event createEvent(double when, int type) {\n    Event e = new Event();\n    e.time = when;\n    e.eventType = type;\n    return e;\n  }\n\n  /**\n   * Schedule the event with the simulator.  The simulator maintains\n   * an array of event (in arbitrary order) and this method simply\n   * appends the given event to the end of the array.\n   *\n   * @return true if the event is added successfully; false otherwise.\n   */\n  static boolean scheduleEventInSimulator(Event e, Simulator sim) {\n    if (sim.numOfEvents >= sim.MAX_NUMBER_OF_EVENTS) {\n      return false;\n    } else {\n      // append e as the last element in array sim.events.\n      sim.events[sim.numOfEvents] = e;\n      sim.numOfEvents++;\n      return true;\n    }\n  }\n\n  /**\n   * Run the simulator until there is no more events scheduled.\n   */\n  static void runSimulator(Simulator sim) {\n    while (sim.numOfEvents > 0) {\n      Event e = getNextEarliestEvent(sim);\n      simulateEvent(sim, e);\n    }\n  }\n\n  /**\n   * Find the next event with the earliest timestamp, breaking\n   * ties arbitrarily.  The event is then deleted from the array.\n   * This is an O(n) algorithm.  Better algorithm exists.  To be\n   * improved in later labs using a min heap.\n   *\n   * @return the next event\n   */\n  static Event getNextEarliestEvent(Simulator sim) {\n    int nextEventIndex = -1;\n\n    // Scan linearly through the array to find the event\n    // with earliest (smallest) timestamp.\n    double minTime = Double.MAX_VALUE;\n    for (int i = 0; i < sim.numOfEvents; i++) {\n      if (sim.events[i].time < minTime) {\n        minTime = sim.events[i].time;\n        nextEventIndex = i;\n      }\n    }\n\n    // Get the earliest event\n    Event e = sim.events[nextEventIndex];\n\n    // Replace the earliest event with the last element in\n    // the array.\n    sim.events[nextEventIndex] = sim.events[sim.numOfEvents - 1];\n    sim.numOfEvents--;\n    return e;\n  }\n\n  /**\n   * Simulate the event based on event type.\n   */\n  static void simulateEvent(Simulator sim, Event e) {\n    switch (e.eventType) {\n      case CUSTOMER_ARRIVE:\n        // A customer has arrived.  Increase the ID and assign it to this customer.\n        sim.lastCustomerId++;\n        System.out.printf(\"%6.3f %d arrives\\n\", e.time, sim.lastCustomerId);\n\n        // If there is no customer currently being served.  Serve this one.\n        int currentCustomer = sim.lastCustomerId;\n        if (!sim.customerBeingServed) {\n          serveCustomer(sim, e.time, currentCustomer);\n        } else if (!sim.customerWaiting) {\n          // If there is a customer currently being served, and noone is waiting, wait.\n          makeCustomerWait(sim, e.time, currentCustomer);\n        } else {\n          // If there is a customer currently being served, and someone is waiting, the\n          // customer just leaves and go elsewhere (maximum only one waiting customer).\n          customerLeaves(sim, e.time, currentCustomer);\n        }\n        break;\n      case CUSTOMER_DONE:\n        // A customer is done being served.\n        System.out.printf(\"%6.3f %d done\\n\", e.time, sim.servedCustomerId);\n        if (sim.customerWaiting) {\n          // Someone is waiting, serve this waiting someone.\n          serveWaitingCustomer(sim, e.time);\n        } else {\n          // Server idle\n          sim.customerBeingServed = false;\n        }\n        break;\n      default:\n        System.err.printf(\"Unknown event type %d\\n\", e.eventType);\n    }\n  }\n\n  /**\n   * Serve the current customer with given id at given time in the given simulator.\n   * Precondition: noone must be served at this time.\n   */\n  static void serveCustomer(Simulator sim, double time, int id) {\n    assert sim.customerBeingServed == false;\n    sim.customerBeingServed = true;\n    sim.servedCustomerId = id;\n    System.out.printf(\"%6.3f %d served\\n\", time, id);\n    boolean ok = scheduleEventInSimulator(createEvent(time + sim.SERVICE_TIME, CUSTOMER_DONE), sim);\n    if (!ok) {\n      System.err.println(\"Warning: too many events.  Simulation result will not be correct.\");\n    }\n    sim.totalNumOfServedCustomer++;\n    assert sim.customerBeingServed == true;\n  }\n\n  /**\n   * Make the current customer with given id wait starting at given time in the given simulator.\n   * Precondition: someone is being served but noone is waiting\n   * Postcondition: someone is being served, and someone is waiting\n   */\n  static void makeCustomerWait(Simulator sim, double time, int id) {\n    assert sim.customerBeingServed == true;\n    assert sim.customerWaiting == false;\n    sim.waitingCustomerId = id;\n    System.out.printf(\"%6.3f %d waits\\n\", time, id);\n    sim.customerWaiting = true;\n    sim.timeStartedWaiting = time;\n    assert sim.customerBeingServed == true;\n    assert sim.customerWaiting == true;\n  }\n\n  /**\n   * Make the current customer with given id wait, starting at given time in the given simulator.\n   * Precondition: someone must be waiting, and noone is being served.\n   * Postcondition: noone is waiting, and someone is being served.\n   */\n  static void serveWaitingCustomer(Simulator sim, double time) {\n    assert sim.customerBeingServed == false;\n    assert sim.customerWaiting == true;\n    sim.customerWaiting = false;\n    serveCustomer(sim, time, sim.waitingCustomerId);\n    sim.totalWaitingTime += (time - sim.timeStartedWaiting);\n    assert sim.customerBeingServed == true;\n    assert sim.customerWaiting == false;\n  }\n\n  /**\n   * Make the current customer with given id leave, at given time in the given simulator.\n   * Precondition: someone must be waiting, and someone is being served.\n   * Postcondition: someone must be waiting, and someone is being served.\n   */\n  static void customerLeaves(Simulator sim, double time, int id) {\n    assert sim.customerBeingServed == true;\n    assert sim.customerWaiting == true;\n    System.out.printf(\"%6.3f %d leaves\\n\", time, id);\n    sim.totalNumOfLostCustomer++;\n    assert sim.customerBeingServed == true;\n    assert sim.customerWaiting == true;\n  }\n}\n",
+			"file": "LabOneAOld.java",
+			"file_size": 10545,
+			"file_write_time": 131623572187598631,
+			"settings":
+			{
+				"buffer_size": 10551,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "LabOneA.java",
+			"settings":
+			{
+				"buffer_size": 19,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "package control: install",
+		"selected_items":
+		[
+			[
+				"package control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 143.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/yewwoei/OneDrive/NUS/cs2030-programming-methodology-2/cs2030/labs/lab1a"
+	],
+	"file_history":
+	[
+		"/Users/yewwoei/OneDrive/NUS/cs2030-programming-methodology-2/cs2030/labs/lab1a/LabOneA.java",
+		"/Users/yewwoei/OneDrive/NUS/cs2030-programming-methodology-2/cs2030/labs/lab1a/LabOneAOld.java"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "LabOneAOld.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2868,
+								2868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 578.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "LabOneA.java",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 19,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lab1.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
