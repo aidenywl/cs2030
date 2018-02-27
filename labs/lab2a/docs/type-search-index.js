@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"CustArrive"},{"p":"<Unnamed>","l":"CustDone"},{"p":"<Unnamed>","l":"Customer"},{"p":"<Unnamed>","l":"Event"},{"p":"<Unnamed>","l":"LabOneB"},{"p":"cs2030.simulator","l":"RandomGenerator"},{"p":"<Unnamed>","l":"Server"},{"p":"<Unnamed>","l":"Server.Statistics"},{"p":"<Unnamed>","l":"Shop"}]
