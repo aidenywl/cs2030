@@ -95,13 +95,17 @@ class Shop {
     return this.events.peek() != null;
   }
 
+  /**
+   * Processes both customer arrive and done events
+   * @param event the event to be processed
+   */
   private void handleEvent(Event event) {
     Server currentServer; // the server that willh andle the event
     CustDone custDone; // the event variable to check if a customer is served
     switch (event.getEventType()) {
       case "ARRIVE":
         // updating time first
-        this.arrivalUpdateTime( (CustArrive) event);
+        this.arrivalUpdateTime((CustArrive) event);
         // creating the customer
         Customer customer = new Customer(event.eventTime);
 
@@ -137,8 +141,16 @@ class Shop {
     }
   }
 
+  // method for processing customer done events
+  private void processCustDone(Event custDone) {
+    if (custDone != null) {
+      events.add(custDone);
+    }
+  }
+
   /**
    * Method for updating the shop based on the customer's arrival time
+   * @param arriveEvent the customer arrive event
    */
   private void arrivalUpdateTime(CustArrive arriveEvent) {
     double arrivalTime = arriveEvent.eventTime;
@@ -149,6 +161,11 @@ class Shop {
     }
   }
 
+  /**
+   * Finds and returns the first idle server.
+   * if none are idle, return an available server.
+   * @return availableServer the server that is idle or available.
+   */
   private Server findIdleOrAvailableServer() {
     Server idleServer = this.findIdleServer();
     Server availableServer = this.findAvailableServer();
@@ -174,6 +191,7 @@ class Shop {
     }
     return idleServer;
   }
+
   private Server findAvailableServer() {
     Server availableServer = null;
 
@@ -190,20 +208,16 @@ class Shop {
   }
 
 
-  // method for processing customer done events
-  private void processCustDone(Event custDone) {
-    if (custDone != null) {
-      events.add(custDone);
-    }
-  }
 
   public boolean hasSpaceForEvent() {
     return this.events.size() < MAX_NUMBER_OF_EVENTS;
   }
+
   public void addEvent(Event event) {
     assert (Event.isValidEvent(event));
     this.events.add(event); // adding to the priority queue
   }
+
 /* Not needed as we use a priortyqueue
   private Event getEarliestEvent() {
     int earliestEventIndex = 0;
@@ -223,11 +237,9 @@ class Shop {
   }
 */
   @Override
-    public String toString() {
-      return String.format("%.3f %d %d\n", Server.Statistics.getAvgWaitTime(),
-          Server.Statistics.getTotalServedCust(),
-          Server.Statistics.getTotalRejectedCust());
-
-    }
-
+  public String toString() {
+    return String.format("%.3f %d %d\n", Server.Statistics.getAvgWaitTime(),
+        Server.Statistics.getTotalServedCust(),
+        Server.Statistics.getTotalRejectedCust());
+  }
 }

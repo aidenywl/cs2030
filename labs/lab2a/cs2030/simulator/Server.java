@@ -45,6 +45,7 @@ class Server {
    * wait, or rejecting him.
    * @param customer the customer to be handled
    * @param servedTime the time the customer is handled by the server
+   * @return the customer done event, if any.
    */
   public Event handleCustomer(Customer customer, double handleTime) {
     // serve customer if server is available
@@ -70,10 +71,12 @@ class Server {
    
   }
   /**
-   * serve the customer and return a CustDone event
+   * serve the customer and return a CustDone event.
    * @param customer the customer being served
    * @param servedTime the time the customer is served
+   * @return the customer done event
    */
+
   private Event serveCustomer(Customer customer, double servedTime) {
     this.idle = false;
     this.servedCustomer = customer;
@@ -88,9 +91,10 @@ class Server {
   }
   
   /**
-   * adds the customer to the server's wait queue
+   * adds the customer to the server's wait queue.
    * @param customer the customer that is to be delayed
    */
+
   private void delayCustomer(Customer customer) {
     this.waitingCustomer = customer;
     this.serverAvailable = false;
@@ -100,10 +104,11 @@ class Server {
   }
 
   /**
-   * rejects a customer and prints the line
+   * rejects a customer and prints the line.
    * @param customer the customer to be rejected
    * PRECONDITION: the waiter is serving a customer and is unavailable
    */
+
   private void rejectCustomer(Customer customer) {
     assert this.serverAvailable == false;
     assert this.idle == false;

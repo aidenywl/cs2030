@@ -1,7 +1,7 @@
 package cs2030.simulator;
 
 /**
- * Encapsulates information and methods pertaining to an arrival event
+ * Encapsulates information and methods pertaining to an arrival event.
  * Event objects have a total order. The Comparable method is implemented
  * and Event objects can be sorted based on their eventTime
  *
@@ -16,9 +16,10 @@ abstract class Event implements Comparable<Event> {
   }
 
   /**
-   * Checks if the event is of the type stated
+   * Checks if the event is of the type stated.
    * I can't force this to be static?
    */
+
   public String getEventType() {
     if (this instanceof CustArrive) {
       return "ARRIVE";
@@ -28,14 +29,15 @@ abstract class Event implements Comparable<Event> {
       return "WRONG EVENT";
     }
   }
+
   public static  boolean isValidEvent(Event event) {
     return event instanceof CustArrive ||
       event instanceof CustDone;
   }
 
   /**
-   * Overrides the compareTo method for the Comparable interface
-   * Compares based on the Event's eventTime
+   * Overrides the compareTo method for the Comparable interface.
+   * Compares based on the Event's eventTime.
    */
   @Override
   public int compareTo(Event other) {

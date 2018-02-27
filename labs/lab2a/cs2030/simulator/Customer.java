@@ -1,7 +1,7 @@
 package cs2030.simulator;
 
 /**
- * Encapsulates a customer for the shop
+ * Encapsulates a customer for the shop.
  * Keeps track of the customer ID and the customer done time.
  *
  * @author Low Yew Woei
@@ -9,15 +9,15 @@ package cs2030.simulator;
  */
 
 class Customer {
-  /** keeps track of the number of customers created so far */
+  /** keeps track of the number of customers created so far. */
   private static int Id;
-  /** the id of the instantiated customer */
+  /** the id of the instantiated customer. */
   protected final int customerId;
-  /** the arrival time of the customer */
+  /** the arrival time of the customer. */
   protected final double arrivalTime;
-  /** the amount of time required to serve the customer */
+  /** the amount of time required to serve the customer. */
   protected final double serviceTime;
-  /** the amount of time the customer spent waiting */
+  /** the amount of time the customer spent waiting. */
   protected double waitTime;
 
   /** 

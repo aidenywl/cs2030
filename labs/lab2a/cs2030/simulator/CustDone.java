@@ -11,7 +11,7 @@ class CustDone extends Event {
   public Server server; // the server that handles the event
   
   /**
-   * Constructs a customer done object
+   * Constructs a customer done object.
    * @param eventTime the time the customer will be finished by the server
    * @param server the server that serves the customer
    */

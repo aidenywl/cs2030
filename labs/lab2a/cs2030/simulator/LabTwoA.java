@@ -24,7 +24,7 @@ class LabTwoA {
    * 1) int random seed 2) int number of servers 3) int number of customers
    * 4) double arrival rate 5) double service rate
    */
-  public static void main(String[] args) {;
+  public static void main(String[] args) {
     Scanner s = createScanner(args);
     if (s == null) {
       return;
