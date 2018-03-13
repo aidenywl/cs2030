@@ -1,0 +1,15 @@
+ 0.000 GC0 arrives
+ 0.000 GC0 served by HS0 (Q: [])
+ 0.063 GC1 arrives
+ 0.063 GC1 served by HS1 (Q: [])
+ 0.083 GC2 arrives
+ 0.083 GC2 waits for HS0 (Q: [GC2])
+ 0.223 GC3 arrives
+ 0.223 GC3 waits for HS1 (Q: [GC3])
+ 0.313 GC0 done served by HS0 (Q: [GC2])
+ 0.313 GC2 served by HS0 (Q: [])
+ 2.708 GC1 done served by HS1 (Q: [GC3])
+ 2.708 GC3 served by HS1 (Q: [])
+ 2.972 GC3 done served by HS1 (Q: [])
+ 3.015 GC2 done served by HS0 (Q: [])
+0.679 4 0

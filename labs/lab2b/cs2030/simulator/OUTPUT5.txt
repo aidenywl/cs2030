@@ -1,0 +1,17 @@
+ 0.000 TC0 arrives
+ 0.000 TC0 served by CS0 (Q: [])
+ 0.035 TC1 arrives
+ 0.035 TC1 served by CS1 (Q: [])
+ 0.046 TC2 arrives
+ 0.046 TC2 waits for CS0 (Q: [TC2])
+ 0.124 TC3 arrives
+ 0.124 TC3 waits for CS1 (Q: [TC3])
+ 0.126 TC4 arrives
+ 0.126 TC4 leaves
+ 0.313 TC0 done served by CS0 (Q: [TC2])
+ 0.313 TC2 served by CS0 (Q: [])
+ 2.680 TC1 done served by CS1 (Q: [TC3])
+ 2.680 TC3 served by CS1 (Q: [])
+ 2.944 TC3 done served by CS1 (Q: [])
+ 3.015 TC2 done served by CS0 (Q: [])
+0.706 4 1

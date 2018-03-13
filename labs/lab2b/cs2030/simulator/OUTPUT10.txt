@@ -1,0 +1,74 @@
+ 0.000 TC0 arrives
+ 0.000 TC0 served by CS2 (Q: [])
+ 0.026 GC1 arrives
+ 0.026 GC1 served by HS0 (Q: [])
+ 0.035 TC2 arrives
+ 0.035 TC2 served by HS1 (Q: [])
+ 0.093 GC3 arrives
+ 0.093 GC3 served by CS3 (Q: [])
+ 0.094 GC4 arrives
+ 0.094 GC4 waits for HS0 (Q: [GC4])
+ 0.107 GC5 arrives
+ 0.107 GC5 waits for CS2 (Q: [GC5])
+ 0.108 GC6 arrives
+ 0.108 GC6 waits for CS3 (Q: [GC6])
+ 0.231 TC7 arrives
+ 0.231 TC7 waits for HS0 (Q: [GC4, TC7])
+ 0.313 TC0 done served by CS2 (Q: [GC5])
+ 0.313 GC5 served by CS2 (Q: [])
+ 0.357 GC3 done served by CS3 (Q: [GC6])
+ 0.357 GC6 served by CS3 (Q: [])
+ 0.447 GC8 arrives
+ 0.447 GC8 waits for CS2 (Q: [GC8])
+ 0.472 TC9 arrives
+ 0.472 TC9 waits for CS2 (Q: [GC8, TC9])
+ 0.476 GC10 arrives
+ 0.476 GC10 waits for HS1 (Q: [GC10])
+ 0.572 GC6 done served by CS3 (Q: [])
+ 0.728 GC5 done served by CS2 (Q: [GC8, TC9])
+ 0.728 GC8 served by CS2 (Q: [TC9])
+ 0.767 GC11 arrives
+ 0.767 GC11 served by CS3 (Q: [])
+ 0.798 GC12 arrives
+ 0.798 GC12 waits for CS3 (Q: [GC12])
+ 0.811 TC13 arrives
+ 0.811 TC13 waits for CS2 (Q: [TC9, TC13])
+ 0.861 GC11 done served by CS3 (Q: [GC12])
+ 0.861 GC12 served by CS3 (Q: [])
+ 0.862 GC12 done served by CS3 (Q: [])
+ 0.938 GC8 done served by CS2 (Q: [TC9, TC13])
+ 0.938 TC9 served by CS2 (Q: [TC13])
+ 0.994 TC9 done served by CS2 (Q: [TC13])
+ 0.994 TC13 served by CS2 (Q: [])
+ 1.050 GC14 arrives
+ 1.050 GC14 served by CS3 (Q: [])
+ 1.073 GC14 done served by CS3 (Q: [])
+ 1.125 GC15 arrives
+ 1.125 GC15 waits for HS1 (Q: [GC10, GC15])
+ 1.212 GC16 arrives
+ 1.212 GC16 served by CS3 (Q: [])
+ 1.212 GC17 arrives
+ 1.212 GC17 waits for HS0 (Q: [GC4, TC7, GC17])
+ 1.261 GC18 arrives
+ 1.261 GC18 waits for CS2 (Q: [GC18])
+ 1.322 GC19 arrives
+ 1.322 GC19 waits for CS3 (Q: [GC19])
+ 1.610 TC13 done served by CS2 (Q: [GC18])
+ 1.610 GC18 served by CS2 (Q: [])
+ 1.811 GC16 done served by CS3 (Q: [GC19])
+ 1.811 GC19 served by CS3 (Q: [])
+ 2.423 GC18 done served by CS2 (Q: [])
+ 2.671 GC1 done served by HS0 (Q: [GC4, TC7, GC17])
+ 2.696 GC19 done served by CS3 (Q: [])
+ 2.736 TC2 done served by HS1 (Q: [GC10, GC15])
+ 3.299 GC4 served by HS0 (Q: [TC7, GC17])
+ 4.781 GC4 done served by HS0 (Q: [TC7, GC17])
+ 6.212 TC7 served by HS0 (Q: [GC17])
+ 7.591 GC10 served by HS1 (Q: [GC15])
+ 9.470 GC10 done served by HS1 (Q: [GC15])
+ 9.724 TC7 done served by HS0 (Q: [GC17])
+11.015 GC15 served by HS1 (Q: [])
+11.328 GC17 served by HS0 (Q: [])
+12.858 GC15 done served by HS1 (Q: [])
+13.697 GC17 done served by HS0 (Q: [])
+1.930 20 0
