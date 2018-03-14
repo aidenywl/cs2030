@@ -1,3 +1,5 @@
+package cs2030.simulator;
+
 /**
  * CustDone encapsulates a customer done event. Abstract Event is the parent.
  * 

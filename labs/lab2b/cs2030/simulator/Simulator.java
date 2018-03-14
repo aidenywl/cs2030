@@ -1,3 +1,5 @@
+package cs2030.simulator;
+
 /**
  * Simulator class encapsulates information and methods pertaining to a
  * event and shop simulator.
@@ -18,14 +20,16 @@ class Simulator {
     natural ordering */
   private PriorityQueue<Event> events;
 
-  /** The shop of servers being simulated. */
-  private Shop shop;
+  /** The shop of human servers being simulated. */
+  private Shop humanShop;
+  /** The shop of self checkout servers being simulated. */
+  private Shop selfCheckoutShop;
 
   /** The object to keep track of statistics for the simulator. */
   protected static Statistics stats = new Statistics();
 
   /** The random generator to be used for servers and customers */
-  public static RandomGenerator randomGen;
+  protected static RandomGenerator randomGen;
 
   /** The number of events to be simulated */
   private int numArrivingCustomers;
@@ -34,9 +38,9 @@ class Simulator {
    * Creates a simulatior and initialises it.
    * @param  numOfServers The number of servers to be created in the shop.
    */
-  public Simulator(int numEvents) {
+  public Simulator(int numCustomers) {
     // initialising the Shop with the number of servers needed
-    this.numArrivingCustomers = numEvents;
+    this.numArrivingCustomers = numCustomers;
     this.events = new PriorityQueue<>(100);
 
     // creating the first event
@@ -44,21 +48,40 @@ class Simulator {
     scheduleEvent(firstEvent);
   }
 
-  /**
-   * Sets the parameters for the shop and initialises it.
-   * @param numServers Number of servers for the shop
-   */
-  public void setShop(int numServers) {
-    this.shop = new Shop(numServers);
+/**
+ * Sets parameters for the shop and initialises it.
+ * @param numHumanServers      number of human servers
+ * @param numSelfService       number of self checkout counters
+ * @param maxQueueLength       maximum queue length
+ * @param restProbability      rest probability for humans
+ * @param selfServiceTimeLimit service time limit for self checkout counters.
+ */
+  public void setShop(int numHumanServers, int numSelfService, int maxQueueLength, double restProbability, double selfServiceTimeLimit) {
+    Server.setQueueLimit(maxQueueLength);
+    this.humanShop = new Shop(numHumanServers);
+    this.humanShop.createHumanServers(restProbability);
+    this.selfCheckoutShop = new Shop(numSelfService);
+    this.selfCheckoutShop.createSelfServers(selfServiceTimeLimit);
   }
+
   /**
    * Sets the parameters for the random generator.
+   * 
    * @param seed   The seed to be used for the random generator.
    * @param lambda The customer arrival rate.
    * @param mu     The service rate.
+   * @param rho The resting rate.
    */
-  public void setRandom(int seed, double lambda, double mu) {
-    Simulator.randomGen = new RandomGenerator(seed, lambda, mu);
+  public void setRandom(int seed, double lambda, double mu, double rho) {
+    Simulator.randomGen = new RandomGenerator(seed, lambda, mu, rho);
+  }
+
+  /**
+   * Sets the parameters for the customer class.
+   * @param probability Probability of a greedy customer.
+   */
+  public void setCustomer(double probability) {
+    Customer.setGreedyProbability(probability);
   }
 
   public void run() {
@@ -71,6 +94,7 @@ class Simulator {
 
   /**
    * Schedules an event into the priority queue if there are spaces left
+   * 
    * @param event The event to be added into the priorityQueue
    */
   private void scheduleEvent(Event event) {
@@ -101,24 +125,46 @@ class Simulator {
   public static Event createDoneEvent(double time, Server server) {
     return new DoneEvent(time, server);
   }
-
+  /**
+   * Simulate the arrival of a customer.
+   *
+   * @param time The time this event is scheduled to occur.
+   */
   public void simulateArrival(double time) {
     // create a customer
     Customer customer = new Customer(time);
+    Server currentServer = null;
+    boolean withinTimeLimit = SelfServer.withinServiceTimeLimit(customer);
     // find an idle or free waiter.
-    Server currentServer = shop.findIdleOrAvailableServer();
-    // if no waiter available, make the customer leave.
+    if (withinTimeLimit) {
+      // look among idle checkount counter
+      currentServer = selfCheckoutShop.findIdleServer(customer);
+    }
+    if (currentServer == null) {
+        // look among idle humans
+      currentServer = humanShop.findIdleServer(customer);
+    }
+
+    // if no idle, join a self checkout counter.
+    if (withinTimeLimit && currentServer == null) {
+      currentServer = selfCheckoutShop.findAvailableServer(customer);
+    }
+    // if checkout counters are not available, find a human server to wait at.
+    if (currentServer == null) {
+      currentServer = humanShop.findAvailableServer(customer);
+    }
+    // if still no luck, make the customer leave.
+    
     if (currentServer == null) {
       customer.leave(time);
     } else {
+      // if the person is served, return a customer done event.
       Event customerDone = currentServer.handleCustomer(customer, time);
 
       if (customerDone != null) {
         scheduleEvent(customerDone);
       }
     }
-    // if the person is served, return a customer done event.
-   
 
     // add events if there are any left to simulate.
     if (hasArrivingCustomers()) {
@@ -127,14 +173,69 @@ class Simulator {
       scheduleEvent(nextArrival);
     }
   }
-
+  /**
+   * Simulate that the server is done serving a customer.
+   *
+   * @param time The time this event is scheduled to occur.
+   * @param server The server to serve the customer.
+   */
   public void simulateDone(double time, Server server) {
     // make the server finish the customer
-    Event customerDone = server.finishCustomer(time);
+    server.finishCustomer(time);
+
+    boolean didServerRest = false;
+    // check whether it is time to rest, if it is a human server.
+    if (server instanceof HumanServer) {
+      didServerRest = checkHumanServerRest(time, (HumanServer) server);
+      if(didServerRest) {
+        return;
+      }
+    }
+    // serve a waiting customer, if any.
+    serveWaitingCustomer(time, server);
+
+  }
+  /**
+   * Simulate that the server is back from a rest.
+   *
+   * @param time The time this event is scheduled to occur.
+   * @param server The server to get back from a rest.
+   */
+  public void simulateBack(double time, HumanServer server) {
+    server.backToWork();
+    serveWaitingCustomer(time, server);
+  }
+  /**
+   * Makes the server serve a waiting customer if there is any.
+   * 
+   * @param time   Time of serving.
+   * @param server The server performing the serving.
+   */
+  private void serveWaitingCustomer(double time, Server server) {
+    Event customerDone = null;
+    // serve the waiting customer.
+    if (server.hasWaitingCustomer()) {
+      // get waiting customers for the waiter if any.
+      Customer waitingCustomer = server.getWaitingCustomer();
+      customerDone = server.handleCustomer(waitingCustomer, time);
+    }
     // schedule done event if any.
     if (customerDone != null) {
       scheduleEvent(customerDone);
     }
+  }
+
+  private boolean checkHumanServerRest(double time, HumanServer server) {
+    Event backEvent = server.checkTimeToRest(time);
+
+    if (backEvent != null) {
+      // make the server rest.
+      server.rest();
+      scheduleEvent(backEvent);
+      return true;      
+    }
+
+    return false;
   }
 
   /**

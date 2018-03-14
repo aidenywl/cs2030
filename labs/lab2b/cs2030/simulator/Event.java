@@ -1,3 +1,5 @@
+package cs2030.simulator;
+
 /**
  * Encapsulates information and methods pertaining to an arrival event.
  * Event objects have a total order. The Comparable method is implemented

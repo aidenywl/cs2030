@@ -1,3 +1,5 @@
+package cs2030.simulator;
+
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
@@ -11,8 +13,6 @@ import java.io.FileNotFoundException;
  * @version CS2030 AY17/18 Sem 2 LabTwoB
  */
 class LabTwoB {
-  // should i put the variables here???
-  protected static int numEvents = 0;
 
   /**
    * The main method for LabOneA.
@@ -27,26 +27,40 @@ class LabTwoB {
     if (s == null) {
       return;
     }
-    // obtaining the arrival rate of the servers
+    // base seed to the RandomGenerator object
     int randomSeed = s.nextInt();
-    // getting the number of servers to initialise the shop
-    int numServers = s.nextInt();
-    // getting the number of events to simulate
-    int numEvents = s.nextInt(); 
+    // getting the number of human servers to initialise the shop
+    int numHumanServers = s.nextInt();
+    // getting the number of self checkout counters to initialise the shop
+    int numSelfServers = s.nextInt();
+    // getting the maximum queue length for servers.
+    int maxQueueLength = s.nextInt();
+    // getting the number of customers to simulate
+    int numCustomers = s.nextInt();
     // obtaining the arrival rate of the customers
     double arrRate = s.nextDouble();
     // obtaining the service rate
     double serRate = s.nextDouble();
+    // obtaining the resting rate. Used to generate rest times.
+    double restRate = s.nextDouble();
+    // probability that a waiter rests.
+    double restProbability = s.nextDouble();
+    // probability of a greedy customer.
+    double greedyProbability = s.nextDouble();
+    // service time limit for self checkout counters.
+    double serviceTimeLimit = s.nextDouble();
 
     // creating a simulation
-    Simulator sim = new Simulator(numEvents);
+    Simulator sim = new Simulator(numCustomers);
 
     // setting the simulation's Random Generator parameters
-    sim.setRandom(randomSeed, arrRate, serRate);
+    sim.setRandom(randomSeed, arrRate, serRate, restRate);
 
     // setting the simulation's shop number of servers
-    sim.setShop(numServers);
+    sim.setShop(numHumanServers, numSelfServers, maxQueueLength, restProbability, serviceTimeLimit);
 
+    // set customer variables
+    sim.setCustomer(greedyProbability);
     // Start the simulation
     sim.run();
 
@@ -54,12 +68,6 @@ class LabTwoB {
 
     // Print statistics
     sim.printStats();
-  }
-
-  /** helper method to determine if all events have been generated */
-
-  protected static boolean hasNextEvent() {
-    return numEvents > 0;
   }
 
   /**

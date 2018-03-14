@@ -1,3 +1,13 @@
+package cs2030.simulator;
+
+/**
+ * Encapsulates information and methods pertaining to an arrival event.
+ * This class does not do much for now, except letting the simulator call
+ * {@code simulateArrival} through polymorphism.
+ *
+ * @author Low Yew Woei
+ * @version CS2030 AY17/18 Sem 2 LabTwoB
+ */
 class ArrivalEvent extends Event {
   
   /**

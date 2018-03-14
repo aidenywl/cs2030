@@ -1,3 +1,5 @@
+package cs2030.simulator;
+
 /**
  * Encapsulates a customer for the shop.
  * Keeps track of the customer ID and the customer done time.
@@ -9,6 +11,8 @@
 class Customer {
   /** keeps track of the number of customers created so far. */
   private static int Id;
+  /** stores the greedy probability. */
+  private static double greedyProbability;
   /** the id of the instantiated customer. */
   private final int customerId;
   /** the arrival time of the customer. */
@@ -19,6 +23,8 @@ class Customer {
   private double waitTime;
   /** the time the customer will be done */
   private double doneTime;
+  /** Indicates if a customer is greedy or not. */
+  private final boolean greedy;
 
   /** 
    * Constructs a customer object.
@@ -28,8 +34,18 @@ class Customer {
     this.customerId = Id;
     Id++;
     this.arrivalTime = arrivalTime;
+    this.greedy = Customer.greedyOrNot();
     this.serviceTime = Simulator.randomGen.genServiceTime();
     this.arrive();
+
+  }
+
+  public static void setGreedyProbability(double probability) {
+    Customer.greedyProbability = probability;
+  }
+
+  private static boolean greedyOrNot() {
+    return Simulator.randomGen.genCustomerType() < Customer.greedyProbability;
   }
 
   /**
@@ -89,9 +105,29 @@ class Customer {
     Simulator.stats.lostOneCustomer();
     System.out.printf("%6.3f %s leaves\n", time, this);
   }
+
+  /**
+   * Obtain the service time required by the customer.
+   * @return The service time.
+   */
+  public double getServiceTime() {
+    return this.serviceTime;
+  }
+
+  /**
+   * Get whether the customer is greedy or not
+   * @return true if the customer is greedy. false otherwise.
+   */
+  public boolean isGreedy() {
+    return greedy;
+  }
  
   @Override
   public String toString() {
-    return "C" +  customerId;
+    if (greedy) {
+      return "GC" + customerId;
+    } else {
+      return "TC" + customerId;
+    }
   }
 }
