@@ -130,7 +130,6 @@ class Server {
     customer.waitBegin(this);
   }
 
-
   /**
    * Used to finish a customer after he has been served.
    * will serve a waiting customer if there is any.

@@ -1,0 +1,3413 @@
+ 0.000 TC0 arrives
+ 0.000 TC0 served by CS3(Q: [])
+ 0.045 TC1 arrives
+ 0.045 TC1 served by HS0(Q: [])
+ 0.060 TC2 arrives
+ 0.060 TC2 served by HS1(Q: [])
+ 0.159 GC3 arrives
+ 0.159 GC3 served by CS4(Q: [])
+ 0.162 GC4 arrives
+ 0.162 GC4 served by HS2(Q: [])
+ 0.184 TC5 arrives
+ 0.184 TC5 waits for CS3(Q: [TC5])
+ 0.185 TC6 arrives
+ 0.185 TC6 waits for CS3(Q: [TC5, TC6])
+ 0.313 TC0 done served by CS3(Q: [TC5, TC6])
+ 0.313 TC5 served by CS3(Q: [TC6])
+ 0.396 TC7 arrives
+ 0.396 TC7 waits for HS0(Q: [TC7])
+ 0.423 GC3 done served by CS4(Q: [])
+ 0.728 TC5 done served by CS3(Q: [TC6])
+ 0.728 TC6 served by CS3(Q: [])
+ 0.767 GC8 arrives
+ 0.767 GC8 served by CS4(Q: [])
+ 0.809 TC9 arrives
+ 0.809 TC9 waits for CS3(Q: [TC9])
+ 0.817 TC10 arrives
+ 0.817 TC10 waits for HS0(Q: [TC7, TC10])
+ 0.943 TC6 done served by CS3(Q: [TC9])
+ 0.943 TC9 served by CS3(Q: [])
+ 0.976 GC8 done served by CS4(Q: [])
+ 0.999 TC9 done served by CS3(Q: [])
+ 1.315 TC11 arrives
+ 1.315 TC11 served by CS3(Q: [])
+ 1.368 GC12 arrives
+ 1.368 GC12 served by CS4(Q: [])
+ 1.369 GC12 done served by CS4(Q: [])
+ 1.391 TC13 arrives
+ 1.391 TC13 served by CS4(Q: [])
+ 1.409 TC11 done served by CS3(Q: [])
+ 1.643 GC4 done served by HS2(Q: [])
+ 1.801 TC14 arrives
+ 1.801 TC14 served by CS3(Q: [])
+ 1.823 TC14 done served by CS3(Q: [])
+ 1.929 TC15 arrives
+ 1.929 TC15 waits for HS0(Q: [TC7, TC10, TC15])
+ 2.007 TC13 done served by CS4(Q: [])
+ 2.078 GC16 arrives
+ 2.078 GC16 served by CS3(Q: [])
+ 2.079 TC17 arrives
+ 2.079 TC17 served by HS2(Q: [])
+ 2.161 GC18 arrives
+ 2.161 GC18 served by CS4(Q: [])
+ 2.267 TC19 arrives
+ 2.267 TC19 waits for CS3(Q: [TC19])
+ 2.677 GC16 done served by CS3(Q: [TC19])
+ 2.677 TC19 served by CS3(Q: [])
+ 2.690 TC1 done served by HS0(Q: [TC7, TC10, TC15])
+ 2.697 GC20 arrives
+ 2.697 GC20 waits for HS1(Q: [GC20])
+ 2.761 TC2 done served by HS1(Q: [GC20])
+ 2.774 GC21 arrives
+ 2.774 GC21 waits for HS2(Q: [GC21])
+ 2.797 GC22 arrives
+ 2.797 GC22 waits for CS3(Q: [GC22])
+ 2.974 GC18 done served by CS4(Q: [])
+ 3.008 GC23 arrives
+ 3.008 GC23 served by CS4(Q: [])
+ 3.066 GC23 done served by CS4(Q: [])
+ 3.276 TC24 arrives
+ 3.276 TC24 served by CS4(Q: [])
+ 3.281 GC25 arrives
+ 3.281 GC25 waits for CS4(Q: [GC25])
+ 3.392 TC24 done served by CS4(Q: [GC25])
+ 3.392 GC25 served by CS4(Q: [])
+ 3.476 GC20 served by HS1(Q: [])
+ 3.489 GC26 arrives
+ 3.489 GC26 waits for CS4(Q: [GC26])
+ 3.558 GC27 arrives
+ 3.558 GC27 waits for HS1(Q: [GC27])
+ 3.562 TC19 done served by CS3(Q: [GC22])
+ 3.562 GC22 served by CS3(Q: [])
+ 3.629 GC28 arrives
+ 3.629 GC28 waits for CS3(Q: [GC28])
+ 3.829 GC29 arrives
+ 3.829 GC29 waits for CS3(Q: [GC28, GC29])
+ 3.854 GC30 arrives
+ 3.854 GC30 waits for HS1(Q: [GC27, GC30])
+ 3.907 TC31 arrives
+ 3.907 TC31 waits for HS1(Q: [GC27, GC30, TC31])
+ 3.939 GC32 arrives
+ 3.939 GC32 waits for CS4(Q: [GC26, GC32])
+ 4.016 GC25 done served by CS4(Q: [GC26, GC32])
+ 4.016 GC26 served by CS4(Q: [GC32])
+ 4.238 GC33 arrives
+ 4.238 GC33 waits for HS2(Q: [GC21, GC33])
+ 4.280 GC22 done served by CS3(Q: [GC28, GC29])
+ 4.280 GC28 served by CS3(Q: [GC29])
+ 4.448 TC17 done served by HS2(Q: [GC21, GC33])
+ 4.556 TC34 arrives
+ 4.556 TC34 waits for CS3(Q: [GC29, TC34])
+ 4.575 GC26 done served by CS4(Q: [GC32])
+ 4.575 GC32 served by CS4(Q: [])
+ 4.650 GC28 done served by CS3(Q: [GC29, TC34])
+ 4.650 GC29 served by CS3(Q: [TC34])
+ 4.690 GC29 done served by CS3(Q: [TC34])
+ 4.690 TC34 served by CS3(Q: [])
+ 4.726 GC20 done served by HS1(Q: [GC27, GC30, TC31])
+ 4.980 TC34 done served by CS3(Q: [])
+ 5.045 GC35 arrives
+ 5.045 GC35 served by CS3(Q: [])
+ 5.054 TC36 arrives
+ 5.054 TC36 leaves
+ 5.117 TC7 served by HS0(Q: [TC10, TC15])
+ 5.220 GC21 served by HS2(Q: [GC33])
+ 5.243 GC37 arrives
+ 5.243 GC37 waits for CS3(Q: [GC37])
+ 5.327 GC38 arrives
+ 5.327 GC38 waits for HS2(Q: [GC33, GC38])
+ 5.444 GC32 done served by CS4(Q: [])
+ 5.528 GC27 served by HS1(Q: [GC30, TC31])
+ 5.539 TC39 arrives
+ 5.539 TC39 served by CS4(Q: [])
+ 5.803 GC35 done served by CS3(Q: [GC37])
+ 5.803 GC37 served by CS3(Q: [])
+ 5.817 TC40 arrives
+ 5.817 TC40 waits for CS3(Q: [TC40])
+ 6.230 TC39 done served by CS4(Q: [])
+ 6.243 TC41 arrives
+ 6.243 TC41 served by CS4(Q: [])
+ 6.534 GC42 arrives
+ 6.534 GC42 waits for HS0(Q: [TC10, TC15, GC42])
+ 6.598 GC37 done served by CS3(Q: [TC40])
+ 6.598 TC40 served by CS3(Q: [])
+ 6.898 GC27 done served by HS1(Q: [GC30, TC31])
+ 6.940 TC41 done served by CS4(Q: [])
+ 6.941 TC43 arrives
+ 6.941 TC43 waits for HS0(Q: [TC10, TC15, GC42, TC43])
+ 6.997 GC21 done served by HS2(Q: [GC33, GC38])
+ 7.052 TC44 arrives
+ 7.052 TC44 served by CS4(Q: [])
+ 7.160 GC45 arrives
+ 7.160 GC45 waits for HS0(Q: [TC10, TC15, GC42, TC43, GC45])
+ 7.223 TC44 done served by CS4(Q: [])
+ 7.258 GC30 served by HS1(Q: [TC31])
+ 7.269 TC40 done served by CS3(Q: [])
+ 7.356 GC46 arrives
+ 7.356 GC46 served by CS3(Q: [])
+ 7.390 TC47 arrives
+ 7.390 TC47 served by CS4(Q: [])
+ 7.427 GC48 arrives
+ 7.427 GC48 waits for CS3(Q: [GC48])
+ 7.462 GC46 done served by CS3(Q: [GC48])
+ 7.462 GC48 served by CS3(Q: [])
+ 7.579 TC49 arrives
+ 7.579 TC49 waits for HS0(Q: [TC10, TC15, GC42, TC43, GC45, TC49])
+ 7.625 TC50 arrives
+ 7.625 TC50 waits for HS0(Q: [TC10, TC15, GC42, TC43, GC45, TC49, TC50])
+ 7.643 GC51 arrives
+ 7.643 GC51 waits for HS1(Q: [TC31, GC51])
+ 7.702 TC47 done served by CS4(Q: [])
+ 7.766 TC52 arrives
+ 7.766 TC52 served by CS4(Q: [])
+ 8.020 TC53 arrives
+ 8.020 TC53 waits for CS3(Q: [TC53])
+ 8.045 GC48 done served by CS3(Q: [TC53])
+ 8.045 TC53 served by CS3(Q: [])
+ 8.278 GC33 served by HS2(Q: [GC38])
+ 8.285 TC54 arrives
+ 8.285 TC54 waits for HS0(Q: [TC10, TC15, GC42, TC43, GC45, TC49, TC50, TC54])
+ 8.351 TC52 done served by CS4(Q: [])
+ 8.355 GC30 done served by HS1(Q: [TC31, GC51])
+ 8.534 GC55 arrives
+ 8.534 GC55 served by CS4(Q: [])
+ 8.581 TC53 done served by CS3(Q: [])
+ 8.616 GC56 arrives
+ 8.616 GC56 served by CS3(Q: [])
+ 8.630 TC31 served by HS1(Q: [GC51])
+ 8.630 TC7 done served by HS0(Q: [TC10, TC15, GC42, TC43, GC45, TC49, TC50, TC54])
+ 8.676 GC56 done served by CS3(Q: [])
+ 8.879 GC55 done served by CS4(Q: [])
+ 8.949 TC57 arrives
+ 8.949 TC57 waits for HS1(Q: [GC51, TC57])
+ 9.210 GC58 arrives
+ 9.210 GC58 waits for HS2(Q: [GC38, GC58])
+ 9.275 TC59 arrives
+ 9.275 TC59 served by CS3(Q: [])
+ 9.366 TC60 arrives
+ 9.366 TC60 served by CS4(Q: [])
+ 9.439 TC59 done served by CS3(Q: [])
+ 9.874 TC61 arrives
+ 9.874 TC61 waits for HS1(Q: [GC51, TC57, TC61])
+ 9.958 TC62 arrives
+ 9.958 TC62 served by CS3(Q: [])
+ 9.977 TC31 done served by HS1(Q: [GC51, TC57, TC61])
+10.031 GC63 arrives
+10.031 GC63 waits for CS3(Q: [GC63])
+10.060 GC51 served by HS1(Q: [TC57, TC61])
+10.069 TC60 done served by CS4(Q: [])
+10.133 TC64 arrives
+10.133 TC64 served by CS4(Q: [])
+10.148 TC10 served by HS0(Q: [TC15, GC42, TC43, GC45, TC49, TC50, TC54])
+10.148 TC65 arrives
+10.148 TC65 waits for CS3(Q: [GC63, TC65])
+10.354 GC33 done served by HS2(Q: [GC38, GC58])
+10.408 TC62 done served by CS3(Q: [GC63, TC65])
+10.408 GC63 served by CS3(Q: [TC65])
+10.475 GC38 served by HS2(Q: [GC58])
+10.529 TC64 done served by CS4(Q: [])
+10.604 GC66 arrives
+10.604 GC66 waits for HS2(Q: [GC58, GC66])
+10.715 TC67 arrives
+10.715 TC67 served by CS4(Q: [])
+10.844 GC63 done served by CS3(Q: [TC65])
+10.844 TC65 served by CS3(Q: [])
+10.848 GC68 arrives
+10.848 GC68 waits for CS3(Q: [GC68])
+10.880 TC69 arrives
+10.880 TC69 waits for HS0(Q: [TC15, GC42, TC43, GC45, TC49, TC50, TC54, TC69])
+11.038 GC70 arrives
+11.038 GC70 waits for HS1(Q: [TC57, TC61, GC70])
+11.097 GC71 arrives
+11.097 GC71 waits for CS4(Q: [GC71])
+11.130 TC65 done served by CS3(Q: [GC68])
+11.130 GC68 served by CS3(Q: [])
+11.142 GC72 arrives
+11.142 GC72 waits for CS3(Q: [GC72])
+11.192 TC73 arrives
+11.192 TC73 waits for HS0(Q: [TC15, GC42, TC43, GC45, TC49, TC50, TC54, TC69, TC73])
+11.282 TC74 arrives
+11.282 TC74 waits for CS3(Q: [GC72, TC74])
+11.517 TC67 done served by CS4(Q: [GC71])
+11.517 GC71 served by CS4(Q: [])
+11.634 GC71 done served by CS4(Q: [])
+11.737 GC38 done served by HS2(Q: [GC58, GC66])
+12.027 TC10 done served by HS0(Q: [TC15, GC42, TC43, GC45, TC49, TC50, TC54, TC69, TC73])
+12.056 GC68 done served by CS3(Q: [GC72, TC74])
+12.056 GC72 served by CS3(Q: [TC74])
+12.150 TC15 served by HS0(Q: [GC42, TC43, GC45, TC49, TC50, TC54, TC69, TC73])
+12.174 GC72 done served by CS3(Q: [TC74])
+12.174 TC74 served by CS3(Q: [])
+12.274 TC75 arrives
+12.274 TC75 served by CS4(Q: [])
+12.281 TC76 arrives
+12.281 TC76 waits for HS0(Q: [GC42, TC43, GC45, TC49, TC50, TC54, TC69, TC73, TC76])
+12.314 TC75 done served by CS4(Q: [])
+12.334 GC51 done served by HS1(Q: [TC57, TC61, GC70])
+12.427 TC77 arrives
+12.427 TC77 served by CS4(Q: [])
+12.472 TC74 done served by CS3(Q: [])
+12.493 TC78 arrives
+12.493 TC78 served by CS3(Q: [])
+12.668 TC78 done served by CS3(Q: [])
+12.740 GC79 arrives
+12.740 GC79 served by CS3(Q: [])
+12.786 TC77 done served by CS4(Q: [])
+12.841 TC80 arrives
+12.841 TC80 served by CS4(Q: [])
+12.855 GC81 arrives
+12.855 GC81 waits for HS0(Q: [GC42, TC43, GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81])
+12.875 GC79 done served by CS3(Q: [])
+13.035 GC82 arrives
+13.035 GC82 served by CS3(Q: [])
+13.078 TC83 arrives
+13.078 TC83 leaves
+13.145 GC82 done served by CS3(Q: [])
+13.157 TC57 served by HS1(Q: [TC61, GC70])
+13.242 GC58 served by HS2(Q: [GC66])
+13.265 GC84 arrives
+13.265 GC84 waits for HS2(Q: [GC66, GC84])
+13.327 GC85 arrives
+13.327 GC85 served by CS3(Q: [])
+13.336 TC80 done served by CS4(Q: [])
+13.357 GC86 arrives
+13.357 GC86 waits for HS1(Q: [TC61, GC70, GC86])
+13.447 TC87 arrives
+13.447 TC87 waits for HS1(Q: [TC61, GC70, GC86, TC87])
+13.919 TC88 arrives
+13.919 TC88 served by CS4(Q: [])
+13.988 TC89 arrives
+13.988 TC89 waits for HS1(Q: [TC61, GC70, GC86, TC87, TC89])
+13.993 TC15 done served by HS0(Q: [GC42, TC43, GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81])
+14.126 GC85 done served by CS3(Q: [])
+14.238 TC90 arrives
+14.238 TC90 waits for HS1(Q: [TC61, GC70, GC86, TC87, TC89, TC90])
+14.555 TC91 arrives
+14.555 TC91 served by CS3(Q: [])
+14.595 GC58 done served by HS2(Q: [GC66, GC84])
+14.600 GC66 served by HS2(Q: [GC84])
+14.632 GC92 arrives
+14.632 GC92 waits for HS2(Q: [GC84, GC92])
+14.690 TC88 done served by CS4(Q: [])
+14.767 GC93 arrives
+14.767 GC93 served by CS4(Q: [])
+14.787 GC94 arrives
+14.787 GC94 waits for CS3(Q: [GC94])
+14.879 GC95 arrives
+14.879 GC95 waits for CS4(Q: [GC95])
+14.894 GC96 arrives
+14.894 GC96 waits for HS2(Q: [GC84, GC92, GC96])
+14.912 TC97 arrives
+14.912 TC97 waits for CS3(Q: [GC94, TC97])
+14.927 GC42 served by HS0(Q: [TC43, GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81])
+15.071 GC93 done served by CS4(Q: [GC95])
+15.071 GC95 served by CS4(Q: [])
+15.080 TC98 arrives
+15.080 TC98 waits for CS3(Q: [GC94, TC97, TC98])
+15.221 TC99 arrives
+15.221 TC99 waits for CS3(Q: [GC94, TC97, TC98, TC99])
+15.347 TC100 arrives
+15.347 TC100 waits for HS0(Q: [TC43, GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100])
+15.390 GC101 arrives
+15.390 GC101 waits for CS4(Q: [GC101])
+15.397 TC91 done served by CS3(Q: [GC94, TC97, TC98, TC99])
+15.397 GC94 served by CS3(Q: [TC97, TC98, TC99])
+15.409 TC102 arrives
+15.409 TC102 waits for CS3(Q: [TC97, TC98, TC99, TC102])
+15.424 GC103 arrives
+15.424 GC103 waits for CS4(Q: [GC101, GC103])
+15.611 TC104 arrives
+15.611 TC104 waits for CS3(Q: [TC97, TC98, TC99, TC102, TC104])
+15.716 TC57 done served by HS1(Q: [TC61, GC70, GC86, TC87, TC89, TC90])
+15.729 GC94 done served by CS3(Q: [TC97, TC98, TC99, TC102, TC104])
+15.729 TC97 served by CS3(Q: [TC98, TC99, TC102, TC104])
+15.771 GC105 arrives
+15.771 GC105 waits for CS4(Q: [GC101, GC103, GC105])
+15.785 TC106 arrives
+15.785 TC106 waits for HS2(Q: [GC84, GC92, GC96, TC106])
+15.822 GC95 done served by CS4(Q: [GC101, GC103, GC105])
+15.822 GC101 served by CS4(Q: [GC103, GC105])
+15.842 TC61 served by HS1(Q: [GC70, GC86, TC87, TC89, TC90])
+15.846 GC107 arrives
+15.846 GC107 waits for HS2(Q: [GC84, GC92, GC96, TC106, GC107])
+16.020 GC42 done served by HS0(Q: [TC43, GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100])
+16.214 GC101 done served by CS4(Q: [GC103, GC105])
+16.214 GC103 served by CS4(Q: [GC105])
+16.228 GC108 arrives
+16.228 GC108 waits for CS4(Q: [GC105, GC108])
+16.443 GC103 done served by CS4(Q: [GC105, GC108])
+16.443 GC105 served by CS4(Q: [GC108])
+16.447 GC109 arrives
+16.447 GC109 waits for HS1(Q: [GC70, GC86, TC87, TC89, TC90, GC109])
+16.454 GC66 done served by HS2(Q: [GC84, GC92, GC96, TC106, GC107])
+16.609 TC110 arrives
+16.609 TC110 waits for CS3(Q: [TC98, TC99, TC102, TC104, TC110])
+16.611 GC111 arrives
+16.611 GC111 waits for HS1(Q: [GC70, GC86, TC87, TC89, TC90, GC109, GC111])
+16.617 GC112 arrives
+16.617 GC112 waits for HS1(Q: [GC70, GC86, TC87, TC89, TC90, GC109, GC111, GC112])
+16.640 TC97 done served by CS3(Q: [TC98, TC99, TC102, TC104, TC110])
+16.640 TC98 served by CS3(Q: [TC99, TC102, TC104, TC110])
+16.662 GC105 done served by CS4(Q: [GC108])
+16.662 GC108 served by CS4(Q: [])
+16.702 TC98 done served by CS3(Q: [TC99, TC102, TC104, TC110])
+16.702 TC99 served by CS3(Q: [TC102, TC104, TC110])
+16.702 TC113 arrives
+16.702 TC113 waits for CS3(Q: [TC102, TC104, TC110, TC113])
+16.735 TC99 done served by CS3(Q: [TC102, TC104, TC110, TC113])
+16.735 TC102 served by CS3(Q: [TC104, TC110, TC113])
+16.953 TC102 done served by CS3(Q: [TC104, TC110, TC113])
+16.953 TC104 served by CS3(Q: [TC110, TC113])
+16.982 GC108 done served by CS4(Q: [])
+17.253 GC114 arrives
+17.253 GC114 served by CS4(Q: [])
+17.281 TC43 served by HS0(Q: [GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100])
+17.328 TC115 arrives
+17.328 TC115 waits for HS0(Q: [GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115])
+17.331 GC116 arrives
+17.331 GC116 waits for CS4(Q: [GC116])
+17.354 TC104 done served by CS3(Q: [TC110, TC113])
+17.354 TC110 served by CS3(Q: [TC113])
+17.414 GC117 arrives
+17.414 GC117 waits for CS3(Q: [TC113, GC117])
+17.551 GC114 done served by CS4(Q: [GC116])
+17.551 GC116 served by CS4(Q: [])
+17.556 GC116 done served by CS4(Q: [])
+17.607 TC118 arrives
+17.607 TC118 served by CS4(Q: [])
+17.805 TC61 done served by HS1(Q: [GC70, GC86, TC87, TC89, TC90, GC109, GC111, GC112])
+17.849 GC84 served by HS2(Q: [GC92, GC96, TC106, GC107])
+17.888 TC118 done served by CS4(Q: [])
+17.935 GC119 arrives
+17.935 GC119 served by CS4(Q: [])
+17.994 GC119 done served by CS4(Q: [])
+18.025 GC120 arrives
+18.025 GC120 served by CS4(Q: [])
+18.113 GC120 done served by CS4(Q: [])
+18.159 TC110 done served by CS3(Q: [TC113, GC117])
+18.159 TC113 served by CS3(Q: [GC117])
+18.287 GC121 arrives
+18.287 GC121 served by CS4(Q: [])
+18.326 GC70 served by HS1(Q: [GC86, TC87, TC89, TC90, GC109, GC111, GC112])
+18.422 TC43 done served by HS0(Q: [GC45, TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115])
+18.502 GC122 arrives
+18.502 GC122 waits for CS4(Q: [GC122])
+18.584 TC123 arrives
+18.584 TC123 waits for CS3(Q: [GC117, TC123])
+18.601 TC113 done served by CS3(Q: [GC117, TC123])
+18.601 GC117 served by CS3(Q: [TC123])
+18.665 TC124 arrives
+18.665 TC124 waits for CS3(Q: [TC123, TC124])
+18.797 GC125 arrives
+18.797 GC125 waits for CS4(Q: [GC122, GC125])
+18.867 GC126 arrives
+18.867 GC126 waits for HS2(Q: [GC92, GC96, TC106, GC107, GC126])
+18.898 TC127 arrives
+18.898 TC127 waits for CS3(Q: [TC123, TC124, TC127])
+19.018 GC121 done served by CS4(Q: [GC122, GC125])
+19.018 GC122 served by CS4(Q: [GC125])
+19.020 TC128 arrives
+19.020 TC128 waits for CS3(Q: [TC123, TC124, TC127, TC128])
+19.092 GC45 served by HS0(Q: [TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115])
+19.172 GC129 arrives
+19.172 GC129 waits for HS2(Q: [GC92, GC96, TC106, GC107, GC126, GC129])
+19.230 TC130 arrives
+19.230 TC130 waits for HS0(Q: [TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130])
+19.336 GC122 done served by CS4(Q: [GC125])
+19.336 GC125 served by CS4(Q: [])
+19.349 GC117 done served by CS3(Q: [TC123, TC124, TC127, TC128])
+19.349 TC123 served by CS3(Q: [TC124, TC127, TC128])
+19.364 TC131 arrives
+19.364 TC131 waits for CS3(Q: [TC124, TC127, TC128, TC131])
+19.375 GC125 done served by CS4(Q: [])
+19.420 TC132 arrives
+19.420 TC132 waits for HS1(Q: [GC86, TC87, TC89, TC90, GC109, GC111, GC112, TC132])
+19.448 GC133 arrives
+19.448 GC133 served by CS4(Q: [])
+19.697 GC134 arrives
+19.697 GC134 waits for CS4(Q: [GC134])
+19.698 GC135 arrives
+19.698 GC135 waits for HS2(Q: [GC92, GC96, TC106, GC107, GC126, GC129, GC135])
+19.905 TC123 done served by CS3(Q: [TC124, TC127, TC128, TC131])
+19.905 TC124 served by CS3(Q: [TC127, TC128, TC131])
+19.924 GC136 arrives
+19.924 GC136 waits for HS2(Q: [GC92, GC96, TC106, GC107, GC126, GC129, GC135, GC136])
+20.085 GC137 arrives
+20.085 GC137 waits for HS1(Q: [GC86, TC87, TC89, TC90, GC109, GC111, GC112, TC132, GC137])
+20.229 GC133 done served by CS4(Q: [GC134])
+20.229 GC134 served by CS4(Q: [])
+20.304 GC138 arrives
+20.304 GC138 waits for CS4(Q: [GC138])
+20.438 GC134 done served by CS4(Q: [GC138])
+20.438 GC138 served by CS4(Q: [])
+20.694 TC124 done served by CS3(Q: [TC127, TC128, TC131])
+20.694 TC127 served by CS3(Q: [TC128, TC131])
+20.901 TC139 arrives
+20.901 TC139 waits for CS3(Q: [TC128, TC131, TC139])
+20.951 TC140 arrives
+20.951 TC140 waits for HS1(Q: [GC86, TC87, TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140])
+21.002 GC138 done served by CS4(Q: [])
+21.051 TC127 done served by CS3(Q: [TC128, TC131, TC139])
+21.051 TC128 served by CS3(Q: [TC131, TC139])
+21.073 TC128 done served by CS3(Q: [TC131, TC139])
+21.073 TC131 served by CS3(Q: [TC139])
+21.117 TC141 arrives
+21.117 TC141 served by CS4(Q: [])
+21.483 TC141 done served by CS4(Q: [])
+21.487 TC142 arrives
+21.487 TC142 served by CS4(Q: [])
+21.498 TC131 done served by CS3(Q: [TC139])
+21.498 TC139 served by CS3(Q: [])
+21.614 GC143 arrives
+21.614 GC143 waits for CS3(Q: [GC143])
+21.813 GC144 arrives
+21.813 GC144 waits for HS2(Q: [GC92, GC96, TC106, GC107, GC126, GC129, GC135, GC136, GC144])
+21.839 TC139 done served by CS3(Q: [GC143])
+21.839 GC143 served by CS3(Q: [])
+22.014 GC45 done served by HS0(Q: [TC49, TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130])
+22.115 TC145 arrives
+22.115 TC145 waits for CS3(Q: [TC145])
+22.176 GC143 done served by CS3(Q: [TC145])
+22.176 TC145 served by CS3(Q: [])
+22.213 GC146 arrives
+22.213 GC146 waits for CS3(Q: [GC146])
+22.243 TC142 done served by CS4(Q: [])
+22.306 GC147 arrives
+22.306 GC147 waits for HS2(Q: [GC92, GC96, TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147])
+22.698 TC145 done served by CS3(Q: [GC146])
+22.698 GC146 served by CS3(Q: [])
+22.896 GC148 arrives
+22.896 GC148 leaves
+22.978 GC149 arrives
+22.978 GC149 leaves
+23.020 GC150 arrives
+23.020 GC150 leaves
+23.219 GC151 arrives
+23.219 GC151 served by CS4(Q: [])
+23.259 GC70 done served by HS1(Q: [GC86, TC87, TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140])
+23.310 GC151 done served by CS4(Q: [])
+23.320 GC152 arrives
+23.320 GC152 leaves
+23.439 GC153 arrives
+23.439 GC153 served by CS4(Q: [])
+23.492 GC146 done served by CS3(Q: [])
+23.739 TC154 arrives
+23.739 TC154 served by CS3(Q: [])
+23.833 GC155 arrives
+23.833 GC155 waits for CS3(Q: [GC155])
+23.957 TC154 done served by CS3(Q: [GC155])
+23.957 GC155 served by CS3(Q: [])
+24.049 GC156 arrives
+24.049 GC156 waits for CS3(Q: [GC156])
+24.255 GC155 done served by CS3(Q: [GC156])
+24.255 GC156 served by CS3(Q: [])
+24.285 GC153 done served by CS4(Q: [])
+24.330 TC157 arrives
+24.330 TC157 served by CS4(Q: [])
+24.386 TC158 arrives
+24.386 TC158 waits for CS3(Q: [TC158])
+24.427 GC159 arrives
+24.427 GC159 leaves
+24.575 TC49 served by HS0(Q: [TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130])
+24.664 GC156 done served by CS3(Q: [TC158])
+24.664 TC158 served by CS3(Q: [])
+24.789 TC160 arrives
+24.789 TC160 waits for CS3(Q: [TC160])
+24.856 GC161 arrives
+24.856 GC161 waits for HS0(Q: [TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161])
+24.945 TC158 done served by CS3(Q: [TC160])
+24.945 TC160 served by CS3(Q: [])
+25.009 GC162 arrives
+25.009 GC162 waits for CS3(Q: [GC162])
+25.050 TC163 arrives
+25.050 TC163 waits for CS3(Q: [GC162, TC163])
+25.053 TC157 done served by CS4(Q: [])
+25.101 TC160 done served by CS3(Q: [GC162, TC163])
+25.101 GC162 served by CS3(Q: [TC163])
+25.162 TC164 arrives
+25.162 TC164 leaves
+25.169 GC84 done served by HS2(Q: [GC92, GC96, TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147])
+25.482 TC165 arrives
+25.482 TC165 served by CS4(Q: [])
+25.543 GC162 done served by CS3(Q: [TC163])
+25.543 TC163 served by CS3(Q: [])
+25.551 GC92 served by HS2(Q: [GC96, TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147])
+25.584 GC166 arrives
+25.584 GC166 waits for CS3(Q: [GC166])
+25.728 TC165 done served by CS4(Q: [])
+25.803 TC163 done served by CS3(Q: [GC166])
+25.803 GC166 served by CS3(Q: [])
+26.096 TC49 done served by HS0(Q: [TC50, TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161])
+26.331 GC166 done served by CS3(Q: [])
+26.424 TC167 arrives
+26.424 TC167 served by CS3(Q: [])
+26.474 GC86 served by HS1(Q: [TC87, TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140])
+26.893 TC50 served by HS0(Q: [TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161])
+27.178 TC168 arrives
+27.178 TC168 waits for HS0(Q: [TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168])
+27.235 TC167 done served by CS3(Q: [])
+27.579 GC92 done served by HS2(Q: [GC96, TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147])
+27.700 TC169 arrives
+27.700 TC169 served by CS3(Q: [])
+28.129 GC86 done served by HS1(Q: [TC87, TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140])
+28.407 TC169 done served by CS3(Q: [])
+28.616 GC96 served by HS2(Q: [TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147])
+28.831 TC170 arrives
+28.831 TC170 waits for HS2(Q: [TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147, TC170])
+28.940 GC171 arrives
+28.940 GC171 waits for HS2(Q: [TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171])
+28.981 TC172 arrives
+28.981 TC172 leaves
+28.991 TC173 arrives
+28.991 TC173 leaves
+29.256 GC174 arrives
+29.256 GC174 leaves
+29.327 TC87 served by HS1(Q: [TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140])
+29.389 GC175 arrives
+29.389 GC175 served by CS3(Q: [])
+29.722 TC176 arrives
+29.722 TC176 served by CS4(Q: [])
+29.808 GC175 done served by CS3(Q: [])
+29.933 TC50 done served by HS0(Q: [TC54, TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168])
+29.942 GC96 done served by HS2(Q: [TC106, GC107, GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171])
+29.989 TC177 arrives
+29.989 TC177 waits for HS1(Q: [TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140, TC177])
+30.090 TC178 arrives
+30.090 TC178 served by CS3(Q: [])
+30.106 GC179 arrives
+30.106 GC179 waits for HS1(Q: [TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179])
+30.353 TC176 done served by CS4(Q: [])
+30.631 TC178 done served by CS3(Q: [])
+30.723 GC180 arrives
+30.723 GC180 leaves
+30.859 TC181 arrives
+30.859 TC181 served by CS3(Q: [])
+30.993 TC106 served by HS2(Q: [GC107, GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171])
+31.031 GC182 arrives
+31.031 GC182 waits for HS2(Q: [GC107, GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182])
+31.155 GC183 arrives
+31.155 GC183 leaves
+31.162 TC184 arrives
+31.162 TC184 served by CS4(Q: [])
+31.241 TC181 done served by CS3(Q: [])
+31.262 GC185 arrives
+31.262 GC185 served by CS3(Q: [])
+31.386 GC185 done served by CS3(Q: [])
+31.726 TC186 arrives
+31.726 TC186 leaves
+31.758 TC187 arrives
+31.758 TC187 leaves
+31.758 TC184 done served by CS4(Q: [])
+31.898 TC188 arrives
+31.898 TC188 leaves
+32.009 TC54 served by HS0(Q: [TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168])
+32.087 TC189 arrives
+32.087 TC189 waits for HS0(Q: [TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189])
+32.089 GC190 arrives
+32.089 GC190 served by CS3(Q: [])
+32.135 TC191 arrives
+32.135 TC191 leaves
+32.197 TC192 arrives
+32.197 TC192 served by CS4(Q: [])
+32.204 GC193 arrives
+32.204 GC193 leaves
+32.285 GC194 arrives
+32.285 GC194 waits for CS3(Q: [GC194])
+32.552 TC195 arrives
+32.552 TC195 waits for CS3(Q: [GC194, TC195])
+32.564 TC192 done served by CS4(Q: [])
+32.582 TC196 arrives
+32.582 TC196 leaves
+32.609 TC106 done served by HS2(Q: [GC107, GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182])
+32.953 GC197 arrives
+32.953 GC197 served by CS4(Q: [])
+32.977 GC107 served by HS2(Q: [GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182])
+32.984 GC190 done served by CS3(Q: [GC194, TC195])
+32.984 GC194 served by CS3(Q: [TC195])
+33.074 TC198 arrives
+33.074 TC198 waits for CS3(Q: [TC195, TC198])
+33.130 GC199 arrives
+33.130 GC199 waits for CS4(Q: [GC199])
+33.226 TC87 done served by HS1(Q: [TC89, TC90, GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179])
+33.267 TC54 done served by HS0(Q: [TC69, TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189])
+33.276 GC200 arrives
+33.276 GC200 waits for HS2(Q: [GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200])
+33.627 GC201 arrives
+33.627 GC201 leaves
+33.629 TC202 arrives
+33.629 TC202 waits for CS3(Q: [TC195, TC198, TC202])
+33.897 GC203 arrives
+33.897 GC203 leaves
+33.905 GC197 done served by CS4(Q: [GC199])
+33.905 GC199 served by CS4(Q: [])
+33.954 GC194 done served by CS3(Q: [TC195, TC198, TC202])
+33.954 TC195 served by CS3(Q: [TC198, TC202])
+34.060 TC204 arrives
+34.060 TC204 waits for CS3(Q: [TC198, TC202, TC204])
+34.061 GC107 done served by HS2(Q: [GC126, GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200])
+34.251 TC195 done served by CS3(Q: [TC198, TC202, TC204])
+34.251 TC198 served by CS3(Q: [TC202, TC204])
+34.499 GC199 done served by CS4(Q: [])
+34.535 TC205 arrives
+34.535 TC205 leaves
+34.637 TC206 arrives
+34.637 TC206 leaves
+34.667 TC207 arrives
+34.667 TC207 served by CS4(Q: [])
+34.787 TC207 done served by CS4(Q: [])
+34.823 TC89 served by HS1(Q: [TC90, GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179])
+34.899 GC208 arrives
+34.899 GC208 served by CS4(Q: [])
+34.925 GC209 arrives
+34.925 GC209 waits for CS4(Q: [GC209])
+34.986 GC210 arrives
+34.986 GC210 waits for HS1(Q: [TC90, GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179, GC210])
+34.999 TC198 done served by CS3(Q: [TC202, TC204])
+34.999 TC202 served by CS3(Q: [TC204])
+35.007 GC208 done served by CS4(Q: [GC209])
+35.007 GC209 served by CS4(Q: [])
+35.013 GC209 done served by CS4(Q: [])
+35.175 GC211 arrives
+35.175 GC211 served by CS4(Q: [])
+35.548 TC212 arrives
+35.548 TC212 waits for CS3(Q: [TC204, TC212])
+35.621 TC202 done served by CS3(Q: [TC204, TC212])
+35.621 TC204 served by CS3(Q: [TC212])
+35.645 TC204 done served by CS3(Q: [TC212])
+35.645 TC212 served by CS3(Q: [])
+35.705 GC126 served by HS2(Q: [GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200])
+35.710 GC211 done served by CS4(Q: [])
+35.865 TC89 done served by HS1(Q: [TC90, GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179, GC210])
+35.874 GC213 arrives
+35.874 GC213 waits for HS2(Q: [GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213])
+35.881 TC214 arrives
+35.881 TC214 leaves
+35.901 GC215 arrives
+35.901 GC215 served by CS4(Q: [])
+35.919 GC216 arrives
+35.919 GC216 waits for CS3(Q: [GC216])
+36.113 TC217 arrives
+36.113 TC217 waits for CS3(Q: [GC216, TC217])
+36.284 GC215 done served by CS4(Q: [])
+36.319 GC218 arrives
+36.319 GC218 served by CS4(Q: [])
+36.420 TC212 done served by CS3(Q: [GC216, TC217])
+36.420 GC216 served by CS3(Q: [TC217])
+36.518 GC218 done served by CS4(Q: [])
+36.645 TC69 served by HS0(Q: [TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189])
+36.733 TC219 arrives
+36.733 TC219 served by CS4(Q: [])
+36.767 TC219 done served by CS4(Q: [])
+36.889 TC220 arrives
+36.889 TC220 served by CS4(Q: [])
+36.923 GC221 arrives
+36.923 GC221 waits for CS4(Q: [GC221])
+36.952 TC222 arrives
+36.952 TC222 waits for CS3(Q: [TC217, TC222])
+37.030 GC216 done served by CS3(Q: [TC217, TC222])
+37.030 TC217 served by CS3(Q: [TC222])
+37.066 GC223 arrives
+37.066 GC223 waits for CS3(Q: [TC222, GC223])
+37.325 TC90 served by HS1(Q: [GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179, GC210])
+37.380 TC224 arrives
+37.380 TC224 waits for CS3(Q: [TC222, GC223, TC224])
+37.431 TC220 done served by CS4(Q: [GC221])
+37.431 GC221 served by CS4(Q: [])
+37.458 GC126 done served by HS2(Q: [GC129, GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213])
+37.476 TC225 arrives
+37.476 TC225 waits for CS3(Q: [TC222, GC223, TC224, TC225])
+37.606 TC226 arrives
+37.606 TC226 waits for CS3(Q: [TC222, GC223, TC224, TC225, TC226])
+37.627 TC227 arrives
+37.627 TC227 waits for CS3(Q: [TC222, GC223, TC224, TC225, TC226, TC227])
+37.977 TC217 done served by CS3(Q: [TC222, GC223, TC224, TC225, TC226, TC227])
+37.977 TC222 served by CS3(Q: [GC223, TC224, TC225, TC226, TC227])
+38.089 GC228 arrives
+38.089 GC228 waits for CS4(Q: [GC228])
+38.089 GC229 arrives
+38.089 GC229 waits for HS0(Q: [TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229])
+38.269 TC230 arrives
+38.269 TC230 waits for HS1(Q: [GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230])
+38.326 GC221 done served by CS4(Q: [GC228])
+38.326 GC228 served by CS4(Q: [])
+38.441 GC231 arrives
+38.441 GC231 leaves
+38.478 GC228 done served by CS4(Q: [])
+38.497 TC232 arrives
+38.497 TC232 served by CS4(Q: [])
+38.541 TC222 done served by CS3(Q: [GC223, TC224, TC225, TC226, TC227])
+38.541 GC223 served by CS3(Q: [TC224, TC225, TC226, TC227])
+38.546 TC69 done served by HS0(Q: [TC73, TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229])
+38.632 GC223 done served by CS3(Q: [TC224, TC225, TC226, TC227])
+38.632 TC224 served by CS3(Q: [TC225, TC226, TC227])
+38.699 TC232 done served by CS4(Q: [])
+38.808 TC233 arrives
+38.808 TC233 served by CS4(Q: [])
+38.811 TC234 arrives
+38.811 TC234 waits for CS3(Q: [TC225, TC226, TC227, TC234])
+38.869 TC224 done served by CS3(Q: [TC225, TC226, TC227, TC234])
+38.869 TC225 served by CS3(Q: [TC226, TC227, TC234])
+38.869 TC235 arrives
+38.869 TC235 leaves
+38.916 TC225 done served by CS3(Q: [TC226, TC227, TC234])
+38.916 TC226 served by CS3(Q: [TC227, TC234])
+38.926 TC73 served by HS0(Q: [TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229])
+39.039 TC236 arrives
+39.039 TC236 waits for HS0(Q: [TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236])
+39.169 TC226 done served by CS3(Q: [TC227, TC234])
+39.169 TC227 served by CS3(Q: [TC234])
+39.252 TC227 done served by CS3(Q: [TC234])
+39.252 TC234 served by CS3(Q: [])
+39.270 TC237 arrives
+39.270 TC237 waits for CS3(Q: [TC237])
+39.567 TC233 done served by CS4(Q: [])
+39.640 TC234 done served by CS3(Q: [TC237])
+39.640 TC237 served by CS3(Q: [])
+39.646 GC238 arrives
+39.646 GC238 served by CS4(Q: [])
+39.665 TC239 arrives
+39.665 TC239 waits for CS3(Q: [TC239])
+39.709 GC240 arrives
+39.709 GC240 waits for CS4(Q: [GC240])
+39.955 TC241 arrives
+39.955 TC241 waits for CS3(Q: [TC239, TC241])
+40.067 TC242 arrives
+40.067 TC242 waits for CS3(Q: [TC239, TC241, TC242])
+40.122 TC243 arrives
+40.122 TC243 waits for CS3(Q: [TC239, TC241, TC242, TC243])
+40.198 TC73 done served by HS0(Q: [TC76, GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236])
+40.272 GC244 arrives
+40.272 GC244 waits for CS4(Q: [GC240, GC244])
+40.302 GC238 done served by CS4(Q: [GC240, GC244])
+40.302 GC240 served by CS4(Q: [GC244])
+40.347 GC245 arrives
+40.347 GC245 waits for CS4(Q: [GC244, GC245])
+40.360 TC237 done served by CS3(Q: [TC239, TC241, TC242, TC243])
+40.360 TC239 served by CS3(Q: [TC241, TC242, TC243])
+40.367 GC240 done served by CS4(Q: [GC244, GC245])
+40.367 GC244 served by CS4(Q: [GC245])
+40.605 TC246 arrives
+40.605 TC246 waits for CS3(Q: [TC241, TC242, TC243, TC246])
+40.658 GC247 arrives
+40.658 GC247 leaves
+40.688 GC248 arrives
+40.688 GC248 leaves
+40.717 GC129 served by HS2(Q: [GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213])
+40.737 TC76 served by HS0(Q: [GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236])
+40.889 TC249 arrives
+40.889 TC249 waits for CS3(Q: [TC241, TC242, TC243, TC246, TC249])
+40.971 TC239 done served by CS3(Q: [TC241, TC242, TC243, TC246, TC249])
+40.971 TC241 served by CS3(Q: [TC242, TC243, TC246, TC249])
+41.066 GC244 done served by CS4(Q: [GC245])
+41.066 GC245 served by CS4(Q: [])
+41.265 TC241 done served by CS3(Q: [TC242, TC243, TC246, TC249])
+41.265 TC242 served by CS3(Q: [TC243, TC246, TC249])
+41.273 TC250 arrives
+41.273 TC250 waits for CS3(Q: [TC243, TC246, TC249, TC250])
+41.295 TC242 done served by CS3(Q: [TC243, TC246, TC249, TC250])
+41.295 TC243 served by CS3(Q: [TC246, TC249, TC250])
+41.362 TC251 arrives
+41.362 TC251 waits for HS0(Q: [GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251])
+41.458 TC252 arrives
+41.458 TC252 waits for HS2(Q: [GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252])
+41.459 GC245 done served by CS4(Q: [])
+41.619 TC90 done served by HS1(Q: [GC109, GC111, GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230])
+41.755 GC253 arrives
+41.755 GC253 served by CS4(Q: [])
+41.774 GC129 done served by HS2(Q: [GC135, GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252])
+41.801 GC109 served by HS1(Q: [GC111, GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230])
+41.932 GC254 arrives
+41.932 GC254 waits for CS4(Q: [GC254])
+41.978 GC253 done served by CS4(Q: [GC254])
+41.978 GC254 served by CS4(Q: [])
+42.011 GC255 arrives
+42.011 GC255 waits for CS4(Q: [GC255])
+42.177 GC256 arrives
+42.177 GC256 waits for CS4(Q: [GC255, GC256])
+42.193 TC243 done served by CS3(Q: [TC246, TC249, TC250])
+42.193 TC246 served by CS3(Q: [TC249, TC250])
+42.212 GC257 arrives
+42.212 GC257 waits for CS3(Q: [TC249, TC250, GC257])
+42.247 TC258 arrives
+42.247 TC258 waits for CS3(Q: [TC249, TC250, GC257, TC258])
+42.256 GC135 served by HS2(Q: [GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252])
+42.326 GC254 done served by CS4(Q: [GC255, GC256])
+42.326 GC255 served by CS4(Q: [GC256])
+42.335 GC255 done served by CS4(Q: [GC256])
+42.335 GC256 served by CS4(Q: [])
+42.391 GC256 done served by CS4(Q: [])
+42.483 TC76 done served by HS0(Q: [GC81, TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251])
+42.715 GC259 arrives
+42.715 GC259 served by CS4(Q: [])
+42.837 GC109 done served by HS1(Q: [GC111, GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230])
+42.863 GC260 arrives
+42.863 GC260 waits for CS4(Q: [GC260])
+42.902 TC246 done served by CS3(Q: [TC249, TC250, GC257, TC258])
+42.902 TC249 served by CS3(Q: [TC250, GC257, TC258])
+42.912 GC81 served by HS0(Q: [TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251])
+42.949 GC261 arrives
+42.949 GC261 waits for HS0(Q: [TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261])
+43.013 GC262 arrives
+43.013 GC262 waits for CS4(Q: [GC260, GC262])
+43.042 GC263 arrives
+43.042 GC263 waits for CS4(Q: [GC260, GC262, GC263])
+43.074 GC264 arrives
+43.074 GC264 waits for HS2(Q: [GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264])
+43.154 TC265 arrives
+43.154 TC265 leaves
+43.162 TC266 arrives
+43.162 TC266 waits for CS3(Q: [TC250, GC257, TC258, TC266])
+43.174 GC267 arrives
+43.174 GC267 waits for CS4(Q: [GC260, GC262, GC263, GC267])
+43.220 GC259 done served by CS4(Q: [GC260, GC262, GC263, GC267])
+43.220 GC260 served by CS4(Q: [GC262, GC263, GC267])
+43.230 TC249 done served by CS3(Q: [TC250, GC257, TC258, TC266])
+43.230 TC250 served by CS3(Q: [GC257, TC258, TC266])
+43.250 GC260 done served by CS4(Q: [GC262, GC263, GC267])
+43.250 GC262 served by CS4(Q: [GC263, GC267])
+43.489 GC268 arrives
+43.489 GC268 leaves
+43.528 TC269 arrives
+43.528 TC269 waits for CS3(Q: [GC257, TC258, TC266, TC269])
+43.601 TC270 arrives
+43.601 TC270 waits for CS3(Q: [GC257, TC258, TC266, TC269, TC270])
+43.601 GC135 done served by HS2(Q: [GC136, GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264])
+43.622 GC271 arrives
+43.622 GC271 leaves
+43.647 GC262 done served by CS4(Q: [GC263, GC267])
+43.647 GC263 served by CS4(Q: [GC267])
+43.752 GC263 done served by CS4(Q: [GC267])
+43.752 GC267 served by CS4(Q: [])
+43.861 TC272 arrives
+43.861 TC272 leaves
+43.953 GC273 arrives
+43.953 GC273 waits for CS4(Q: [GC273])
+43.953 GC136 served by HS2(Q: [GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264])
+44.093 TC274 arrives
+44.093 TC274 waits for CS3(Q: [GC257, TC258, TC266, TC269, TC270, TC274])
+44.132 GC111 served by HS1(Q: [GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230])
+44.186 TC250 done served by CS3(Q: [GC257, TC258, TC266, TC269, TC270, TC274])
+44.186 GC257 served by CS3(Q: [TC258, TC266, TC269, TC270, TC274])
+44.337 GC257 done served by CS3(Q: [TC258, TC266, TC269, TC270, TC274])
+44.337 TC258 served by CS3(Q: [TC266, TC269, TC270, TC274])
+44.381 TC258 done served by CS3(Q: [TC266, TC269, TC270, TC274])
+44.381 TC266 served by CS3(Q: [TC269, TC270, TC274])
+44.448 TC275 arrives
+44.448 TC275 waits for CS3(Q: [TC269, TC270, TC274, TC275])
+44.469 GC276 arrives
+44.469 GC276 waits for HS1(Q: [GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230, GC276])
+44.629 GC267 done served by CS4(Q: [GC273])
+44.629 GC273 served by CS4(Q: [])
+44.655 TC277 arrives
+44.655 TC277 waits for CS3(Q: [TC269, TC270, TC274, TC275, TC277])
+44.733 TC278 arrives
+44.733 TC278 waits for HS1(Q: [GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278])
+44.784 GC273 done served by CS4(Q: [])
+44.896 TC266 done served by CS3(Q: [TC269, TC270, TC274, TC275, TC277])
+44.896 TC269 served by CS3(Q: [TC270, TC274, TC275, TC277])
+44.952 TC269 done served by CS3(Q: [TC270, TC274, TC275, TC277])
+44.952 TC270 served by CS3(Q: [TC274, TC275, TC277])
+45.196 GC279 arrives
+45.196 GC279 waits for HS2(Q: [GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279])
+45.259 GC280 arrives
+45.259 GC280 leaves
+45.322 GC281 arrives
+45.322 GC281 served by CS4(Q: [])
+45.538 TC282 arrives
+45.538 TC282 waits for CS3(Q: [TC274, TC275, TC277, TC282])
+45.548 TC270 done served by CS3(Q: [TC274, TC275, TC277, TC282])
+45.548 TC274 served by CS3(Q: [TC275, TC277, TC282])
+45.640 GC81 done served by HS0(Q: [TC100, TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261])
+45.641 TC100 served by HS0(Q: [TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261])
+45.832 GC283 arrives
+45.832 GC283 waits for CS4(Q: [GC283])
+45.975 GC281 done served by CS4(Q: [GC283])
+45.975 GC283 served by CS4(Q: [])
+46.005 GC284 arrives
+46.005 GC284 waits for CS4(Q: [GC284])
+46.133 TC285 arrives
+46.133 TC285 waits for HS0(Q: [TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285])
+46.224 GC283 done served by CS4(Q: [GC284])
+46.224 GC284 served by CS4(Q: [])
+46.323 TC274 done served by CS3(Q: [TC275, TC277, TC282])
+46.323 TC275 served by CS3(Q: [TC277, TC282])
+46.390 TC286 arrives
+46.390 TC286 leaves
+46.479 TC275 done served by CS3(Q: [TC277, TC282])
+46.479 TC277 served by CS3(Q: [TC282])
+46.492 TC287 arrives
+46.492 TC287 waits for CS3(Q: [TC282, TC287])
+46.513 GC288 arrives
+46.513 GC288 waits for CS4(Q: [GC288])
+46.697 GC284 done served by CS4(Q: [GC288])
+46.697 GC288 served by CS4(Q: [])
+46.818 GC289 arrives
+46.818 GC289 waits for CS4(Q: [GC289])
+46.845 GC290 arrives
+46.845 GC290 waits for CS4(Q: [GC289, GC290])
+46.889 GC111 done served by HS1(Q: [GC112, TC132, GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278])
+46.990 TC277 done served by CS3(Q: [TC282, TC287])
+46.990 TC282 served by CS3(Q: [TC287])
+46.997 TC291 arrives
+46.997 TC291 leaves
+47.020 GC292 arrives
+47.020 GC292 waits for CS3(Q: [TC287, GC292])
+47.046 GC288 done served by CS4(Q: [GC289, GC290])
+47.046 GC289 served by CS4(Q: [GC290])
+47.082 GC293 arrives
+47.082 GC293 waits for CS4(Q: [GC290, GC293])
+47.145 GC289 done served by CS4(Q: [GC290, GC293])
+47.145 GC290 served by CS4(Q: [GC293])
+47.254 GC136 done served by HS2(Q: [GC144, GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279])
+47.328 GC294 arrives
+47.328 GC294 leaves
+47.520 TC282 done served by CS3(Q: [TC287, GC292])
+47.520 TC287 served by CS3(Q: [GC292])
+47.538 TC295 arrives
+47.538 TC295 waits for CS3(Q: [GC292, TC295])
+47.540 GC296 arrives
+47.540 GC296 waits for CS4(Q: [GC293, GC296])
+47.553 GC297 arrives
+47.553 GC297 waits for CS3(Q: [GC292, TC295, GC297])
+47.632 GC112 served by HS1(Q: [TC132, GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278])
+47.659 TC287 done served by CS3(Q: [GC292, TC295, GC297])
+47.659 GC292 served by CS3(Q: [TC295, GC297])
+47.677 GC290 done served by CS4(Q: [GC293, GC296])
+47.677 GC293 served by CS4(Q: [GC296])
+47.683 GC298 arrives
+47.683 GC298 waits for HS1(Q: [TC132, GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298])
+47.830 TC299 arrives
+47.830 TC299 waits for CS3(Q: [TC295, GC297, TC299])
+47.889 GC300 arrives
+47.889 GC300 waits for CS4(Q: [GC296, GC300])
+48.070 TC301 arrives
+48.070 TC301 waits for CS3(Q: [TC295, GC297, TC299, TC301])
+48.082 GC293 done served by CS4(Q: [GC296, GC300])
+48.082 GC296 served by CS4(Q: [GC300])
+48.204 GC302 arrives
+48.204 GC302 waits for CS4(Q: [GC300, GC302])
+48.342 GC292 done served by CS3(Q: [TC295, GC297, TC299, TC301])
+48.342 TC295 served by CS3(Q: [GC297, TC299, TC301])
+48.582 TC100 done served by HS0(Q: [TC115, TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285])
+48.679 GC303 arrives
+48.679 GC303 leaves
+48.736 TC115 served by HS0(Q: [TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285])
+48.822 TC295 done served by CS3(Q: [GC297, TC299, TC301])
+48.822 GC297 served by CS3(Q: [TC299, TC301])
+48.830 TC304 arrives
+48.830 TC304 waits for CS3(Q: [TC299, TC301, TC304])
+48.861 GC296 done served by CS4(Q: [GC300, GC302])
+48.861 GC300 served by CS4(Q: [GC302])
+48.913 GC112 done served by HS1(Q: [TC132, GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298])
+49.001 GC297 done served by CS3(Q: [TC299, TC301, TC304])
+49.001 TC299 served by CS3(Q: [TC301, TC304])
+49.054 TC305 arrives
+49.054 TC305 waits for HS0(Q: [TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305])
+49.118 TC299 done served by CS3(Q: [TC301, TC304])
+49.118 TC301 served by CS3(Q: [TC304])
+49.222 TC306 arrives
+49.222 TC306 waits for CS3(Q: [TC304, TC306])
+49.487 GC300 done served by CS4(Q: [GC302])
+49.487 GC302 served by CS4(Q: [])
+49.491 TC132 served by HS1(Q: [GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298])
+49.509 TC301 done served by CS3(Q: [TC304, TC306])
+49.509 TC304 served by CS3(Q: [TC306])
+49.622 GC307 arrives
+49.622 GC307 waits for CS4(Q: [GC307])
+49.644 GC144 served by HS2(Q: [GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279])
+49.698 TC308 arrives
+49.698 TC308 waits for HS1(Q: [GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308])
+49.961 GC302 done served by CS4(Q: [GC307])
+49.961 GC307 served by CS4(Q: [])
+49.976 TC304 done served by CS3(Q: [TC306])
+49.976 TC306 served by CS3(Q: [])
+50.014 GC309 arrives
+50.014 GC309 waits for HS2(Q: [GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309])
+50.020 GC310 arrives
+50.020 GC310 leaves
+50.082 TC311 arrives
+50.082 TC311 leaves
+50.114 TC312 arrives
+50.114 TC312 waits for CS3(Q: [TC312])
+50.206 GC313 arrives
+50.206 GC313 leaves
+50.285 TC306 done served by CS3(Q: [TC312])
+50.285 TC312 served by CS3(Q: [])
+50.430 TC314 arrives
+50.430 TC314 waits for CS3(Q: [TC314])
+50.493 GC315 arrives
+50.493 GC315 waits for CS4(Q: [GC315])
+50.556 GC307 done served by CS4(Q: [GC315])
+50.556 GC315 served by CS4(Q: [])
+50.630 TC132 done served by HS1(Q: [GC137, TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308])
+50.709 GC316 arrives
+50.709 GC316 leaves
+50.720 TC115 done served by HS0(Q: [TC130, GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305])
+50.820 GC315 done served by CS4(Q: [])
+50.899 TC130 served by HS0(Q: [GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305])
+51.275 TC312 done served by CS3(Q: [TC314])
+51.275 TC314 served by CS3(Q: [])
+51.299 GC317 arrives
+51.299 GC317 served by CS4(Q: [])
+51.321 TC318 arrives
+51.321 TC318 waits for CS3(Q: [TC318])
+51.337 GC137 served by HS1(Q: [TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308])
+51.460 GC319 arrives
+51.460 GC319 waits for CS4(Q: [GC319])
+51.591 TC314 done served by CS3(Q: [TC318])
+51.591 TC318 served by CS3(Q: [])
+51.623 TC320 arrives
+51.623 TC320 waits for CS3(Q: [TC320])
+51.630 TC318 done served by CS3(Q: [TC320])
+51.630 TC320 served by CS3(Q: [])
+51.677 GC317 done served by CS4(Q: [GC319])
+51.677 GC319 served by CS4(Q: [])
+51.702 GC321 arrives
+51.702 GC321 waits for HS0(Q: [GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321])
+51.782 TC320 done served by CS3(Q: [])
+51.787 GC144 done served by HS2(Q: [GC147, TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309])
+51.836 TC322 arrives
+51.836 TC322 waits for HS1(Q: [TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322])
+51.846 GC319 done served by CS4(Q: [])
+51.870 GC323 arrives
+51.870 GC323 leaves
+51.920 TC324 arrives
+51.920 TC324 served by CS3(Q: [])
+51.993 TC325 arrives
+51.993 TC325 served by CS4(Q: [])
+52.027 GC326 arrives
+52.027 GC326 waits for CS3(Q: [GC326])
+52.176 TC325 done served by CS4(Q: [])
+52.259 TC327 arrives
+52.259 TC327 served by CS4(Q: [])
+52.455 TC327 done served by CS4(Q: [])
+52.459 TC324 done served by CS3(Q: [GC326])
+52.459 GC326 served by CS3(Q: [])
+52.533 TC328 arrives
+52.533 TC328 served by CS4(Q: [])
+52.535 GC329 arrives
+52.535 GC329 waits for CS3(Q: [GC329])
+52.537 GC326 done served by CS3(Q: [GC329])
+52.537 GC329 served by CS3(Q: [])
+52.691 GC329 done served by CS3(Q: [])
+52.888 TC328 done served by CS4(Q: [])
+52.931 GC137 done served by HS1(Q: [TC140, TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322])
+52.971 TC330 arrives
+52.971 TC330 leaves
+53.145 TC331 arrives
+53.145 TC331 served by CS3(Q: [])
+53.202 GC332 arrives
+53.202 GC332 served by CS4(Q: [])
+53.231 TC331 done served by CS3(Q: [])
+53.246 GC332 done served by CS4(Q: [])
+53.454 GC333 arrives
+53.454 GC333 leaves
+53.486 GC147 served by HS2(Q: [TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309])
+53.548 TC334 arrives
+53.548 TC334 served by CS3(Q: [])
+53.572 GC335 arrives
+53.572 GC335 served by CS4(Q: [])
+53.638 TC336 arrives
+53.638 TC336 waits for HS2(Q: [TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336])
+53.733 TC337 arrives
+53.733 TC337 leaves
+53.917 GC338 arrives
+53.917 GC338 leaves
+53.947 GC339 arrives
+53.947 GC339 waits for CS3(Q: [GC339])
+53.990 GC340 arrives
+53.990 GC340 waits for CS4(Q: [GC340])
+54.017 GC341 arrives
+54.017 GC341 leaves
+54.029 TC334 done served by CS3(Q: [GC339])
+54.029 GC339 served by CS3(Q: [])
+54.110 TC130 done served by HS0(Q: [GC161, TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321])
+54.147 TC342 arrives
+54.147 TC342 leaves
+54.209 GC339 done served by CS3(Q: [])
+54.223 GC343 arrives
+54.223 GC343 served by CS3(Q: [])
+54.261 GC335 done served by CS4(Q: [GC340])
+54.261 GC340 served by CS4(Q: [])
+54.275 GC343 done served by CS3(Q: [])
+54.312 TC344 arrives
+54.312 TC344 served by CS3(Q: [])
+54.441 GC345 arrives
+54.441 GC345 waits for CS3(Q: [GC345])
+54.637 TC344 done served by CS3(Q: [GC345])
+54.637 GC345 served by CS3(Q: [])
+54.676 GC147 done served by HS2(Q: [TC170, GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336])
+54.696 GC345 done served by CS3(Q: [])
+54.754 TC346 arrives
+54.754 TC346 served by CS3(Q: [])
+54.796 TC170 served by HS2(Q: [GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336])
+54.902 TC347 arrives
+54.902 TC347 waits for CS3(Q: [TC347])
+55.072 GC348 arrives
+55.072 GC348 waits for CS4(Q: [GC348])
+55.121 TC346 done served by CS3(Q: [TC347])
+55.121 TC347 served by CS3(Q: [])
+55.124 GC340 done served by CS4(Q: [GC348])
+55.124 GC348 served by CS4(Q: [])
+55.206 TC349 arrives
+55.206 TC349 waits for CS3(Q: [TC349])
+55.241 GC348 done served by CS4(Q: [])
+55.258 TC350 arrives
+55.258 TC350 served by CS4(Q: [])
+55.344 TC351 arrives
+55.344 TC351 waits for CS3(Q: [TC349, TC351])
+55.419 TC352 arrives
+55.419 TC352 waits for HS2(Q: [GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352])
+55.423 GC353 arrives
+55.423 GC353 waits for CS4(Q: [GC353])
+55.441 TC354 arrives
+55.441 TC354 leaves
+55.471 TC355 arrives
+55.471 TC355 leaves
+55.548 GC356 arrives
+55.548 GC356 waits for CS4(Q: [GC353, GC356])
+55.670 GC357 arrives
+55.670 GC357 leaves
+55.684 GC358 arrives
+55.684 GC358 leaves
+55.695 GC359 arrives
+55.695 GC359 waits for CS3(Q: [TC349, TC351, GC359])
+55.801 GC161 served by HS0(Q: [TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321])
+55.801 TC350 done served by CS4(Q: [GC353, GC356])
+55.801 GC353 served by CS4(Q: [GC356])
+55.863 GC360 arrives
+55.863 GC360 waits for HS0(Q: [TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360])
+55.925 GC361 arrives
+55.925 GC361 leaves
+55.998 TC362 arrives
+55.998 TC362 waits for CS3(Q: [TC349, TC351, GC359, TC362])
+56.004 TC347 done served by CS3(Q: [TC349, TC351, GC359, TC362])
+56.004 TC349 served by CS3(Q: [TC351, GC359, TC362])
+56.063 GC363 arrives
+56.063 GC363 leaves
+56.344 GC364 arrives
+56.344 GC364 leaves
+56.389 TC349 done served by CS3(Q: [TC351, GC359, TC362])
+56.389 TC351 served by CS3(Q: [GC359, TC362])
+56.406 TC365 arrives
+56.406 TC365 leaves
+56.495 TC140 served by HS1(Q: [TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322])
+56.620 TC366 arrives
+56.620 TC366 waits for CS3(Q: [GC359, TC362, TC366])
+56.628 GC353 done served by CS4(Q: [GC356])
+56.628 GC356 served by CS4(Q: [])
+56.699 GC356 done served by CS4(Q: [])
+56.771 TC367 arrives
+56.771 TC367 served by CS4(Q: [])
+56.844 TC368 arrives
+56.844 TC368 waits for HS1(Q: [TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368])
+56.859 TC369 arrives
+56.859 TC369 waits for CS3(Q: [GC359, TC362, TC366, TC369])
+56.889 TC367 done served by CS4(Q: [])
+57.019 GC370 arrives
+57.019 GC370 served by CS4(Q: [])
+57.165 TC371 arrives
+57.165 TC371 leaves
+57.269 TC351 done served by CS3(Q: [GC359, TC362, TC366, TC369])
+57.269 GC359 served by CS3(Q: [TC362, TC366, TC369])
+57.303 GC372 arrives
+57.303 GC372 leaves
+57.432 GC373 arrives
+57.432 GC373 waits for CS4(Q: [GC373])
+57.461 GC374 arrives
+57.461 GC374 waits for CS4(Q: [GC373, GC374])
+57.645 GC370 done served by CS4(Q: [GC373, GC374])
+57.645 GC373 served by CS4(Q: [GC374])
+57.671 GC375 arrives
+57.671 GC375 leaves
+57.747 GC376 arrives
+57.747 GC376 waits for CS4(Q: [GC374, GC376])
+57.750 TC377 arrives
+57.750 TC377 leaves
+57.790 GC359 done served by CS3(Q: [TC362, TC366, TC369])
+57.790 TC362 served by CS3(Q: [TC366, TC369])
+57.829 GC378 arrives
+57.829 GC378 leaves
+57.869 TC379 arrives
+57.869 TC379 leaves
+57.916 GC380 arrives
+57.916 GC380 waits for CS3(Q: [TC366, TC369, GC380])
+57.943 GC161 done served by HS0(Q: [TC168, TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360])
+57.977 GC373 done served by CS4(Q: [GC374, GC376])
+57.977 GC374 served by CS4(Q: [GC376])
+58.194 TC362 done served by CS3(Q: [TC366, TC369, GC380])
+58.194 TC366 served by CS3(Q: [TC369, GC380])
+58.293 GC381 arrives
+58.293 GC381 leaves
+58.398 GC382 arrives
+58.398 GC382 leaves
+58.400 TC383 arrives
+58.400 TC383 waits for CS3(Q: [TC369, GC380, TC383])
+58.475 TC384 arrives
+58.475 TC384 waits for CS3(Q: [TC369, GC380, TC383, TC384])
+58.547 TC366 done served by CS3(Q: [TC369, GC380, TC383, TC384])
+58.547 TC369 served by CS3(Q: [GC380, TC383, TC384])
+58.558 TC369 done served by CS3(Q: [GC380, TC383, TC384])
+58.558 GC380 served by CS3(Q: [TC383, TC384])
+58.593 TC140 done served by HS1(Q: [TC177, GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368])
+58.651 TC177 served by HS1(Q: [GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368])
+58.660 GC385 arrives
+58.660 GC385 waits for HS1(Q: [GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385])
+58.678 TC170 done served by HS2(Q: [GC171, GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352])
+58.720 GC374 done served by CS4(Q: [GC376])
+58.720 GC376 served by CS4(Q: [])
+58.837 GC386 arrives
+58.837 GC386 leaves
+58.900 TC387 arrives
+58.900 TC387 waits for CS3(Q: [TC383, TC384, TC387])
+59.021 GC380 done served by CS3(Q: [TC383, TC384, TC387])
+59.021 TC383 served by CS3(Q: [TC384, TC387])
+59.035 TC388 arrives
+59.035 TC388 waits for CS3(Q: [TC384, TC387, TC388])
+59.126 TC383 done served by CS3(Q: [TC384, TC387, TC388])
+59.126 TC384 served by CS3(Q: [TC387, TC388])
+59.136 TC389 arrives
+59.136 TC389 waits for CS3(Q: [TC387, TC388, TC389])
+59.223 GC171 served by HS2(Q: [GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352])
+59.289 GC376 done served by CS4(Q: [])
+59.504 GC390 arrives
+59.504 GC390 served by CS4(Q: [])
+59.518 GC390 done served by CS4(Q: [])
+59.676 GC391 arrives
+59.676 GC391 served by CS4(Q: [])
+59.781 TC168 served by HS0(Q: [TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360])
+59.812 GC391 done served by CS4(Q: [])
+59.829 GC392 arrives
+59.829 GC392 served by CS4(Q: [])
+59.883 GC393 arrives
+59.883 GC393 waits for CS4(Q: [GC393])
+59.891 TC394 arrives
+59.891 TC394 waits for CS3(Q: [TC387, TC388, TC389, TC394])
+59.917 TC384 done served by CS3(Q: [TC387, TC388, TC389, TC394])
+59.917 TC387 served by CS3(Q: [TC388, TC389, TC394])
+59.936 TC395 arrives
+59.936 TC395 waits for CS3(Q: [TC388, TC389, TC394, TC395])
+60.008 TC177 done served by HS1(Q: [GC179, GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385])
+60.180 TC387 done served by CS3(Q: [TC388, TC389, TC394, TC395])
+60.180 TC388 served by CS3(Q: [TC389, TC394, TC395])
+60.229 TC396 arrives
+60.229 TC396 waits for HS0(Q: [TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396])
+60.245 GC397 arrives
+60.245 GC397 waits for CS4(Q: [GC393, GC397])
+60.330 GC398 arrives
+60.330 GC398 waits for CS4(Q: [GC393, GC397, GC398])
+60.345 TC399 arrives
+60.345 TC399 waits for CS3(Q: [TC389, TC394, TC395, TC399])
+60.382 TC400 arrives
+60.382 TC400 waits for CS3(Q: [TC389, TC394, TC395, TC399, TC400])
+60.438 GC392 done served by CS4(Q: [GC393, GC397, GC398])
+60.438 GC393 served by CS4(Q: [GC397, GC398])
+60.499 GC401 arrives
+60.499 GC401 waits for CS4(Q: [GC397, GC398, GC401])
+60.543 GC402 arrives
+60.543 GC402 waits for HS2(Q: [GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402])
+60.714 GC393 done served by CS4(Q: [GC397, GC398, GC401])
+60.714 GC397 served by CS4(Q: [GC398, GC401])
+60.796 TC388 done served by CS3(Q: [TC389, TC394, TC395, TC399, TC400])
+60.796 TC389 served by CS3(Q: [TC394, TC395, TC399, TC400])
+60.843 TC389 done served by CS3(Q: [TC394, TC395, TC399, TC400])
+60.843 TC394 served by CS3(Q: [TC395, TC399, TC400])
+60.956 GC171 done served by HS2(Q: [GC182, GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402])
+61.055 GC403 arrives
+61.055 GC403 waits for CS4(Q: [GC398, GC401, GC403])
+61.083 GC397 done served by CS4(Q: [GC398, GC401, GC403])
+61.083 GC398 served by CS4(Q: [GC401, GC403])
+61.262 GC404 arrives
+61.262 GC404 waits for CS4(Q: [GC401, GC403, GC404])
+61.292 TC405 arrives
+61.292 TC405 waits for CS3(Q: [TC395, TC399, TC400, TC405])
+61.364 GC406 arrives
+61.364 GC406 waits for CS4(Q: [GC401, GC403, GC404, GC406])
+61.449 TC407 arrives
+61.449 TC407 waits for CS3(Q: [TC395, TC399, TC400, TC405, TC407])
+61.452 TC168 done served by HS0(Q: [TC189, GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396])
+61.453 GC408 arrives
+61.453 GC408 leaves
+61.511 GC182 served by HS2(Q: [GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402])
+61.583 TC394 done served by CS3(Q: [TC395, TC399, TC400, TC405, TC407])
+61.583 TC395 served by CS3(Q: [TC399, TC400, TC405, TC407])
+61.721 TC409 arrives
+61.721 TC409 waits for CS3(Q: [TC399, TC400, TC405, TC407, TC409])
+61.791 GC398 done served by CS4(Q: [GC401, GC403, GC404, GC406])
+61.791 GC401 served by CS4(Q: [GC403, GC404, GC406])
+62.139 TC410 arrives
+62.139 TC410 waits for HS2(Q: [GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410])
+62.210 GC411 arrives
+62.210 GC411 leaves
+62.228 TC395 done served by CS3(Q: [TC399, TC400, TC405, TC407, TC409])
+62.228 TC399 served by CS3(Q: [TC400, TC405, TC407, TC409])
+62.251 GC401 done served by CS4(Q: [GC403, GC404, GC406])
+62.251 GC403 served by CS4(Q: [GC404, GC406])
+62.269 TC412 arrives
+62.269 TC412 waits for CS3(Q: [TC400, TC405, TC407, TC409, TC412])
+62.270 GC413 arrives
+62.270 GC413 waits for CS4(Q: [GC404, GC406, GC413])
+62.474 TC414 arrives
+62.474 TC414 waits for CS3(Q: [TC400, TC405, TC407, TC409, TC412, TC414])
+62.489 TC399 done served by CS3(Q: [TC400, TC405, TC407, TC409, TC412, TC414])
+62.489 TC400 served by CS3(Q: [TC405, TC407, TC409, TC412, TC414])
+62.496 TC400 done served by CS3(Q: [TC405, TC407, TC409, TC412, TC414])
+62.496 TC405 served by CS3(Q: [TC407, TC409, TC412, TC414])
+62.540 GC403 done served by CS4(Q: [GC404, GC406, GC413])
+62.540 GC404 served by CS4(Q: [GC406, GC413])
+62.643 GC182 done served by HS2(Q: [GC200, GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410])
+62.665 TC405 done served by CS3(Q: [TC407, TC409, TC412, TC414])
+62.665 TC407 served by CS3(Q: [TC409, TC412, TC414])
+62.733 TC415 arrives
+62.733 TC415 leaves
+62.886 GC404 done served by CS4(Q: [GC406, GC413])
+62.886 GC406 served by CS4(Q: [GC413])
+62.897 GC200 served by HS2(Q: [GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410])
+62.969 GC416 arrives
+62.969 GC416 waits for CS4(Q: [GC413, GC416])
+63.238 GC406 done served by CS4(Q: [GC413, GC416])
+63.238 GC413 served by CS4(Q: [GC416])
+63.254 GC413 done served by CS4(Q: [GC416])
+63.254 GC416 served by CS4(Q: [])
+63.308 TC417 arrives
+63.308 TC417 waits for CS3(Q: [TC409, TC412, TC414, TC417])
+63.398 GC418 arrives
+63.398 GC418 waits for HS2(Q: [GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418])
+63.417 GC419 arrives
+63.417 GC419 waits for CS4(Q: [GC419])
+63.600 TC407 done served by CS3(Q: [TC409, TC412, TC414, TC417])
+63.600 TC409 served by CS3(Q: [TC412, TC414, TC417])
+63.664 GC416 done served by CS4(Q: [GC419])
+63.664 GC419 served by CS4(Q: [])
+63.665 GC420 arrives
+63.665 GC420 waits for CS4(Q: [GC420])
+63.805 GC421 arrives
+63.805 GC421 waits for CS4(Q: [GC420, GC421])
+63.835 TC422 arrives
+63.835 TC422 waits for CS3(Q: [TC412, TC414, TC417, TC422])
+63.890 TC409 done served by CS3(Q: [TC412, TC414, TC417, TC422])
+63.890 TC412 served by CS3(Q: [TC414, TC417, TC422])
+64.038 TC423 arrives
+64.038 TC423 leaves
+64.044 GC424 arrives
+64.044 GC424 waits for CS4(Q: [GC420, GC421, GC424])
+64.053 GC425 arrives
+64.053 GC425 leaves
+64.112 GC419 done served by CS4(Q: [GC420, GC421, GC424])
+64.112 GC420 served by CS4(Q: [GC421, GC424])
+64.162 TC426 arrives
+64.162 TC426 waits for CS3(Q: [TC414, TC417, TC422, TC426])
+64.190 TC412 done served by CS3(Q: [TC414, TC417, TC422, TC426])
+64.190 TC414 served by CS3(Q: [TC417, TC422, TC426])
+64.239 GC427 arrives
+64.239 GC427 leaves
+64.280 TC428 arrives
+64.280 TC428 waits for CS3(Q: [TC417, TC422, TC426, TC428])
+64.381 TC429 arrives
+64.381 TC429 waits for CS3(Q: [TC417, TC422, TC426, TC428, TC429])
+64.410 TC414 done served by CS3(Q: [TC417, TC422, TC426, TC428, TC429])
+64.410 TC417 served by CS3(Q: [TC422, TC426, TC428, TC429])
+64.572 TC430 arrives
+64.572 TC430 waits for CS3(Q: [TC422, TC426, TC428, TC429, TC430])
+64.683 GC420 done served by CS4(Q: [GC421, GC424])
+64.683 GC421 served by CS4(Q: [GC424])
+64.822 GC200 done served by HS2(Q: [GC213, TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418])
+64.855 GC179 served by HS1(Q: [GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385])
+64.861 TC417 done served by CS3(Q: [TC422, TC426, TC428, TC429, TC430])
+64.861 TC422 served by CS3(Q: [TC426, TC428, TC429, TC430])
+64.887 TC431 arrives
+64.887 TC431 waits for CS3(Q: [TC426, TC428, TC429, TC430, TC431])
+64.950 GC432 arrives
+64.950 GC432 waits for CS4(Q: [GC424, GC432])
+65.042 TC433 arrives
+65.042 TC433 waits for CS3(Q: [TC426, TC428, TC429, TC430, TC431, TC433])
+65.141 GC421 done served by CS4(Q: [GC424, GC432])
+65.141 GC424 served by CS4(Q: [GC432])
+65.161 TC434 arrives
+65.161 TC434 waits for HS1(Q: [GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434])
+65.360 TC422 done served by CS3(Q: [TC426, TC428, TC429, TC430, TC431, TC433])
+65.360 TC426 served by CS3(Q: [TC428, TC429, TC430, TC431, TC433])
+65.421 TC435 arrives
+65.421 TC435 waits for CS3(Q: [TC428, TC429, TC430, TC431, TC433, TC435])
+65.464 TC436 arrives
+65.464 TC436 waits for CS3(Q: [TC428, TC429, TC430, TC431, TC433, TC435, TC436])
+65.466 GC437 arrives
+65.466 GC437 leaves
+65.527 TC438 arrives
+65.527 TC438 leaves
+65.601 TC439 arrives
+65.601 TC439 waits for CS3(Q: [TC428, TC429, TC430, TC431, TC433, TC435, TC436, TC439])
+65.684 GC424 done served by CS4(Q: [GC432])
+65.684 GC432 served by CS4(Q: [])
+65.821 TC426 done served by CS3(Q: [TC428, TC429, TC430, TC431, TC433, TC435, TC436, TC439])
+65.821 TC428 served by CS3(Q: [TC429, TC430, TC431, TC433, TC435, TC436, TC439])
+65.902 GC440 arrives
+65.902 GC440 leaves
+65.930 GC179 done served by HS1(Q: [GC210, TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434])
+66.040 GC213 served by HS2(Q: [TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418])
+66.070 GC441 arrives
+66.070 GC441 waits for HS2(Q: [TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418, GC441])
+66.101 TC428 done served by CS3(Q: [TC429, TC430, TC431, TC433, TC435, TC436, TC439])
+66.101 TC429 served by CS3(Q: [TC430, TC431, TC433, TC435, TC436, TC439])
+66.246 TC442 arrives
+66.246 TC442 leaves
+66.372 GC210 served by HS1(Q: [TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434])
+66.453 GC443 arrives
+66.453 GC443 waits for CS4(Q: [GC443])
+66.556 GC444 arrives
+66.556 GC444 waits for CS4(Q: [GC443, GC444])
+66.586 GC432 done served by CS4(Q: [GC443, GC444])
+66.586 GC443 served by CS4(Q: [GC444])
+66.588 TC189 served by HS0(Q: [GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396])
+66.609 GC443 done served by CS4(Q: [GC444])
+66.609 GC444 served by CS4(Q: [])
+66.937 TC429 done served by CS3(Q: [TC430, TC431, TC433, TC435, TC436, TC439])
+66.937 TC430 served by CS3(Q: [TC431, TC433, TC435, TC436, TC439])
+67.023 GC445 arrives
+67.023 GC445 waits for HS0(Q: [GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445])
+67.211 GC213 done served by HS2(Q: [TC252, GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418, GC441])
+67.222 TC446 arrives
+67.222 TC446 waits for HS1(Q: [TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434, TC446])
+67.342 TC252 served by HS2(Q: [GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418, GC441])
+67.534 TC447 arrives
+67.534 TC447 waits for CS3(Q: [TC431, TC433, TC435, TC436, TC439, TC447])
+67.576 GC444 done served by CS4(Q: [])
+67.686 GC448 arrives
+67.686 GC448 served by CS4(Q: [])
+67.687 TC430 done served by CS3(Q: [TC431, TC433, TC435, TC436, TC439, TC447])
+67.687 TC431 served by CS3(Q: [TC433, TC435, TC436, TC439, TC447])
+67.730 TC431 done served by CS3(Q: [TC433, TC435, TC436, TC439, TC447])
+67.730 TC433 served by CS3(Q: [TC435, TC436, TC439, TC447])
+67.764 GC449 arrives
+67.764 GC449 waits for HS2(Q: [GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449])
+67.768 GC450 arrives
+67.768 GC450 leaves
+67.919 TC451 arrives
+67.919 TC451 waits for CS3(Q: [TC435, TC436, TC439, TC447, TC451])
+67.971 GC210 done served by HS1(Q: [TC230, GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434, TC446])
+68.053 TC189 done served by HS0(Q: [GC229, TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445])
+68.067 GC452 arrives
+68.067 GC452 waits for CS4(Q: [GC452])
+68.076 TC453 arrives
+68.076 TC453 leaves
+68.132 TC454 arrives
+68.132 TC454 leaves
+68.281 GC448 done served by CS4(Q: [GC452])
+68.281 GC452 served by CS4(Q: [])
+68.281 GC455 arrives
+68.281 GC455 leaves
+68.295 TC456 arrives
+68.295 TC456 waits for CS3(Q: [TC435, TC436, TC439, TC447, TC451, TC456])
+68.343 GC457 arrives
+68.343 GC457 waits for CS4(Q: [GC457])
+68.392 TC458 arrives
+68.392 TC458 leaves
+68.437 TC433 done served by CS3(Q: [TC435, TC436, TC439, TC447, TC451, TC456])
+68.437 TC435 served by CS3(Q: [TC436, TC439, TC447, TC451, TC456])
+68.491 TC230 served by HS1(Q: [GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434, TC446])
+68.611 TC459 arrives
+68.611 TC459 waits for CS3(Q: [TC436, TC439, TC447, TC451, TC456, TC459])
+68.729 TC460 arrives
+68.729 TC460 waits for CS3(Q: [TC436, TC439, TC447, TC451, TC456, TC459, TC460])
+68.769 TC252 done served by HS2(Q: [GC264, GC279, GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449])
+69.009 GC452 done served by CS4(Q: [GC457])
+69.009 GC457 served by CS4(Q: [])
+69.085 TC461 arrives
+69.085 TC461 waits for HS1(Q: [GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461])
+69.089 TC462 arrives
+69.089 TC462 waits for CS3(Q: [TC436, TC439, TC447, TC451, TC456, TC459, TC460, TC462])
+69.140 GC457 done served by CS4(Q: [])
+69.202 TC435 done served by CS3(Q: [TC436, TC439, TC447, TC451, TC456, TC459, TC460, TC462])
+69.202 TC436 served by CS3(Q: [TC439, TC447, TC451, TC456, TC459, TC460, TC462])
+69.320 GC229 served by HS0(Q: [TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445])
+69.704 GC463 arrives
+69.704 GC463 waits for HS0(Q: [TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463])
+69.706 GC464 arrives
+69.706 GC464 served by CS4(Q: [])
+69.732 TC465 arrives
+69.732 TC465 waits for CS3(Q: [TC439, TC447, TC451, TC456, TC459, TC460, TC462, TC465])
+69.760 GC464 done served by CS4(Q: [])
+69.788 TC466 arrives
+69.788 TC466 leaves
+69.933 TC436 done served by CS3(Q: [TC439, TC447, TC451, TC456, TC459, TC460, TC462, TC465])
+69.933 TC439 served by CS3(Q: [TC447, TC451, TC456, TC459, TC460, TC462, TC465])
+70.130 TC467 arrives
+70.130 TC467 served by CS4(Q: [])
+70.146 TC467 done served by CS4(Q: [])
+70.197 TC230 done served by HS1(Q: [GC276, TC278, GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461])
+70.266 GC468 arrives
+70.266 GC468 served by CS4(Q: [])
+70.450 GC468 done served by CS4(Q: [])
+70.467 TC439 done served by CS3(Q: [TC447, TC451, TC456, TC459, TC460, TC462, TC465])
+70.467 TC447 served by CS3(Q: [TC451, TC456, TC459, TC460, TC462, TC465])
+70.480 GC229 done served by HS0(Q: [TC236, TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463])
+70.624 TC469 arrives
+70.624 TC469 leaves
+70.712 GC470 arrives
+70.712 GC470 leaves
+70.742 TC236 served by HS0(Q: [TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463])
+70.920 TC471 arrives
+70.920 TC471 served by CS4(Q: [])
+71.009 TC471 done served by CS4(Q: [])
+71.123 GC472 arrives
+71.123 GC472 served by CS4(Q: [])
+71.153 GC473 arrives
+71.153 GC473 waits for HS0(Q: [TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473])
+71.234 GC472 done served by CS4(Q: [])
+71.296 GC276 served by HS1(Q: [TC278, GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461])
+71.297 TC447 done served by CS3(Q: [TC451, TC456, TC459, TC460, TC462, TC465])
+71.297 TC451 served by CS3(Q: [TC456, TC459, TC460, TC462, TC465])
+71.508 TC474 arrives
+71.508 TC474 served by CS4(Q: [])
+71.566 TC474 done served by CS4(Q: [])
+71.786 TC236 done served by HS0(Q: [TC251, GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473])
+71.816 TC251 served by HS0(Q: [GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473])
+71.983 TC475 arrives
+71.983 TC475 served by CS4(Q: [])
+72.221 TC475 done served by CS4(Q: [])
+72.226 TC451 done served by CS3(Q: [TC456, TC459, TC460, TC462, TC465])
+72.226 TC456 served by CS3(Q: [TC459, TC460, TC462, TC465])
+72.277 TC456 done served by CS3(Q: [TC459, TC460, TC462, TC465])
+72.277 TC459 served by CS3(Q: [TC460, TC462, TC465])
+72.319 TC459 done served by CS3(Q: [TC460, TC462, TC465])
+72.319 TC460 served by CS3(Q: [TC462, TC465])
+72.343 GC476 arrives
+72.343 GC476 served by CS4(Q: [])
+72.349 TC460 done served by CS3(Q: [TC462, TC465])
+72.349 TC462 served by CS3(Q: [TC465])
+72.369 TC477 arrives
+72.369 TC477 waits for CS3(Q: [TC465, TC477])
+72.534 GC478 arrives
+72.534 GC478 waits for CS4(Q: [GC478])
+72.579 GC479 arrives
+72.579 GC479 waits for HS0(Q: [GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479])
+72.619 GC276 done served by HS1(Q: [TC278, GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461])
+72.671 TC480 arrives
+72.671 TC480 leaves
+72.687 GC476 done served by CS4(Q: [GC478])
+72.687 GC478 served by CS4(Q: [])
+72.760 TC462 done served by CS3(Q: [TC465, TC477])
+72.760 TC465 served by CS3(Q: [TC477])
+72.774 TC481 arrives
+72.774 TC481 waits for CS3(Q: [TC477, TC481])
+72.976 GC264 served by HS2(Q: [GC279, GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449])
+72.977 GC482 arrives
+72.977 GC482 waits for CS4(Q: [GC482])
+73.101 GC478 done served by CS4(Q: [GC482])
+73.101 GC482 served by CS4(Q: [])
+73.163 GC482 done served by CS4(Q: [])
+73.213 TC483 arrives
+73.213 TC483 served by CS4(Q: [])
+73.463 TC465 done served by CS3(Q: [TC477, TC481])
+73.463 TC477 served by CS3(Q: [TC481])
+73.496 TC484 arrives
+73.496 TC484 waits for CS3(Q: [TC481, TC484])
+73.540 GC485 arrives
+73.540 GC485 waits for CS4(Q: [GC485])
+73.611 TC486 arrives
+73.611 TC486 waits for CS3(Q: [TC481, TC484, TC486])
+73.645 GC487 arrives
+73.645 GC487 waits for CS4(Q: [GC485, GC487])
+73.751 TC488 arrives
+73.751 TC488 waits for CS3(Q: [TC481, TC484, TC486, TC488])
+73.803 TC483 done served by CS4(Q: [GC485, GC487])
+73.803 GC485 served by CS4(Q: [GC487])
+73.841 TC477 done served by CS3(Q: [TC481, TC484, TC486, TC488])
+73.841 TC481 served by CS3(Q: [TC484, TC486, TC488])
+73.886 GC489 arrives
+73.886 GC489 waits for CS4(Q: [GC487, GC489])
+74.103 TC490 arrives
+74.103 TC490 waits for CS3(Q: [TC484, TC486, TC488, TC490])
+74.146 GC485 done served by CS4(Q: [GC487, GC489])
+74.146 GC487 served by CS4(Q: [GC489])
+74.170 GC264 done served by HS2(Q: [GC279, GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449])
+74.197 GC487 done served by CS4(Q: [GC489])
+74.197 GC489 served by CS4(Q: [])
+74.255 GC491 arrives
+74.255 GC491 waits for CS4(Q: [GC491])
+74.367 TC492 arrives
+74.367 TC492 waits for CS3(Q: [TC484, TC486, TC488, TC490, TC492])
+74.481 GC489 done served by CS4(Q: [GC491])
+74.481 GC491 served by CS4(Q: [])
+74.544 GC493 arrives
+74.544 GC493 leaves
+74.586 GC491 done served by CS4(Q: [])
+74.630 TC494 arrives
+74.630 TC494 served by CS4(Q: [])
+74.725 GC495 arrives
+74.725 GC495 waits for CS4(Q: [GC495])
+74.825 TC481 done served by CS3(Q: [TC484, TC486, TC488, TC490, TC492])
+74.825 TC484 served by CS3(Q: [TC486, TC488, TC490, TC492])
+74.861 GC496 arrives
+74.861 GC496 waits for CS4(Q: [GC495, GC496])
+74.959 TC497 arrives
+74.959 TC497 waits for CS3(Q: [TC486, TC488, TC490, TC492, TC497])
+74.960 TC498 arrives
+74.960 TC498 waits for CS3(Q: [TC486, TC488, TC490, TC492, TC497, TC498])
+75.108 TC499 arrives
+75.108 TC499 leaves
+75.237 TC494 done served by CS4(Q: [GC495, GC496])
+75.237 GC495 served by CS4(Q: [GC496])
+75.289 GC500 arrives
+75.289 GC500 waits for CS4(Q: [GC496, GC500])
+75.294 TC278 served by HS1(Q: [GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461])
+75.298 TC501 arrives
+75.298 TC501 waits for CS3(Q: [TC486, TC488, TC490, TC492, TC497, TC498, TC501])
+75.301 GC502 arrives
+75.301 GC502 waits for CS4(Q: [GC496, GC500, GC502])
+75.395 GC495 done served by CS4(Q: [GC496, GC500, GC502])
+75.395 GC496 served by CS4(Q: [GC500, GC502])
+75.523 TC251 done served by HS0(Q: [GC261, TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479])
+75.536 TC484 done served by CS3(Q: [TC486, TC488, TC490, TC492, TC497, TC498, TC501])
+75.536 TC486 served by CS3(Q: [TC488, TC490, TC492, TC497, TC498, TC501])
+75.550 TC503 arrives
+75.550 TC503 waits for CS3(Q: [TC488, TC490, TC492, TC497, TC498, TC501, TC503])
+75.568 TC504 arrives
+75.568 TC504 waits for CS3(Q: [TC488, TC490, TC492, TC497, TC498, TC501, TC503, TC504])
+75.601 GC505 arrives
+75.601 GC505 waits for CS4(Q: [GC500, GC502, GC505])
+75.705 GC261 served by HS0(Q: [TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479])
+75.796 TC506 arrives
+75.796 TC506 waits for HS0(Q: [TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506])
+75.982 GC507 arrives
+75.982 GC507 waits for CS4(Q: [GC500, GC502, GC505, GC507])
+76.076 GC508 arrives
+76.076 GC508 waits for HS1(Q: [GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461, GC508])
+76.106 GC509 arrives
+76.106 GC509 waits for HS1(Q: [GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509])
+76.107 GC496 done served by CS4(Q: [GC500, GC502, GC505, GC507])
+76.107 GC500 served by CS4(Q: [GC502, GC505, GC507])
+76.120 GC500 done served by CS4(Q: [GC502, GC505, GC507])
+76.120 GC502 served by CS4(Q: [GC505, GC507])
+76.134 TC486 done served by CS3(Q: [TC488, TC490, TC492, TC497, TC498, TC501, TC503, TC504])
+76.134 TC488 served by CS3(Q: [TC490, TC492, TC497, TC498, TC501, TC503, TC504])
+76.283 TC510 arrives
+76.283 TC510 waits for CS3(Q: [TC490, TC492, TC497, TC498, TC501, TC503, TC504, TC510])
+76.382 TC488 done served by CS3(Q: [TC490, TC492, TC497, TC498, TC501, TC503, TC504, TC510])
+76.382 TC490 served by CS3(Q: [TC492, TC497, TC498, TC501, TC503, TC504, TC510])
+76.429 TC511 arrives
+76.429 TC511 waits for CS3(Q: [TC492, TC497, TC498, TC501, TC503, TC504, TC510, TC511])
+76.465 GC502 done served by CS4(Q: [GC505, GC507])
+76.465 GC505 served by CS4(Q: [GC507])
+76.566 GC512 arrives
+76.566 GC512 waits for CS4(Q: [GC507, GC512])
+76.622 TC278 done served by HS1(Q: [GC298, TC308, TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509])
+76.634 GC298 served by HS1(Q: [TC308, TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509])
+76.663 GC279 served by HS2(Q: [GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449])
+76.675 GC513 arrives
+76.675 GC513 waits for HS2(Q: [GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449, GC513])
+76.845 TC514 arrives
+76.845 TC514 waits for HS1(Q: [TC308, TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514])
+77.049 GC505 done served by CS4(Q: [GC507, GC512])
+77.049 GC507 served by CS4(Q: [GC512])
+77.066 GC515 arrives
+77.066 GC515 waits for CS4(Q: [GC512, GC515])
+77.069 TC490 done served by CS3(Q: [TC492, TC497, TC498, TC501, TC503, TC504, TC510, TC511])
+77.069 TC492 served by CS3(Q: [TC497, TC498, TC501, TC503, TC504, TC510, TC511])
+77.271 TC516 arrives
+77.271 TC516 waits for HS2(Q: [GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516])
+77.347 TC517 arrives
+77.347 TC517 leaves
+77.363 GC507 done served by CS4(Q: [GC512, GC515])
+77.363 GC512 served by CS4(Q: [GC515])
+77.435 TC518 arrives
+77.435 TC518 leaves
+77.580 GC519 arrives
+77.580 GC519 waits for CS4(Q: [GC515, GC519])
+77.735 GC512 done served by CS4(Q: [GC515, GC519])
+77.735 GC515 served by CS4(Q: [GC519])
+77.796 GC520 arrives
+77.796 GC520 waits for CS4(Q: [GC519, GC520])
+77.840 GC298 done served by HS1(Q: [TC308, TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514])
+77.861 TC492 done served by CS3(Q: [TC497, TC498, TC501, TC503, TC504, TC510, TC511])
+77.861 TC497 served by CS3(Q: [TC498, TC501, TC503, TC504, TC510, TC511])
+77.953 GC521 arrives
+77.953 GC521 waits for CS4(Q: [GC519, GC520, GC521])
+78.011 TC522 arrives
+78.011 TC522 leaves
+78.025 GC515 done served by CS4(Q: [GC519, GC520, GC521])
+78.025 GC519 served by CS4(Q: [GC520, GC521])
+78.097 TC308 served by HS1(Q: [TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514])
+78.189 GC523 arrives
+78.189 GC523 waits for HS1(Q: [TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523])
+78.245 TC497 done served by CS3(Q: [TC498, TC501, TC503, TC504, TC510, TC511])
+78.245 TC498 served by CS3(Q: [TC501, TC503, TC504, TC510, TC511])
+78.250 TC524 arrives
+78.250 TC524 waits for CS3(Q: [TC501, TC503, TC504, TC510, TC511, TC524])
+78.265 TC525 arrives
+78.265 TC525 leaves
+78.300 TC526 arrives
+78.300 TC526 leaves
+78.370 GC519 done served by CS4(Q: [GC520, GC521])
+78.370 GC520 served by CS4(Q: [GC521])
+78.512 GC520 done served by CS4(Q: [GC521])
+78.512 GC521 served by CS4(Q: [])
+78.660 TC527 arrives
+78.660 TC527 waits for CS3(Q: [TC501, TC503, TC504, TC510, TC511, TC524, TC527])
+78.769 GC521 done served by CS4(Q: [])
+78.970 TC498 done served by CS3(Q: [TC501, TC503, TC504, TC510, TC511, TC524, TC527])
+78.970 TC501 served by CS3(Q: [TC503, TC504, TC510, TC511, TC524, TC527])
+79.025 TC501 done served by CS3(Q: [TC503, TC504, TC510, TC511, TC524, TC527])
+79.025 TC503 served by CS3(Q: [TC504, TC510, TC511, TC524, TC527])
+79.124 TC528 arrives
+79.124 TC528 served by CS4(Q: [])
+79.191 GC529 arrives
+79.191 GC529 leaves
+79.196 TC503 done served by CS3(Q: [TC504, TC510, TC511, TC524, TC527])
+79.196 TC504 served by CS3(Q: [TC510, TC511, TC524, TC527])
+79.282 TC528 done served by CS4(Q: [])
+79.342 GC530 arrives
+79.342 GC530 served by CS4(Q: [])
+79.491 TC504 done served by CS3(Q: [TC510, TC511, TC524, TC527])
+79.491 TC510 served by CS3(Q: [TC511, TC524, TC527])
+79.510 TC510 done served by CS3(Q: [TC511, TC524, TC527])
+79.510 TC511 served by CS3(Q: [TC524, TC527])
+79.599 GC531 arrives
+79.599 GC531 waits for CS4(Q: [GC531])
+79.601 TC532 arrives
+79.601 TC532 leaves
+79.625 GC533 arrives
+79.625 GC533 leaves
+79.711 TC534 arrives
+79.711 TC534 leaves
+79.939 TC535 arrives
+79.939 TC535 leaves
+79.964 GC536 arrives
+79.964 GC536 waits for CS4(Q: [GC531, GC536])
+80.208 GC279 done served by HS2(Q: [GC309, TC336, TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516])
+80.218 TC511 done served by CS3(Q: [TC524, TC527])
+80.218 TC524 served by CS3(Q: [TC527])
+80.227 GC530 done served by CS4(Q: [GC531, GC536])
+80.227 GC531 served by CS4(Q: [GC536])
+80.234 GC537 arrives
+80.234 GC537 waits for CS3(Q: [TC527, GC537])
+80.247 GC538 arrives
+80.247 GC538 leaves
+80.323 TC524 done served by CS3(Q: [TC527, GC537])
+80.323 TC527 served by CS3(Q: [GC537])
+80.447 GC261 done served by HS0(Q: [TC285, TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506])
+80.525 GC531 done served by CS4(Q: [GC536])
+80.525 GC536 served by CS4(Q: [])
+80.571 TC539 arrives
+80.571 TC539 waits for CS3(Q: [GC537, TC539])
+80.582 GC540 arrives
+80.582 GC540 waits for CS4(Q: [GC540])
+80.599 TC527 done served by CS3(Q: [GC537, TC539])
+80.599 GC537 served by CS3(Q: [TC539])
+80.688 GC541 arrives
+80.688 GC541 waits for CS3(Q: [TC539, GC541])
+80.709 GC542 arrives
+80.709 GC542 waits for CS4(Q: [GC540, GC542])
+80.790 GC543 arrives
+80.790 GC543 waits for CS3(Q: [TC539, GC541, GC543])
+80.848 GC544 arrives
+80.848 GC544 leaves
+80.897 GC536 done served by CS4(Q: [GC540, GC542])
+80.897 GC540 served by CS4(Q: [GC542])
+80.898 TC545 arrives
+80.898 TC545 waits for CS3(Q: [TC539, GC541, GC543, TC545])
+80.909 GC537 done served by CS3(Q: [TC539, GC541, GC543, TC545])
+80.909 TC539 served by CS3(Q: [GC541, GC543, TC545])
+80.913 TC308 done served by HS1(Q: [TC322, TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523])
+80.940 GC546 arrives
+80.940 GC546 waits for CS4(Q: [GC542, GC546])
+81.048 TC547 arrives
+81.048 TC547 waits for CS3(Q: [GC541, GC543, TC545, TC547])
+81.078 GC548 arrives
+81.078 GC548 leaves
+81.185 TC549 arrives
+81.185 TC549 waits for CS3(Q: [GC541, GC543, TC545, TC547, TC549])
+81.301 TC539 done served by CS3(Q: [GC541, GC543, TC545, TC547, TC549])
+81.301 GC541 served by CS3(Q: [GC543, TC545, TC547, TC549])
+81.422 TC550 arrives
+81.422 TC550 leaves
+81.429 GC551 arrives
+81.429 GC551 waits for CS4(Q: [GC542, GC546, GC551])
+81.441 TC552 arrives
+81.441 TC552 leaves
+81.813 GC540 done served by CS4(Q: [GC542, GC546, GC551])
+81.813 GC542 served by CS4(Q: [GC546, GC551])
+81.863 TC553 arrives
+81.863 TC553 waits for CS3(Q: [GC543, TC545, TC547, TC549, TC553])
+81.866 GC309 served by HS2(Q: [TC336, TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516])
+82.053 GC541 done served by CS3(Q: [GC543, TC545, TC547, TC549, TC553])
+82.053 GC543 served by CS3(Q: [TC545, TC547, TC549, TC553])
+82.087 TC554 arrives
+82.087 TC554 waits for CS3(Q: [TC545, TC547, TC549, TC553, TC554])
+82.395 TC555 arrives
+82.395 TC555 waits for CS3(Q: [TC545, TC547, TC549, TC553, TC554, TC555])
+82.501 TC556 arrives
+82.501 TC556 waits for HS2(Q: [TC336, TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556])
+82.515 GC542 done served by CS4(Q: [GC546, GC551])
+82.515 GC546 served by CS4(Q: [GC551])
+82.663 GC543 done served by CS3(Q: [TC545, TC547, TC549, TC553, TC554, TC555])
+82.663 TC545 served by CS3(Q: [TC547, TC549, TC553, TC554, TC555])
+82.675 TC557 arrives
+82.675 TC557 waits for CS3(Q: [TC547, TC549, TC553, TC554, TC555, TC557])
+82.870 GC558 arrives
+82.870 GC558 waits for CS4(Q: [GC551, GC558])
+82.927 GC559 arrives
+82.927 GC559 leaves
+82.962 TC560 arrives
+82.962 TC560 waits for CS3(Q: [TC547, TC549, TC553, TC554, TC555, TC557, TC560])
+82.974 GC561 arrives
+82.974 GC561 waits for CS4(Q: [GC551, GC558, GC561])
+82.983 GC546 done served by CS4(Q: [GC551, GC558, GC561])
+82.983 GC551 served by CS4(Q: [GC558, GC561])
+83.039 GC551 done served by CS4(Q: [GC558, GC561])
+83.039 GC558 served by CS4(Q: [GC561])
+83.051 TC562 arrives
+83.051 TC562 waits for CS3(Q: [TC547, TC549, TC553, TC554, TC555, TC557, TC560, TC562])
+83.209 GC558 done served by CS4(Q: [GC561])
+83.209 GC561 served by CS4(Q: [])
+83.332 TC563 arrives
+83.332 TC563 leaves
+83.420 TC564 arrives
+83.420 TC564 leaves
+83.452 TC545 done served by CS3(Q: [TC547, TC549, TC553, TC554, TC555, TC557, TC560, TC562])
+83.452 TC547 served by CS3(Q: [TC549, TC553, TC554, TC555, TC557, TC560, TC562])
+83.460 TC547 done served by CS3(Q: [TC549, TC553, TC554, TC555, TC557, TC560, TC562])
+83.460 TC549 served by CS3(Q: [TC553, TC554, TC555, TC557, TC560, TC562])
+83.524 TC565 arrives
+83.524 TC565 leaves
+83.586 GC566 arrives
+83.586 GC566 waits for CS4(Q: [GC566])
+83.618 TC549 done served by CS3(Q: [TC553, TC554, TC555, TC557, TC560, TC562])
+83.618 TC553 served by CS3(Q: [TC554, TC555, TC557, TC560, TC562])
+83.639 GC567 arrives
+83.639 GC567 leaves
+83.699 TC322 served by HS1(Q: [TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523])
+83.795 GC561 done served by CS4(Q: [GC566])
+83.795 GC566 served by CS4(Q: [])
+83.870 TC568 arrives
+83.870 TC568 waits for HS1(Q: [TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568])
+83.896 GC569 arrives
+83.896 GC569 waits for CS4(Q: [GC569])
+83.907 TC570 arrives
+83.907 TC570 waits for CS3(Q: [TC554, TC555, TC557, TC560, TC562, TC570])
+83.927 GC571 arrives
+83.927 GC571 leaves
+83.992 TC572 arrives
+83.992 TC572 waits for CS3(Q: [TC554, TC555, TC557, TC560, TC562, TC570, TC572])
+83.996 TC573 arrives
+83.996 TC573 leaves
+84.033 TC285 served by HS0(Q: [TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506])
+84.078 TC574 arrives
+84.078 TC574 waits for CS3(Q: [TC554, TC555, TC557, TC560, TC562, TC570, TC572, TC574])
+84.275 GC575 arrives
+84.275 GC575 waits for CS4(Q: [GC569, GC575])
+84.358 GC566 done served by CS4(Q: [GC569, GC575])
+84.358 GC569 served by CS4(Q: [GC575])
+84.416 TC576 arrives
+84.416 TC576 waits for HS0(Q: [TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576])
+84.466 TC577 arrives
+84.466 TC577 waits for CS3(Q: [TC554, TC555, TC557, TC560, TC562, TC570, TC572, TC574, TC577])
+84.610 TC553 done served by CS3(Q: [TC554, TC555, TC557, TC560, TC562, TC570, TC572, TC574, TC577])
+84.610 TC554 served by CS3(Q: [TC555, TC557, TC560, TC562, TC570, TC572, TC574, TC577])
+84.624 TC578 arrives
+84.624 TC578 waits for CS3(Q: [TC555, TC557, TC560, TC562, TC570, TC572, TC574, TC577, TC578])
+84.700 GC569 done served by CS4(Q: [GC575])
+84.700 GC575 served by CS4(Q: [])
+84.816 GC309 done served by HS2(Q: [TC336, TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556])
+84.925 TC579 arrives
+84.925 TC579 leaves
+84.987 TC580 arrives
+84.987 TC580 leaves
+85.057 GC581 arrives
+85.057 GC581 leaves
+85.246 TC285 done served by HS0(Q: [TC305, GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576])
+85.300 GC582 arrives
+85.300 GC582 waits for CS4(Q: [GC582])
+85.317 GC575 done served by CS4(Q: [GC582])
+85.317 GC582 served by CS4(Q: [])
+85.351 TC554 done served by CS3(Q: [TC555, TC557, TC560, TC562, TC570, TC572, TC574, TC577, TC578])
+85.351 TC555 served by CS3(Q: [TC557, TC560, TC562, TC570, TC572, TC574, TC577, TC578])
+85.457 TC305 served by HS0(Q: [GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576])
+85.595 TC555 done served by CS3(Q: [TC557, TC560, TC562, TC570, TC572, TC574, TC577, TC578])
+85.595 TC557 served by CS3(Q: [TC560, TC562, TC570, TC572, TC574, TC577, TC578])
+85.603 GC583 arrives
+85.603 GC583 waits for CS4(Q: [GC583])
+85.630 GC584 arrives
+85.630 GC584 waits for CS4(Q: [GC583, GC584])
+85.655 GC582 done served by CS4(Q: [GC583, GC584])
+85.655 GC583 served by CS4(Q: [GC584])
+85.669 TC557 done served by CS3(Q: [TC560, TC562, TC570, TC572, TC574, TC577, TC578])
+85.669 TC560 served by CS3(Q: [TC562, TC570, TC572, TC574, TC577, TC578])
+85.714 GC585 arrives
+85.714 GC585 waits for CS4(Q: [GC584, GC585])
+86.008 GC586 arrives
+86.008 GC586 waits for HS0(Q: [GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586])
+86.013 GC583 done served by CS4(Q: [GC584, GC585])
+86.013 GC584 served by CS4(Q: [GC585])
+86.046 GC584 done served by CS4(Q: [GC585])
+86.046 GC585 served by CS4(Q: [])
+86.074 TC560 done served by CS3(Q: [TC562, TC570, TC572, TC574, TC577, TC578])
+86.074 TC562 served by CS3(Q: [TC570, TC572, TC574, TC577, TC578])
+86.129 GC585 done served by CS4(Q: [])
+86.194 TC322 done served by HS1(Q: [TC368, GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568])
+86.332 TC562 done served by CS3(Q: [TC570, TC572, TC574, TC577, TC578])
+86.332 TC570 served by CS3(Q: [TC572, TC574, TC577, TC578])
+86.392 TC587 arrives
+86.392 TC587 served by CS4(Q: [])
+86.486 TC570 done served by CS3(Q: [TC572, TC574, TC577, TC578])
+86.486 TC572 served by CS3(Q: [TC574, TC577, TC578])
+86.610 TC588 arrives
+86.610 TC588 waits for CS3(Q: [TC574, TC577, TC578, TC588])
+86.829 TC587 done served by CS4(Q: [])
+86.944 TC589 arrives
+86.944 TC589 leaves
+87.007 TC336 served by HS2(Q: [TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556])
+87.037 GC590 arrives
+87.037 GC590 waits for HS2(Q: [TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590])
+87.048 TC591 arrives
+87.048 TC591 served by CS4(Q: [])
+87.181 TC592 arrives
+87.181 TC592 waits for CS3(Q: [TC574, TC577, TC578, TC588, TC592])
+87.232 TC593 arrives
+87.232 TC593 waits for CS3(Q: [TC574, TC577, TC578, TC588, TC592, TC593])
+87.339 TC572 done served by CS3(Q: [TC574, TC577, TC578, TC588, TC592, TC593])
+87.339 TC574 served by CS3(Q: [TC577, TC578, TC588, TC592, TC593])
+87.413 TC305 done served by HS0(Q: [GC321, GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586])
+87.417 TC574 done served by CS3(Q: [TC577, TC578, TC588, TC592, TC593])
+87.417 TC577 served by CS3(Q: [TC578, TC588, TC592, TC593])
+87.563 TC594 arrives
+87.563 TC594 leaves
+87.628 GC321 served by HS0(Q: [GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586])
+87.758 GC595 arrives
+87.758 GC595 waits for CS4(Q: [GC595])
+87.780 TC596 arrives
+87.780 TC596 waits for CS3(Q: [TC578, TC588, TC592, TC593, TC596])
+87.892 TC591 done served by CS4(Q: [GC595])
+87.892 GC595 served by CS4(Q: [])
+87.994 TC368 served by HS1(Q: [GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568])
+88.016 GC597 arrives
+88.016 GC597 waits for HS0(Q: [GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597])
+88.065 GC598 arrives
+88.065 GC598 waits for CS4(Q: [GC598])
+88.129 TC577 done served by CS3(Q: [TC578, TC588, TC592, TC593, TC596])
+88.129 TC578 served by CS3(Q: [TC588, TC592, TC593, TC596])
+88.219 GC599 arrives
+88.219 GC599 waits for CS4(Q: [GC598, GC599])
+88.235 TC336 done served by HS2(Q: [TC352, GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590])
+88.246 GC595 done served by CS4(Q: [GC598, GC599])
+88.246 GC598 served by CS4(Q: [GC599])
+88.264 GC600 arrives
+88.264 GC600 waits for HS1(Q: [GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600])
+88.422 TC601 arrives
+88.422 TC601 waits for CS3(Q: [TC588, TC592, TC593, TC596, TC601])
+88.473 GC602 arrives
+88.473 GC602 waits for CS4(Q: [GC599, GC602])
+88.506 TC352 served by HS2(Q: [GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590])
+88.515 GC598 done served by CS4(Q: [GC599, GC602])
+88.515 GC599 served by CS4(Q: [GC602])
+88.542 GC603 arrives
+88.542 GC603 waits for CS4(Q: [GC602, GC603])
+88.632 TC604 arrives
+88.632 TC604 waits for CS3(Q: [TC588, TC592, TC593, TC596, TC601, TC604])
+88.647 GC605 arrives
+88.647 GC605 waits for CS4(Q: [GC602, GC603, GC605])
+88.813 GC321 done served by HS0(Q: [GC360, TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597])
+88.823 TC578 done served by CS3(Q: [TC588, TC592, TC593, TC596, TC601, TC604])
+88.823 TC588 served by CS3(Q: [TC592, TC593, TC596, TC601, TC604])
+88.870 TC588 done served by CS3(Q: [TC592, TC593, TC596, TC601, TC604])
+88.870 TC592 served by CS3(Q: [TC593, TC596, TC601, TC604])
+88.998 GC360 served by HS0(Q: [TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597])
+89.080 GC606 arrives
+89.080 GC606 waits for CS4(Q: [GC602, GC603, GC605, GC606])
+89.091 GC607 arrives
+89.091 GC607 waits for CS3(Q: [TC593, TC596, TC601, TC604, GC607])
+89.334 TC608 arrives
+89.334 TC608 waits for HS0(Q: [TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608])
+89.430 GC599 done served by CS4(Q: [GC602, GC603, GC605, GC606])
+89.430 GC602 served by CS4(Q: [GC603, GC605, GC606])
+89.467 TC609 arrives
+89.467 TC609 waits for CS3(Q: [TC593, TC596, TC601, TC604, GC607, TC609])
+89.495 TC610 arrives
+89.495 TC610 waits for HS2(Q: [GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590, TC610])
+89.559 TC592 done served by CS3(Q: [TC593, TC596, TC601, TC604, GC607, TC609])
+89.559 TC593 served by CS3(Q: [TC596, TC601, TC604, GC607, TC609])
+89.588 TC611 arrives
+89.588 TC611 waits for CS3(Q: [TC596, TC601, TC604, GC607, TC609, TC611])
+89.651 TC612 arrives
+89.651 TC612 leaves
+89.678 GC613 arrives
+89.678 GC613 leaves
+89.698 GC602 done served by CS4(Q: [GC603, GC605, GC606])
+89.698 GC603 served by CS4(Q: [GC605, GC606])
+89.706 GC603 done served by CS4(Q: [GC605, GC606])
+89.706 GC605 served by CS4(Q: [GC606])
+89.817 TC614 arrives
+89.817 TC614 waits for CS3(Q: [TC596, TC601, TC604, GC607, TC609, TC611, TC614])
+89.823 GC615 arrives
+89.823 GC615 waits for CS4(Q: [GC606, GC615])
+89.851 TC368 done served by HS1(Q: [GC385, TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600])
+90.122 TC616 arrives
+90.122 TC616 leaves
+90.142 TC593 done served by CS3(Q: [TC596, TC601, TC604, GC607, TC609, TC611, TC614])
+90.142 TC596 served by CS3(Q: [TC601, TC604, GC607, TC609, TC611, TC614])
+90.190 TC352 done served by HS2(Q: [GC402, TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590, TC610])
+90.635 GC605 done served by CS4(Q: [GC606, GC615])
+90.635 GC606 served by CS4(Q: [GC615])
+90.671 TC617 arrives
+90.671 TC617 waits for CS3(Q: [TC601, TC604, GC607, TC609, TC611, TC614, TC617])
+90.727 GC618 arrives
+90.727 GC618 leaves
+90.772 TC596 done served by CS3(Q: [TC601, TC604, GC607, TC609, TC611, TC614, TC617])
+90.772 TC601 served by CS3(Q: [TC604, GC607, TC609, TC611, TC614, TC617])
+90.870 GC385 served by HS1(Q: [TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600])
+90.956 GC619 arrives
+90.956 GC619 waits for CS4(Q: [GC615, GC619])
+91.044 TC620 arrives
+91.044 TC620 waits for HS1(Q: [TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620])
+91.319 GC606 done served by CS4(Q: [GC615, GC619])
+91.319 GC615 served by CS4(Q: [GC619])
+91.360 TC621 arrives
+91.360 TC621 leaves
+91.464 GC622 arrives
+91.464 GC622 leaves
+91.484 GC615 done served by CS4(Q: [GC619])
+91.484 GC619 served by CS4(Q: [])
+91.531 GC623 arrives
+91.531 GC623 waits for CS4(Q: [GC623])
+91.631 GC360 done served by HS0(Q: [TC396, GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608])
+91.659 TC601 done served by CS3(Q: [TC604, GC607, TC609, TC611, TC614, TC617])
+91.659 TC604 served by CS3(Q: [GC607, TC609, TC611, TC614, TC617])
+91.838 TC624 arrives
+91.838 TC624 leaves
+92.216 TC625 arrives
+92.216 TC625 leaves
+92.252 TC626 arrives
+92.252 TC626 leaves
+92.312 GC402 served by HS2(Q: [TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590, TC610])
+92.325 GC619 done served by CS4(Q: [GC623])
+92.325 GC623 served by CS4(Q: [])
+92.473 GC623 done served by CS4(Q: [])
+92.570 TC604 done served by CS3(Q: [GC607, TC609, TC611, TC614, TC617])
+92.570 GC607 served by CS3(Q: [TC609, TC611, TC614, TC617])
+92.612 GC627 arrives
+92.612 GC627 waits for HS2(Q: [TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627])
+92.826 TC628 arrives
+92.826 TC628 leaves
+92.875 GC607 done served by CS3(Q: [TC609, TC611, TC614, TC617])
+92.875 TC609 served by CS3(Q: [TC611, TC614, TC617])
+92.939 TC629 arrives
+92.939 TC629 served by CS4(Q: [])
+92.941 TC396 served by HS0(Q: [GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608])
+92.998 GC630 arrives
+92.998 GC630 waits for CS4(Q: [GC630])
+93.125 TC609 done served by CS3(Q: [TC611, TC614, TC617])
+93.125 TC611 served by CS3(Q: [TC614, TC617])
+93.153 TC611 done served by CS3(Q: [TC614, TC617])
+93.153 TC614 served by CS3(Q: [TC617])
+93.235 TC631 arrives
+93.235 TC631 waits for HS0(Q: [GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631])
+93.339 TC632 arrives
+93.339 TC632 leaves
+93.447 TC633 arrives
+93.447 TC633 leaves
+93.481 GC402 done served by HS2(Q: [TC410, GC418, GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627])
+93.557 TC614 done served by CS3(Q: [TC617])
+93.557 TC617 served by CS3(Q: [])
+93.661 TC629 done served by CS4(Q: [GC630])
+93.661 GC630 served by CS4(Q: [])
+93.744 TC634 arrives
+93.744 TC634 waits for CS3(Q: [TC634])
+93.760 GC635 arrives
+93.760 GC635 leaves
+93.803 TC636 arrives
+93.803 TC636 waits for CS3(Q: [TC634, TC636])
+93.967 TC637 arrives
+93.967 TC637 waits for CS3(Q: [TC634, TC636, TC637])
+94.032 GC638 arrives
+94.032 GC638 waits for CS4(Q: [GC638])
+94.170 GC385 done served by HS1(Q: [TC434, TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620])
+94.215 GC639 arrives
+94.215 GC639 leaves
+94.253 TC434 served by HS1(Q: [TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620])
+94.269 TC617 done served by CS3(Q: [TC634, TC636, TC637])
+94.269 TC634 served by CS3(Q: [TC636, TC637])
+94.521 TC640 arrives
+94.521 TC640 waits for HS1(Q: [TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640])
+94.539 GC630 done served by CS4(Q: [GC638])
+94.539 GC638 served by CS4(Q: [])
+94.644 GC641 arrives
+94.644 GC641 waits for CS4(Q: [GC641])
+94.839 TC634 done served by CS3(Q: [TC636, TC637])
+94.839 TC636 served by CS3(Q: [TC637])
+95.171 GC638 done served by CS4(Q: [GC641])
+95.171 GC641 served by CS4(Q: [])
+95.185 GC642 arrives
+95.185 GC642 waits for CS4(Q: [GC642])
+95.264 GC643 arrives
+95.264 GC643 waits for CS3(Q: [TC637, GC643])
+95.299 TC396 done served by HS0(Q: [GC445, GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631])
+95.310 TC636 done served by CS3(Q: [TC637, GC643])
+95.310 TC637 served by CS3(Q: [GC643])
+95.356 GC641 done served by CS4(Q: [GC642])
+95.356 GC642 served by CS4(Q: [])
+95.377 GC644 arrives
+95.377 GC644 waits for CS4(Q: [GC644])
+95.404 TC410 served by HS2(Q: [GC418, GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627])
+95.428 GC642 done served by CS4(Q: [GC644])
+95.428 GC644 served by CS4(Q: [])
+95.561 TC434 done served by HS1(Q: [TC446, TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640])
+95.613 GC645 arrives
+95.613 GC645 waits for CS4(Q: [GC645])
+95.716 GC644 done served by CS4(Q: [GC645])
+95.716 GC645 served by CS4(Q: [])
+95.729 TC646 arrives
+95.729 TC646 waits for CS3(Q: [GC643, TC646])
+95.917 GC647 arrives
+95.917 GC647 waits for CS4(Q: [GC647])
+95.925 GC445 served by HS0(Q: [GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631])
+95.972 GC648 arrives
+95.972 GC648 waits for CS4(Q: [GC647, GC648])
+96.029 TC649 arrives
+96.029 TC649 waits for CS3(Q: [GC643, TC646, TC649])
+96.204 GC645 done served by CS4(Q: [GC647, GC648])
+96.204 GC647 served by CS4(Q: [GC648])
+96.253 GC650 arrives
+96.253 GC650 waits for CS4(Q: [GC648, GC650])
+96.302 TC637 done served by CS3(Q: [GC643, TC646, TC649])
+96.302 GC643 served by CS3(Q: [TC646, TC649])
+96.414 TC446 served by HS1(Q: [TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640])
+96.425 GC651 arrives
+96.425 GC651 waits for CS3(Q: [TC646, TC649, GC651])
+96.632 TC652 arrives
+96.632 TC652 waits for CS3(Q: [TC646, TC649, GC651, TC652])
+96.734 GC653 arrives
+96.734 GC653 waits for CS4(Q: [GC648, GC650, GC653])
+96.815 GC647 done served by CS4(Q: [GC648, GC650, GC653])
+96.815 GC648 served by CS4(Q: [GC650, GC653])
+96.826 GC643 done served by CS3(Q: [TC646, TC649, GC651, TC652])
+96.826 TC646 served by CS3(Q: [TC649, GC651, TC652])
+97.152 TC410 done served by HS2(Q: [GC418, GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627])
+97.175 GC654 arrives
+97.175 GC654 waits for HS0(Q: [GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654])
+97.327 TC655 arrives
+97.327 TC655 waits for HS1(Q: [TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640, TC655])
+97.347 TC646 done served by CS3(Q: [TC649, GC651, TC652])
+97.347 TC649 served by CS3(Q: [GC651, TC652])
+97.390 GC648 done served by CS4(Q: [GC650, GC653])
+97.390 GC650 served by CS4(Q: [GC653])
+97.436 TC656 arrives
+97.436 TC656 waits for CS3(Q: [GC651, TC652, TC656])
+97.503 TC649 done served by CS3(Q: [GC651, TC652, TC656])
+97.503 GC651 served by CS3(Q: [TC652, TC656])
+97.509 GC445 done served by HS0(Q: [GC463, GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654])
+97.568 TC657 arrives
+97.568 TC657 waits for CS3(Q: [TC652, TC656, TC657])
+97.768 GC651 done served by CS3(Q: [TC652, TC656, TC657])
+97.768 TC652 served by CS3(Q: [TC656, TC657])
+97.819 GC658 arrives
+97.819 GC658 waits for CS4(Q: [GC653, GC658])
+97.914 TC652 done served by CS3(Q: [TC656, TC657])
+97.914 TC656 served by CS3(Q: [TC657])
+97.963 GC418 served by HS2(Q: [GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627])
+98.025 GC659 arrives
+98.025 GC659 waits for CS3(Q: [TC657, GC659])
+98.049 GC650 done served by CS4(Q: [GC653, GC658])
+98.049 GC653 served by CS4(Q: [GC658])
+98.183 GC463 served by HS0(Q: [GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654])
+98.238 GC653 done served by CS4(Q: [GC658])
+98.238 GC658 served by CS4(Q: [])
+98.276 TC660 arrives
+98.276 TC660 waits for HS0(Q: [GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660])
+98.298 TC656 done served by CS3(Q: [TC657, GC659])
+98.298 TC657 served by CS3(Q: [GC659])
+98.345 GC661 arrives
+98.345 GC661 waits for CS4(Q: [GC661])
+98.411 TC662 arrives
+98.411 TC662 waits for CS3(Q: [GC659, TC662])
+98.431 TC663 arrives
+98.431 TC663 waits for CS3(Q: [GC659, TC662, TC663])
+98.499 GC664 arrives
+98.499 GC664 waits for CS4(Q: [GC661, GC664])
+98.535 GC658 done served by CS4(Q: [GC661, GC664])
+98.535 GC661 served by CS4(Q: [GC664])
+98.535 GC661 done served by CS4(Q: [GC664])
+98.535 GC664 served by CS4(Q: [])
+98.624 TC665 arrives
+98.624 TC665 waits for CS3(Q: [GC659, TC662, TC663, TC665])
+98.647 GC666 arrives
+98.647 GC666 waits for CS4(Q: [GC666])
+98.673 GC664 done served by CS4(Q: [GC666])
+98.673 GC666 served by CS4(Q: [])
+98.686 TC667 arrives
+98.686 TC667 waits for CS3(Q: [GC659, TC662, TC663, TC665, TC667])
+98.795 TC668 arrives
+98.795 TC668 waits for HS2(Q: [GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627, TC668])
+98.864 TC657 done served by CS3(Q: [GC659, TC662, TC663, TC665, TC667])
+98.864 GC659 served by CS3(Q: [TC662, TC663, TC665, TC667])
+99.132 GC666 done served by CS4(Q: [])
+99.160 TC669 arrives
+99.160 TC669 waits for HS2(Q: [GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669])
+99.223 GC418 done served by HS2(Q: [GC441, GC449, GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669])
+99.266 GC659 done served by CS3(Q: [TC662, TC663, TC665, TC667])
+99.266 TC662 served by CS3(Q: [TC663, TC665, TC667])
+99.271 GC463 done served by HS0(Q: [GC473, GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660])
+99.301 GC473 served by HS0(Q: [GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660])
+99.599 TC670 arrives
+99.599 TC670 waits for HS0(Q: [GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670])
+99.603 TC446 done served by HS1(Q: [TC461, GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640, TC655])
+99.728 TC662 done served by CS3(Q: [TC663, TC665, TC667])
+99.728 TC663 served by CS3(Q: [TC665, TC667])
+99.749 TC461 served by HS1(Q: [GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640, TC655])
+99.754 GC441 served by HS2(Q: [GC449, GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669])
+100.178 TC671 arrives
+100.178 TC671 waits for HS1(Q: [GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671])
+100.293 TC672 arrives
+100.293 TC672 served by CS4(Q: [])
+100.329 TC673 arrives
+100.329 TC673 waits for CS3(Q: [TC665, TC667, TC673])
+100.570 TC672 done served by CS4(Q: [])
+100.584 TC663 done served by CS3(Q: [TC665, TC667, TC673])
+100.584 TC665 served by CS3(Q: [TC667, TC673])
+100.673 TC674 arrives
+100.673 TC674 served by CS4(Q: [])
+100.825 GC441 done served by HS2(Q: [GC449, GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669])
+100.828 TC665 done served by CS3(Q: [TC667, TC673])
+100.828 TC667 served by CS3(Q: [TC673])
+100.847 TC675 arrives
+100.847 TC675 leaves
+100.922 GC449 served by HS2(Q: [GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669])
+100.950 TC676 arrives
+100.950 TC676 waits for CS3(Q: [TC673, TC676])
+100.976 GC677 arrives
+100.976 GC677 waits for HS2(Q: [GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669, GC677])
+101.022 GC678 arrives
+101.022 GC678 waits for HS2(Q: [GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678])
+101.025 TC674 done served by CS4(Q: [])
+101.041 TC679 arrives
+101.041 TC679 served by CS4(Q: [])
+101.042 GC680 arrives
+101.042 GC680 waits for CS4(Q: [GC680])
+101.053 GC681 arrives
+101.053 GC681 waits for CS4(Q: [GC680, GC681])
+101.070 GC473 done served by HS0(Q: [GC479, TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670])
+101.140 GC682 arrives
+101.140 GC682 leaves
+101.170 TC679 done served by CS4(Q: [GC680, GC681])
+101.170 GC680 served by CS4(Q: [GC681])
+101.328 TC461 done served by HS1(Q: [GC508, GC509, TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671])
+101.353 TC667 done served by CS3(Q: [TC673, TC676])
+101.353 TC673 served by CS3(Q: [TC676])
+101.359 GC508 served by HS1(Q: [GC509, TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671])
+101.612 GC683 arrives
+101.612 GC683 waits for CS3(Q: [TC676, GC683])
+101.661 GC479 served by HS0(Q: [TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670])
+101.766 GC680 done served by CS4(Q: [GC681])
+101.766 GC681 served by CS4(Q: [])
+101.838 GC684 arrives
+101.838 GC684 waits for HS0(Q: [TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684])
+102.050 TC673 done served by CS3(Q: [TC676, GC683])
+102.050 TC676 served by CS3(Q: [GC683])
+102.064 GC681 done served by CS4(Q: [])
+102.084 TC685 arrives
+102.084 TC685 served by CS4(Q: [])
+102.257 GC449 done served by HS2(Q: [GC513, TC516, TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678])
+102.323 TC676 done served by CS3(Q: [GC683])
+102.323 GC683 served by CS3(Q: [])
+102.621 TC686 arrives
+102.621 TC686 waits for CS3(Q: [TC686])
+102.747 TC687 arrives
+102.747 TC687 waits for CS3(Q: [TC686, TC687])
+102.809 GC508 done served by HS1(Q: [GC509, TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671])
+102.890 TC685 done served by CS4(Q: [])
+102.934 TC688 arrives
+102.934 TC688 served by CS4(Q: [])
+102.936 GC689 arrives
+102.936 GC689 leaves
+102.946 GC690 arrives
+102.946 GC690 waits for CS4(Q: [GC690])
+103.045 GC479 done served by HS0(Q: [TC506, TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684])
+103.113 TC506 served by HS0(Q: [TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684])
+103.129 GC683 done served by CS3(Q: [TC686, TC687])
+103.129 TC686 served by CS3(Q: [TC687])
+103.247 GC691 arrives
+103.247 GC691 waits for CS3(Q: [TC687, GC691])
+103.340 TC692 arrives
+103.340 TC692 waits for CS3(Q: [TC687, GC691, TC692])
+103.341 GC513 served by HS2(Q: [TC516, TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678])
+103.358 GC693 arrives
+103.358 GC693 waits for CS4(Q: [GC690, GC693])
+103.367 GC694 arrives
+103.367 GC694 waits for CS4(Q: [GC690, GC693, GC694])
+103.384 TC686 done served by CS3(Q: [TC687, GC691, TC692])
+103.384 TC687 served by CS3(Q: [GC691, TC692])
+103.724 TC695 arrives
+103.724 TC695 waits for CS3(Q: [GC691, TC692, TC695])
+103.729 TC688 done served by CS4(Q: [GC690, GC693, GC694])
+103.729 GC690 served by CS4(Q: [GC693, GC694])
+103.784 TC687 done served by CS3(Q: [GC691, TC692, TC695])
+103.784 GC691 served by CS3(Q: [TC692, TC695])
+103.809 TC696 arrives
+103.809 TC696 waits for CS3(Q: [TC692, TC695, TC696])
+103.818 TC697 arrives
+103.818 TC697 waits for CS3(Q: [TC692, TC695, TC696, TC697])
+103.822 GC691 done served by CS3(Q: [TC692, TC695, TC696, TC697])
+103.822 TC692 served by CS3(Q: [TC695, TC696, TC697])
+103.854 GC698 arrives
+103.854 GC698 waits for CS4(Q: [GC693, GC694, GC698])
+104.056 GC509 served by HS1(Q: [TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671])
+104.175 GC690 done served by CS4(Q: [GC693, GC694, GC698])
+104.175 GC693 served by CS4(Q: [GC694, GC698])
+104.191 GC699 arrives
+104.191 GC699 waits for HS1(Q: [TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671, GC699])
+104.234 TC692 done served by CS3(Q: [TC695, TC696, TC697])
+104.234 TC695 served by CS3(Q: [TC696, TC697])
+104.468 GC700 arrives
+104.468 GC700 waits for CS3(Q: [TC696, TC697, GC700])
+104.613 GC701 arrives
+104.613 GC701 waits for HS0(Q: [TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701])
+104.702 TC695 done served by CS3(Q: [TC696, TC697, GC700])
+104.702 TC696 served by CS3(Q: [TC697, GC700])
+104.720 GC702 arrives
+104.720 GC702 waits for CS3(Q: [TC697, GC700, GC702])
+104.735 TC703 arrives
+104.735 TC703 waits for CS3(Q: [TC697, GC700, GC702, TC703])
+104.756 TC704 arrives
+104.756 TC704 waits for HS1(Q: [TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704])
+104.831 GC705 arrives
+104.831 GC705 waits for CS4(Q: [GC694, GC698, GC705])
+104.844 TC696 done served by CS3(Q: [TC697, GC700, GC702, TC703])
+104.844 TC697 served by CS3(Q: [GC700, GC702, TC703])
+104.852 TC506 done served by HS0(Q: [TC576, GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701])
+104.863 GC693 done served by CS4(Q: [GC694, GC698, GC705])
+104.863 GC694 served by CS4(Q: [GC698, GC705])
+105.183 GC706 arrives
+105.183 GC706 waits for CS4(Q: [GC698, GC705, GC706])
+105.233 GC707 arrives
+105.233 GC707 waits for CS3(Q: [GC700, GC702, TC703, GC707])
+105.276 GC694 done served by CS4(Q: [GC698, GC705, GC706])
+105.276 GC698 served by CS4(Q: [GC705, GC706])
+105.333 GC698 done served by CS4(Q: [GC705, GC706])
+105.333 GC705 served by CS4(Q: [GC706])
+105.466 TC697 done served by CS3(Q: [GC700, GC702, TC703, GC707])
+105.466 GC700 served by CS3(Q: [GC702, TC703, GC707])
+105.566 TC576 served by HS0(Q: [GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701])
+105.630 GC708 arrives
+105.630 GC708 waits for CS4(Q: [GC706, GC708])
+105.642 GC700 done served by CS3(Q: [GC702, TC703, GC707])
+105.642 GC702 served by CS3(Q: [TC703, GC707])
+105.750 GC705 done served by CS4(Q: [GC706, GC708])
+105.750 GC706 served by CS4(Q: [GC708])
+105.994 TC709 arrives
+105.994 TC709 waits for HS0(Q: [GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709])
+106.171 TC710 arrives
+106.171 TC710 waits for CS3(Q: [TC703, GC707, TC710])
+106.256 GC706 done served by CS4(Q: [GC708])
+106.256 GC708 served by CS4(Q: [])
+106.273 GC513 done served by HS2(Q: [TC516, TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678])
+106.342 TC711 arrives
+106.342 TC711 waits for CS3(Q: [TC703, GC707, TC710, TC711])
+106.397 GC708 done served by CS4(Q: [])
+106.452 TC712 arrives
+106.452 TC712 served by CS4(Q: [])
+106.487 TC713 arrives
+106.487 TC713 leaves
+106.489 GC702 done served by CS3(Q: [TC703, GC707, TC710, TC711])
+106.489 TC703 served by CS3(Q: [GC707, TC710, TC711])
+106.505 GC509 done served by HS1(Q: [TC514, GC523, TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704])
+106.549 TC514 served by HS1(Q: [GC523, TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704])
+106.563 GC714 arrives
+106.563 GC714 waits for HS1(Q: [GC523, TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714])
+106.704 TC715 arrives
+106.704 TC715 waits for CS3(Q: [GC707, TC710, TC711, TC715])
+106.743 GC716 arrives
+106.743 GC716 waits for CS4(Q: [GC716])
+106.829 GC717 arrives
+106.829 GC717 waits for CS4(Q: [GC716, GC717])
+107.009 TC718 arrives
+107.009 TC718 waits for CS3(Q: [GC707, TC710, TC711, TC715, TC718])
+107.113 TC703 done served by CS3(Q: [GC707, TC710, TC711, TC715, TC718])
+107.113 GC707 served by CS3(Q: [TC710, TC711, TC715, TC718])
+107.137 TC712 done served by CS4(Q: [GC716, GC717])
+107.137 GC716 served by CS4(Q: [GC717])
+107.212 GC716 done served by CS4(Q: [GC717])
+107.212 GC717 served by CS4(Q: [])
+107.242 GC707 done served by CS3(Q: [TC710, TC711, TC715, TC718])
+107.242 TC710 served by CS3(Q: [TC711, TC715, TC718])
+107.326 GC719 arrives
+107.326 GC719 leaves
+107.336 GC720 arrives
+107.336 GC720 leaves
+107.360 TC710 done served by CS3(Q: [TC711, TC715, TC718])
+107.360 TC711 served by CS3(Q: [TC715, TC718])
+107.396 GC717 done served by CS4(Q: [])
+107.548 TC711 done served by CS3(Q: [TC715, TC718])
+107.548 TC715 served by CS3(Q: [TC718])
+107.723 GC721 arrives
+107.723 GC721 served by CS4(Q: [])
+107.744 TC514 done served by HS1(Q: [GC523, TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714])
+107.781 GC721 done served by CS4(Q: [])
+107.820 TC715 done served by CS3(Q: [TC718])
+107.820 TC718 served by CS3(Q: [])
+107.828 TC722 arrives
+107.828 TC722 served by CS4(Q: [])
+107.846 TC723 arrives
+107.846 TC723 leaves
+107.863 TC516 served by HS2(Q: [TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678])
+107.896 GC724 arrives
+107.896 GC724 waits for HS2(Q: [TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678, GC724])
+107.979 TC725 arrives
+107.979 TC725 waits for HS2(Q: [TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725])
+108.070 GC523 served by HS1(Q: [TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714])
+108.121 TC718 done served by CS3(Q: [])
+108.180 GC726 arrives
+108.180 GC726 served by CS3(Q: [])
+108.298 GC726 done served by CS3(Q: [])
+108.317 GC727 arrives
+108.317 GC727 served by CS3(Q: [])
+108.356 GC727 done served by CS3(Q: [])
+108.512 GC728 arrives
+108.512 GC728 waits for HS1(Q: [TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728])
+108.524 GC729 arrives
+108.524 GC729 leaves
+108.559 TC730 arrives
+108.559 TC730 leaves
+108.754 TC722 done served by CS4(Q: [])
+108.869 TC731 arrives
+108.869 TC731 served by CS3(Q: [])
+108.898 TC732 arrives
+108.898 TC732 leaves
+109.001 GC733 arrives
+109.001 GC733 served by CS4(Q: [])
+109.032 GC734 arrives
+109.032 GC734 waits for CS3(Q: [GC734])
+109.070 TC731 done served by CS3(Q: [GC734])
+109.070 GC734 served by CS3(Q: [])
+109.273 GC523 done served by HS1(Q: [TC568, GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728])
+109.404 GC735 arrives
+109.404 GC735 leaves
+109.422 GC736 arrives
+109.422 GC736 waits for CS3(Q: [GC736])
+109.475 GC733 done served by CS4(Q: [])
+109.595 GC734 done served by CS3(Q: [GC736])
+109.595 GC736 served by CS3(Q: [])
+109.630 GC737 arrives
+109.630 GC737 leaves
+109.649 GC736 done served by CS3(Q: [])
+109.665 TC516 done served by HS2(Q: [TC556, GC590, TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725])
+109.665 GC738 arrives
+109.665 GC738 served by CS3(Q: [])
+109.683 TC739 arrives
+109.683 TC739 leaves
+109.700 TC576 done served by HS0(Q: [GC586, GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709])
+109.702 TC740 arrives
+109.702 TC740 served by CS4(Q: [])
+109.730 TC741 arrives
+109.730 TC741 waits for CS3(Q: [TC741])
+109.748 GC586 served by HS0(Q: [GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709])
+109.904 GC742 arrives
+109.904 GC742 waits for CS4(Q: [GC742])
+109.970 GC743 arrives
+109.970 GC743 waits for CS3(Q: [TC741, GC743])
+110.000 TC744 arrives
+110.000 TC744 waits for CS3(Q: [TC741, GC743, TC744])
+110.010 GC738 done served by CS3(Q: [TC741, GC743, TC744])
+110.010 TC741 served by CS3(Q: [GC743, TC744])
+110.109 TC745 arrives
+110.109 TC745 waits for HS0(Q: [GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745])
+110.151 TC741 done served by CS3(Q: [GC743, TC744])
+110.151 GC743 served by CS3(Q: [TC744])
+110.264 TC740 done served by CS4(Q: [GC742])
+110.264 GC742 served by CS4(Q: [])
+110.338 TC746 arrives
+110.338 TC746 waits for CS3(Q: [TC744, TC746])
+110.401 TC556 served by HS2(Q: [GC590, TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725])
+110.460 GC742 done served by CS4(Q: [])
+110.553 GC747 arrives
+110.553 GC747 waits for HS2(Q: [GC590, TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747])
+110.889 TC748 arrives
+110.889 TC748 served by CS4(Q: [])
+110.939 TC568 served by HS1(Q: [GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728])
+111.039 TC749 arrives
+111.039 TC749 waits for HS1(Q: [GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749])
+111.043 GC743 done served by CS3(Q: [TC744, TC746])
+111.043 TC744 served by CS3(Q: [TC746])
+111.211 TC748 done served by CS4(Q: [])
+111.310 TC750 arrives
+111.310 TC750 served by CS4(Q: [])
+111.584 TC744 done served by CS3(Q: [TC746])
+111.584 TC746 served by CS3(Q: [])
+111.678 TC751 arrives
+111.678 TC751 leaves
+111.948 TC556 done served by HS2(Q: [GC590, TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747])
+112.127 TC750 done served by CS4(Q: [])
+112.134 TC746 done served by CS3(Q: [])
+112.181 GC586 done served by HS0(Q: [GC597, TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745])
+112.195 GC590 served by HS2(Q: [TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747])
+112.333 TC752 arrives
+112.333 TC752 served by CS3(Q: [])
+112.337 GC753 arrives
+112.337 GC753 waits for HS2(Q: [TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753])
+112.344 GC754 arrives
+112.344 GC754 leaves
+112.410 TC755 arrives
+112.410 TC755 leaves
+112.558 TC756 arrives
+112.558 TC756 served by CS4(Q: [])
+112.654 TC757 arrives
+112.654 TC757 leaves
+112.761 GC597 served by HS0(Q: [TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745])
+112.993 TC758 arrives
+112.993 TC758 waits for HS0(Q: [TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758])
+113.186 TC752 done served by CS3(Q: [])
+113.191 TC756 done served by CS4(Q: [])
+113.235 TC568 done served by HS1(Q: [GC600, TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749])
+113.255 TC759 arrives
+113.255 TC759 leaves
+113.271 TC760 arrives
+113.271 TC760 leaves
+113.498 GC590 done served by HS2(Q: [TC610, GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753])
+113.536 TC761 arrives
+113.536 TC761 served by CS3(Q: [])
+113.582 TC762 arrives
+113.582 TC762 leaves
+113.607 TC761 done served by CS3(Q: [])
+113.848 TC763 arrives
+113.848 TC763 leaves
+113.873 TC610 served by HS2(Q: [GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753])
+113.883 GC597 done served by HS0(Q: [TC608, TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758])
+113.883 TC764 arrives
+113.883 TC764 waits for HS2(Q: [GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764])
+113.895 TC765 arrives
+113.895 TC765 leaves
+114.114 TC766 arrives
+114.114 TC766 served by CS3(Q: [])
+114.184 GC767 arrives
+114.184 GC767 served by CS4(Q: [])
+114.272 TC768 arrives
+114.272 TC768 waits for CS3(Q: [TC768])
+114.340 TC608 served by HS0(Q: [TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758])
+114.342 TC769 arrives
+114.342 TC769 waits for HS0(Q: [TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769])
+114.389 TC770 arrives
+114.389 TC770 waits for CS3(Q: [TC768, TC770])
+114.544 GC771 arrives
+114.544 GC771 waits for CS4(Q: [GC771])
+114.588 TC766 done served by CS3(Q: [TC768, TC770])
+114.588 TC768 served by CS3(Q: [TC770])
+114.596 TC772 arrives
+114.596 TC772 waits for CS3(Q: [TC770, TC772])
+114.676 TC768 done served by CS3(Q: [TC770, TC772])
+114.676 TC770 served by CS3(Q: [TC772])
+114.691 GC600 served by HS1(Q: [TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749])
+114.785 TC770 done served by CS3(Q: [TC772])
+114.785 TC772 served by CS3(Q: [])
+114.816 TC772 done served by CS3(Q: [])
+114.912 TC773 arrives
+114.912 TC773 served by CS3(Q: [])
+114.981 GC767 done served by CS4(Q: [GC771])
+114.981 GC771 served by CS4(Q: [])
+114.993 GC774 arrives
+114.993 GC774 waits for HS1(Q: [TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774])
+115.058 TC610 done served by HS2(Q: [GC627, TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764])
+115.060 TC775 arrives
+115.060 TC775 leaves
+115.085 GC776 arrives
+115.085 GC776 leaves
+115.203 GC771 done served by CS4(Q: [])
+115.245 GC777 arrives
+115.245 GC777 served by CS4(Q: [])
+115.378 TC773 done served by CS3(Q: [])
+115.413 TC778 arrives
+115.413 TC778 served by CS3(Q: [])
+115.486 TC778 done served by CS3(Q: [])
+115.561 TC779 arrives
+115.561 TC779 served by CS3(Q: [])
+115.871 TC608 done served by HS0(Q: [TC631, GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769])
+115.898 TC779 done served by CS3(Q: [])
+115.913 GC777 done served by CS4(Q: [])
+115.935 GC780 arrives
+115.935 GC780 served by CS3(Q: [])
+115.954 GC781 arrives
+115.954 GC781 served by CS4(Q: [])
+116.018 GC780 done served by CS3(Q: [])
+116.041 GC627 served by HS2(Q: [TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764])
+116.041 GC600 done served by HS1(Q: [TC620, TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774])
+116.306 TC631 served by HS0(Q: [GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769])
+116.401 GC782 arrives
+116.401 GC782 waits for HS0(Q: [GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782])
+116.488 GC781 done served by CS4(Q: [])
+116.897 GC783 arrives
+116.897 GC783 waits for HS2(Q: [TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783])
+116.900 GC784 arrives
+116.900 GC784 leaves
+116.974 GC785 arrives
+116.974 GC785 leaves
+117.111 TC786 arrives
+117.111 TC786 served by CS3(Q: [])
+117.125 GC787 arrives
+117.125 GC787 served by CS4(Q: [])
+117.278 TC786 done served by CS3(Q: [])
+117.392 TC631 done served by HS0(Q: [GC654, TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782])
+117.443 GC788 arrives
+117.443 GC788 leaves
+117.453 TC789 arrives
+117.453 TC789 served by CS3(Q: [])
+117.536 GC790 arrives
+117.536 GC790 waits for CS3(Q: [GC790])
+117.553 TC791 arrives
+117.553 TC791 waits for CS3(Q: [GC790, TC791])
+117.608 GC792 arrives
+117.608 GC792 waits for CS4(Q: [GC792])
+117.765 GC793 arrives
+117.765 GC793 waits for CS4(Q: [GC792, GC793])
+117.816 GC794 arrives
+117.816 GC794 waits for CS3(Q: [GC790, TC791, GC794])
+117.866 GC795 arrives
+117.866 GC795 leaves
+117.900 TC789 done served by CS3(Q: [GC790, TC791, GC794])
+117.900 GC790 served by CS3(Q: [TC791, GC794])
+117.909 GC654 served by HS0(Q: [TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782])
+117.958 GC787 done served by CS4(Q: [GC792, GC793])
+117.958 GC792 served by CS4(Q: [GC793])
+117.976 TC796 arrives
+117.976 TC796 waits for CS3(Q: [TC791, GC794, TC796])
+118.040 GC797 arrives
+118.040 GC797 waits for HS0(Q: [TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797])
+118.061 GC798 arrives
+118.061 GC798 leaves
+118.189 GC792 done served by CS4(Q: [GC793])
+118.189 GC793 served by CS4(Q: [])
+118.212 GC799 arrives
+118.212 GC799 waits for CS4(Q: [GC799])
+118.229 GC790 done served by CS3(Q: [TC791, GC794, TC796])
+118.229 TC791 served by CS3(Q: [GC794, TC796])
+118.306 GC793 done served by CS4(Q: [GC799])
+118.306 GC799 served by CS4(Q: [])
+118.362 TC620 served by HS1(Q: [TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774])
+118.399 GC800 arrives
+118.399 GC800 waits for HS1(Q: [TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800])
+118.432 GC801 arrives
+118.432 GC801 waits for CS4(Q: [GC801])
+118.518 GC799 done served by CS4(Q: [GC801])
+118.518 GC801 served by CS4(Q: [])
+118.525 GC802 arrives
+118.525 GC802 waits for CS4(Q: [GC802])
+118.602 GC803 arrives
+118.602 GC803 leaves
+118.617 GC801 done served by CS4(Q: [GC802])
+118.617 GC802 served by CS4(Q: [])
+118.777 TC804 arrives
+118.777 TC804 waits for CS3(Q: [GC794, TC796, TC804])
+118.850 GC802 done served by CS4(Q: [])
+119.014 GC654 done served by HS0(Q: [TC660, TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797])
+119.022 TC791 done served by CS3(Q: [GC794, TC796, TC804])
+119.022 GC794 served by CS3(Q: [TC796, TC804])
+119.131 GC794 done served by CS3(Q: [TC796, TC804])
+119.131 TC796 served by CS3(Q: [TC804])
+119.223 TC796 done served by CS3(Q: [TC804])
+119.223 TC804 served by CS3(Q: [])
+119.290 TC660 served by HS0(Q: [TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797])
+119.377 TC805 arrives
+119.377 TC805 waits for HS0(Q: [TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805])
+119.459 GC627 done served by HS2(Q: [TC668, TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783])
+119.495 TC806 arrives
+119.495 TC806 served by CS4(Q: [])
+119.616 TC804 done served by CS3(Q: [])
+119.826 TC806 done served by CS4(Q: [])
+119.834 GC807 arrives
+119.834 GC807 served by CS3(Q: [])
+119.847 TC668 served by HS2(Q: [TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783])
+119.950 GC808 arrives
+119.950 GC808 waits for HS2(Q: [TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808])
+119.956 GC809 arrives
+119.956 GC809 served by CS4(Q: [])
+120.139 TC810 arrives
+120.139 TC810 waits for CS3(Q: [TC810])
+120.159 GC809 done served by CS4(Q: [])
+120.224 GC811 arrives
+120.224 GC811 served by CS4(Q: [])
+120.299 GC811 done served by CS4(Q: [])
+120.327 GC807 done served by CS3(Q: [TC810])
+120.327 TC810 served by CS3(Q: [])
+120.368 TC660 done served by HS0(Q: [TC670, GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805])
+120.444 TC812 arrives
+120.444 TC812 served by CS4(Q: [])
+120.579 TC813 arrives
+120.579 TC813 leaves
+120.681 TC812 done served by CS4(Q: [])
+120.712 TC814 arrives
+120.712 TC814 leaves
+120.764 GC815 arrives
+120.764 GC815 served by CS4(Q: [])
+120.771 GC815 done served by CS4(Q: [])
+120.851 TC810 done served by CS3(Q: [])
+120.946 TC816 arrives
+120.946 TC816 leaves
+120.979 TC620 done served by HS1(Q: [TC640, TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800])
+121.255 GC817 arrives
+121.255 GC817 served by CS3(Q: [])
+121.267 TC670 served by HS0(Q: [GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805])
+121.350 GC817 done served by CS3(Q: [])
+121.503 TC668 done served by HS2(Q: [TC669, GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808])
+121.577 GC818 arrives
+121.577 GC818 waits for HS0(Q: [GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818])
+121.702 GC819 arrives
+121.702 GC819 served by CS3(Q: [])
+121.756 TC820 arrives
+121.756 TC820 leaves
+121.774 TC640 served by HS1(Q: [TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800])
+121.924 TC821 arrives
+121.924 TC821 waits for HS1(Q: [TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821])
+122.126 GC822 arrives
+122.126 GC822 leaves
+122.154 GC819 done served by CS3(Q: [])
+122.191 TC823 arrives
+122.191 TC823 served by CS3(Q: [])
+122.197 GC824 arrives
+122.197 GC824 served by CS4(Q: [])
+122.365 TC825 arrives
+122.365 TC825 leaves
+122.463 TC826 arrives
+122.463 TC826 leaves
+122.513 TC827 arrives
+122.513 TC827 leaves
+122.600 GC828 arrives
+122.600 GC828 waits for CS3(Q: [GC828])
+122.671 GC829 arrives
+122.671 GC829 leaves
+122.676 TC830 arrives
+122.676 TC830 waits for CS3(Q: [GC828, TC830])
+122.686 GC831 arrives
+122.686 GC831 waits for CS4(Q: [GC831])
+122.778 GC824 done served by CS4(Q: [GC831])
+122.778 GC831 served by CS4(Q: [])
+123.029 TC832 arrives
+123.029 TC832 waits for CS3(Q: [GC828, TC830, TC832])
+123.062 GC833 arrives
+123.062 GC833 waits for CS4(Q: [GC833])
+123.126 TC670 done served by HS0(Q: [GC684, GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818])
+123.129 TC823 done served by CS3(Q: [GC828, TC830, TC832])
+123.129 GC828 served by CS3(Q: [TC830, TC832])
+123.183 TC834 arrives
+123.183 TC834 waits for CS3(Q: [TC830, TC832, TC834])
+123.184 GC835 arrives
+123.184 GC835 waits for CS4(Q: [GC833, GC835])
+123.241 TC836 arrives
+123.241 TC836 waits for CS3(Q: [TC830, TC832, TC834, TC836])
+123.283 GC837 arrives
+123.283 GC837 waits for CS4(Q: [GC833, GC835, GC837])
+123.289 GC831 done served by CS4(Q: [GC833, GC835, GC837])
+123.289 GC833 served by CS4(Q: [GC835, GC837])
+123.311 GC838 arrives
+123.311 GC838 waits for CS4(Q: [GC835, GC837, GC838])
+123.358 TC640 done served by HS1(Q: [TC655, TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821])
+123.397 GC839 arrives
+123.397 GC839 waits for CS4(Q: [GC835, GC837, GC838, GC839])
+123.435 GC840 arrives
+123.435 GC840 waits for CS3(Q: [TC830, TC832, TC834, TC836, GC840])
+123.438 GC684 served by HS0(Q: [GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818])
+123.502 TC841 arrives
+123.502 TC841 waits for HS0(Q: [GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841])
+123.593 GC842 arrives
+123.593 GC842 waits for CS4(Q: [GC835, GC837, GC838, GC839, GC842])
+123.666 GC833 done served by CS4(Q: [GC835, GC837, GC838, GC839, GC842])
+123.666 GC835 served by CS4(Q: [GC837, GC838, GC839, GC842])
+123.823 GC828 done served by CS3(Q: [TC830, TC832, TC834, TC836, GC840])
+123.823 TC830 served by CS3(Q: [TC832, TC834, TC836, GC840])
+123.849 TC655 served by HS1(Q: [TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821])
+123.925 TC830 done served by CS3(Q: [TC832, TC834, TC836, GC840])
+123.925 TC832 served by CS3(Q: [TC834, TC836, GC840])
+124.142 GC843 arrives
+124.142 GC843 waits for HS1(Q: [TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843])
+124.147 TC844 arrives
+124.147 TC844 waits for CS3(Q: [TC834, TC836, GC840, TC844])
+124.182 TC845 arrives
+124.182 TC845 waits for CS3(Q: [TC834, TC836, GC840, TC844, TC845])
+124.217 GC846 arrives
+124.217 GC846 waits for CS4(Q: [GC837, GC838, GC839, GC842, GC846])
+124.221 TC847 arrives
+124.221 TC847 waits for CS3(Q: [TC834, TC836, GC840, TC844, TC845, TC847])
+124.292 TC848 arrives
+124.292 TC848 leaves
+124.302 TC849 arrives
+124.302 TC849 leaves
+124.305 GC835 done served by CS4(Q: [GC837, GC838, GC839, GC842, GC846])
+124.305 GC837 served by CS4(Q: [GC838, GC839, GC842, GC846])
+124.410 TC850 arrives
+124.410 TC850 waits for CS3(Q: [TC834, TC836, GC840, TC844, TC845, TC847, TC850])
+124.413 TC851 arrives
+124.413 TC851 waits for CS3(Q: [TC834, TC836, GC840, TC844, TC845, TC847, TC850, TC851])
+124.515 TC832 done served by CS3(Q: [TC834, TC836, GC840, TC844, TC845, TC847, TC850, TC851])
+124.515 TC834 served by CS3(Q: [TC836, GC840, TC844, TC845, TC847, TC850, TC851])
+124.547 TC834 done served by CS3(Q: [TC836, GC840, TC844, TC845, TC847, TC850, TC851])
+124.547 TC836 served by CS3(Q: [GC840, TC844, TC845, TC847, TC850, TC851])
+124.594 TC836 done served by CS3(Q: [GC840, TC844, TC845, TC847, TC850, TC851])
+124.594 GC840 served by CS3(Q: [TC844, TC845, TC847, TC850, TC851])
+124.610 GC840 done served by CS3(Q: [TC844, TC845, TC847, TC850, TC851])
+124.610 TC844 served by CS3(Q: [TC845, TC847, TC850, TC851])
+124.616 TC844 done served by CS3(Q: [TC845, TC847, TC850, TC851])
+124.616 TC845 served by CS3(Q: [TC847, TC850, TC851])
+124.633 TC852 arrives
+124.633 TC852 waits for CS3(Q: [TC847, TC850, TC851, TC852])
+124.694 GC853 arrives
+124.694 GC853 leaves
+124.735 GC837 done served by CS4(Q: [GC838, GC839, GC842, GC846])
+124.735 GC838 served by CS4(Q: [GC839, GC842, GC846])
+124.802 TC854 arrives
+124.802 TC854 waits for CS3(Q: [TC847, TC850, TC851, TC852, TC854])
+124.827 TC845 done served by CS3(Q: [TC847, TC850, TC851, TC852, TC854])
+124.827 TC847 served by CS3(Q: [TC850, TC851, TC852, TC854])
+124.831 TC855 arrives
+124.831 TC855 waits for CS3(Q: [TC850, TC851, TC852, TC854, TC855])
+124.877 TC669 served by HS2(Q: [GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808])
+124.916 GC856 arrives
+124.916 GC856 waits for CS4(Q: [GC839, GC842, GC846, GC856])
+124.979 TC857 arrives
+124.979 TC857 waits for HS2(Q: [GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857])
+125.061 GC838 done served by CS4(Q: [GC839, GC842, GC846, GC856])
+125.061 GC839 served by CS4(Q: [GC842, GC846, GC856])
+125.108 GC858 arrives
+125.108 GC858 leaves
+125.121 GC684 done served by HS0(Q: [GC701, TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841])
+125.268 TC655 done served by HS1(Q: [TC671, GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843])
+125.285 TC847 done served by CS3(Q: [TC850, TC851, TC852, TC854, TC855])
+125.285 TC850 served by CS3(Q: [TC851, TC852, TC854, TC855])
+125.352 GC701 served by HS0(Q: [TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841])
+125.550 GC839 done served by CS4(Q: [GC842, GC846, GC856])
+125.550 GC842 served by CS4(Q: [GC846, GC856])
+125.601 TC859 arrives
+125.601 TC859 waits for CS3(Q: [TC851, TC852, TC854, TC855, TC859])
+125.645 TC850 done served by CS3(Q: [TC851, TC852, TC854, TC855, TC859])
+125.645 TC851 served by CS3(Q: [TC852, TC854, TC855, TC859])
+125.744 TC860 arrives
+125.744 TC860 waits for CS3(Q: [TC852, TC854, TC855, TC859, TC860])
+125.810 TC861 arrives
+125.810 TC861 waits for HS0(Q: [TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861])
+126.198 GC842 done served by CS4(Q: [GC846, GC856])
+126.198 GC846 served by CS4(Q: [GC856])
+126.207 GC862 arrives
+126.207 GC862 leaves
+126.469 TC863 arrives
+126.469 TC863 leaves
+126.556 TC851 done served by CS3(Q: [TC852, TC854, TC855, TC859, TC860])
+126.556 TC852 served by CS3(Q: [TC854, TC855, TC859, TC860])
+126.840 GC846 done served by CS4(Q: [GC856])
+126.840 GC856 served by CS4(Q: [])
+126.914 GC701 done served by HS0(Q: [TC709, TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861])
+126.980 TC852 done served by CS3(Q: [TC854, TC855, TC859, TC860])
+126.980 TC854 served by CS3(Q: [TC855, TC859, TC860])
+126.994 GC856 done served by CS4(Q: [])
+127.090 TC864 arrives
+127.090 TC864 served by CS4(Q: [])
+127.142 TC865 arrives
+127.142 TC865 waits for CS3(Q: [TC855, TC859, TC860, TC865])
+127.278 TC854 done served by CS3(Q: [TC855, TC859, TC860, TC865])
+127.278 TC855 served by CS3(Q: [TC859, TC860, TC865])
+127.384 TC864 done served by CS4(Q: [])
+127.401 TC855 done served by CS3(Q: [TC859, TC860, TC865])
+127.401 TC859 served by CS3(Q: [TC860, TC865])
+127.450 TC866 arrives
+127.450 TC866 served by CS4(Q: [])
+127.459 TC859 done served by CS3(Q: [TC860, TC865])
+127.459 TC860 served by CS3(Q: [TC865])
+127.464 GC867 arrives
+127.464 GC867 leaves
+127.572 TC868 arrives
+127.572 TC868 leaves
+127.893 TC709 served by HS0(Q: [TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861])
+128.044 TC671 served by HS1(Q: [GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843])
+128.334 GC869 arrives
+128.334 GC869 waits for CS4(Q: [GC869])
+128.369 TC866 done served by CS4(Q: [GC869])
+128.369 GC869 served by CS4(Q: [])
+128.393 TC860 done served by CS3(Q: [TC865])
+128.393 TC865 served by CS3(Q: [])
+128.414 GC870 arrives
+128.414 GC870 waits for HS0(Q: [TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870])
+128.444 TC669 done served by HS2(Q: [GC677, GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857])
+128.612 GC869 done served by CS4(Q: [])
+128.830 GC871 arrives
+128.830 GC871 waits for HS1(Q: [GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871])
+128.878 GC872 arrives
+128.878 GC872 leaves
+128.899 TC873 arrives
+128.899 TC873 leaves
+128.992 TC865 done served by CS3(Q: [])
+129.022 TC874 arrives
+129.022 TC874 leaves
+129.277 TC671 done served by HS1(Q: [GC699, TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871])
+129.461 GC875 arrives
+129.461 GC875 served by CS3(Q: [])
+129.515 GC699 served by HS1(Q: [TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871])
+129.522 GC677 served by HS2(Q: [GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857])
+129.678 TC876 arrives
+129.678 TC876 waits for HS1(Q: [TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876])
+129.773 GC877 arrives
+129.773 GC877 served by CS4(Q: [])
+129.838 TC709 done served by HS0(Q: [TC745, TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870])
+129.930 GC878 arrives
+129.930 GC878 waits for CS3(Q: [GC878])
+130.055 TC879 arrives
+130.055 TC879 waits for HS2(Q: [GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879])
+130.132 GC875 done served by CS3(Q: [GC878])
+130.132 GC878 served by CS3(Q: [])
+130.164 TC880 arrives
+130.164 TC880 waits for CS3(Q: [TC880])
+130.186 GC881 arrives
+130.186 GC881 waits for CS4(Q: [GC881])
+130.226 GC882 arrives
+130.226 GC882 waits for CS3(Q: [TC880, GC882])
+130.262 TC883 arrives
+130.262 TC883 waits for CS3(Q: [TC880, GC882, TC883])
+130.286 GC877 done served by CS4(Q: [GC881])
+130.286 GC881 served by CS4(Q: [])
+130.297 TC884 arrives
+130.297 TC884 waits for CS3(Q: [TC880, GC882, TC883, TC884])
+130.574 GC878 done served by CS3(Q: [TC880, GC882, TC883, TC884])
+130.574 TC880 served by CS3(Q: [GC882, TC883, TC884])
+130.693 TC745 served by HS0(Q: [TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870])
+130.756 TC880 done served by CS3(Q: [GC882, TC883, TC884])
+130.756 GC882 served by CS3(Q: [TC883, TC884])
+130.867 GC882 done served by CS3(Q: [TC883, TC884])
+130.867 TC883 served by CS3(Q: [TC884])
+130.907 GC885 arrives
+130.907 GC885 waits for CS4(Q: [GC885])
+130.947 TC886 arrives
+130.947 TC886 waits for HS0(Q: [TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886])
+131.078 TC883 done served by CS3(Q: [TC884])
+131.078 TC884 served by CS3(Q: [])
+131.085 GC699 done served by HS1(Q: [TC704, GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876])
+131.155 TC704 served by HS1(Q: [GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876])
+131.186 TC884 done served by CS3(Q: [])
+131.198 TC887 arrives
+131.198 TC887 waits for HS1(Q: [GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887])
+131.270 GC881 done served by CS4(Q: [GC885])
+131.270 GC885 served by CS4(Q: [])
+131.326 TC888 arrives
+131.326 TC888 served by CS3(Q: [])
+131.334 TC888 done served by CS3(Q: [])
+131.345 GC677 done served by HS2(Q: [GC678, GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879])
+131.391 GC885 done served by CS4(Q: [])
+131.480 TC889 arrives
+131.480 TC889 served by CS3(Q: [])
+131.792 TC890 arrives
+131.792 TC890 served by CS4(Q: [])
+131.810 TC889 done served by CS3(Q: [])
+131.943 TC891 arrives
+131.943 TC891 leaves
+132.007 GC678 served by HS2(Q: [GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879])
+132.030 GC892 arrives
+132.030 GC892 served by CS3(Q: [])
+132.173 GC893 arrives
+132.173 GC893 waits for CS3(Q: [GC893])
+132.179 TC704 done served by HS1(Q: [GC714, GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887])
+132.218 GC892 done served by CS3(Q: [GC893])
+132.218 GC893 served by CS3(Q: [])
+132.260 TC894 arrives
+132.260 TC894 waits for HS2(Q: [GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894])
+132.361 TC895 arrives
+132.361 TC895 waits for CS3(Q: [TC895])
+132.410 TC896 arrives
+132.410 TC896 leaves
+132.420 GC897 arrives
+132.420 GC897 leaves
+132.459 TC898 arrives
+132.459 TC898 leaves
+132.468 GC899 arrives
+132.468 GC899 leaves
+132.520 GC900 arrives
+132.520 GC900 leaves
+132.593 GC901 arrives
+132.593 GC901 waits for CS4(Q: [GC901])
+132.599 TC890 done served by CS4(Q: [GC901])
+132.599 GC901 served by CS4(Q: [])
+132.919 GC893 done served by CS3(Q: [TC895])
+132.919 TC895 served by CS3(Q: [])
+133.035 GC902 arrives
+133.035 GC902 waits for CS3(Q: [GC902])
+133.054 GC901 done served by CS4(Q: [])
+133.180 GC903 arrives
+133.180 GC903 served by CS4(Q: [])
+133.227 GC904 arrives
+133.227 GC904 leaves
+133.357 GC905 arrives
+133.357 GC905 leaves
+133.363 GC714 served by HS1(Q: [GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887])
+133.376 GC678 done served by HS2(Q: [GC724, TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894])
+133.415 GC903 done served by CS4(Q: [])
+133.510 GC906 arrives
+133.510 GC906 served by CS4(Q: [])
+133.526 TC907 arrives
+133.526 TC907 waits for CS3(Q: [GC902, TC907])
+133.600 TC745 done served by HS0(Q: [TC758, TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886])
+133.795 TC895 done served by CS3(Q: [GC902, TC907])
+133.795 GC902 served by CS3(Q: [TC907])
+133.874 GC906 done served by CS4(Q: [])
+133.916 TC758 served by HS0(Q: [TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886])
+134.012 GC908 arrives
+134.012 GC908 served by CS4(Q: [])
+134.047 GC909 arrives
+134.047 GC909 waits for CS4(Q: [GC909])
+134.183 TC910 arrives
+134.183 TC910 waits for HS0(Q: [TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910])
+134.200 GC911 arrives
+134.200 GC911 waits for CS3(Q: [TC907, GC911])
+134.211 GC912 arrives
+134.211 GC912 waits for HS1(Q: [GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912])
+134.282 GC913 arrives
+134.282 GC913 waits for CS4(Q: [GC909, GC913])
+134.433 GC914 arrives
+134.433 GC914 waits for CS3(Q: [TC907, GC911, GC914])
+134.468 GC915 arrives
+134.468 GC915 leaves
+134.540 GC908 done served by CS4(Q: [GC909, GC913])
+134.540 GC909 served by CS4(Q: [GC913])
+134.640 TC916 arrives
+134.640 TC916 leaves
+134.760 GC902 done served by CS3(Q: [TC907, GC911, GC914])
+134.760 TC907 served by CS3(Q: [GC911, GC914])
+134.887 TC917 arrives
+134.887 TC917 waits for CS3(Q: [GC911, GC914, TC917])
+134.981 GC918 arrives
+134.981 GC918 waits for CS4(Q: [GC913, GC918])
+135.088 GC909 done served by CS4(Q: [GC913, GC918])
+135.088 GC913 served by CS4(Q: [GC918])
+135.129 TC907 done served by CS3(Q: [GC911, GC914, TC917])
+135.129 GC911 served by CS3(Q: [GC914, TC917])
+135.222 GC724 served by HS2(Q: [TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894])
+135.273 GC913 done served by CS4(Q: [GC918])
+135.273 GC918 served by CS4(Q: [])
+135.284 GC714 done served by HS1(Q: [GC728, TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912])
+135.378 GC911 done served by CS3(Q: [GC914, TC917])
+135.378 GC914 served by CS3(Q: [TC917])
+135.381 TC919 arrives
+135.381 TC919 waits for CS3(Q: [TC917, TC919])
+135.514 GC920 arrives
+135.514 GC920 waits for HS2(Q: [TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920])
+135.532 TC921 arrives
+135.532 TC921 waits for CS3(Q: [TC917, TC919, TC921])
+135.558 GC914 done served by CS3(Q: [TC917, TC919, TC921])
+135.558 TC917 served by CS3(Q: [TC919, TC921])
+135.818 GC728 served by HS1(Q: [TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912])
+135.973 TC922 arrives
+135.973 TC922 waits for CS3(Q: [TC919, TC921, TC922])
+136.150 GC918 done served by CS4(Q: [])
+136.211 TC917 done served by CS3(Q: [TC919, TC921, TC922])
+136.211 TC919 served by CS3(Q: [TC921, TC922])
+136.336 GC923 arrives
+136.336 GC923 served by CS4(Q: [])
+136.358 GC924 arrives
+136.358 GC924 waits for CS4(Q: [GC924])
+136.420 GC925 arrives
+136.420 GC925 waits for HS1(Q: [TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925])
+136.435 GC923 done served by CS4(Q: [GC924])
+136.435 GC924 served by CS4(Q: [])
+136.547 TC926 arrives
+136.547 TC926 waits for CS3(Q: [TC921, TC922, TC926])
+136.558 GC927 arrives
+136.558 GC927 waits for CS4(Q: [GC927])
+136.561 GC724 done served by HS2(Q: [TC725, GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920])
+136.680 GC928 arrives
+136.680 GC928 waits for CS4(Q: [GC927, GC928])
+136.694 GC929 arrives
+136.694 GC929 waits for CS4(Q: [GC927, GC928, GC929])
+136.856 TC930 arrives
+136.856 TC930 leaves
+136.924 TC931 arrives
+136.924 TC931 leaves
+136.940 TC758 done served by HS0(Q: [TC769, GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910])
+136.980 GC728 done served by HS1(Q: [TC749, GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925])
+136.985 GC932 arrives
+136.985 GC932 leaves
+136.997 GC924 done served by CS4(Q: [GC927, GC928, GC929])
+136.997 GC927 served by CS4(Q: [GC928, GC929])
+137.016 TC919 done served by CS3(Q: [TC921, TC922, TC926])
+137.016 TC921 served by CS3(Q: [TC922, TC926])
+137.096 TC749 served by HS1(Q: [GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925])
+137.105 GC927 done served by CS4(Q: [GC928, GC929])
+137.105 GC928 served by CS4(Q: [GC929])
+137.121 GC928 done served by CS4(Q: [GC929])
+137.121 GC929 served by CS4(Q: [])
+137.155 TC933 arrives
+137.155 TC933 waits for CS3(Q: [TC922, TC926, TC933])
+137.160 GC934 arrives
+137.160 GC934 waits for HS1(Q: [GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925, GC934])
+137.330 GC929 done served by CS4(Q: [])
+137.335 TC921 done served by CS3(Q: [TC922, TC926, TC933])
+137.335 TC922 served by CS3(Q: [TC926, TC933])
+137.338 TC935 arrives
+137.338 TC935 served by CS4(Q: [])
+137.403 TC936 arrives
+137.403 TC936 waits for CS3(Q: [TC926, TC933, TC936])
+137.577 TC937 arrives
+137.577 TC937 waits for CS3(Q: [TC926, TC933, TC936, TC937])
+137.624 TC922 done served by CS3(Q: [TC926, TC933, TC936, TC937])
+137.624 TC926 served by CS3(Q: [TC933, TC936, TC937])
+137.707 TC725 served by HS2(Q: [GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920])
+137.737 TC935 done served by CS4(Q: [])
+137.909 GC938 arrives
+137.909 GC938 served by CS4(Q: [])
+137.912 TC939 arrives
+137.912 TC939 waits for HS2(Q: [GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939])
+137.965 GC940 arrives
+137.965 GC940 waits for CS4(Q: [GC940])
+137.975 GC941 arrives
+137.975 GC941 waits for CS4(Q: [GC940, GC941])
+138.042 TC926 done served by CS3(Q: [TC933, TC936, TC937])
+138.042 TC933 served by CS3(Q: [TC936, TC937])
+138.117 GC938 done served by CS4(Q: [GC940, GC941])
+138.117 GC940 served by CS4(Q: [GC941])
+138.118 TC942 arrives
+138.118 TC942 leaves
+138.150 GC940 done served by CS4(Q: [GC941])
+138.150 GC941 served by CS4(Q: [])
+138.215 GC943 arrives
+138.215 GC943 waits for CS4(Q: [GC943])
+138.269 GC944 arrives
+138.269 GC944 waits for CS4(Q: [GC943, GC944])
+138.372 TC945 arrives
+138.372 TC945 waits for CS3(Q: [TC936, TC937, TC945])
+138.383 TC749 done served by HS1(Q: [GC774, GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925, GC934])
+138.513 TC933 done served by CS3(Q: [TC936, TC937, TC945])
+138.513 TC936 served by CS3(Q: [TC937, TC945])
+138.614 GC946 arrives
+138.614 GC946 leaves
+138.705 GC774 served by HS1(Q: [GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925, GC934])
+138.710 GC947 arrives
+138.710 GC947 waits for HS1(Q: [GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947])
+138.778 GC941 done served by CS4(Q: [GC943, GC944])
+138.778 GC943 served by CS4(Q: [GC944])
+138.804 GC948 arrives
+138.804 GC948 waits for CS4(Q: [GC944, GC948])
+138.860 GC949 arrives
+138.860 GC949 leaves
+138.864 TC936 done served by CS3(Q: [TC937, TC945])
+138.864 TC937 served by CS3(Q: [TC945])
+139.017 TC769 served by HS0(Q: [GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910])
+139.308 TC950 arrives
+139.308 TC950 waits for CS3(Q: [TC945, TC950])
+139.320 TC951 arrives
+139.320 TC951 waits for HS0(Q: [GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910, TC951])
+139.408 GC943 done served by CS4(Q: [GC944, GC948])
+139.408 GC944 served by CS4(Q: [GC948])
+139.427 TC725 done served by HS2(Q: [GC747, GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939])
+139.438 GC952 arrives
+139.438 GC952 leaves
+139.443 GC747 served by HS2(Q: [GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939])
+139.468 GC944 done served by CS4(Q: [GC948])
+139.468 GC948 served by CS4(Q: [])
+139.538 TC953 arrives
+139.538 TC953 waits for HS2(Q: [GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953])
+139.569 TC954 arrives
+139.569 TC954 waits for CS3(Q: [TC945, TC950, TC954])
+139.616 GC955 arrives
+139.616 GC955 leaves
+139.648 TC937 done served by CS3(Q: [TC945, TC950, TC954])
+139.648 TC945 served by CS3(Q: [TC950, TC954])
+139.660 GC948 done served by CS4(Q: [])
+139.750 TC956 arrives
+139.750 TC956 served by CS4(Q: [])
+139.827 GC774 done served by HS1(Q: [GC800, TC821, GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947])
+139.875 TC945 done served by CS3(Q: [TC950, TC954])
+139.875 TC950 served by CS3(Q: [TC954])
+139.984 TC950 done served by CS3(Q: [TC954])
+139.984 TC954 served by CS3(Q: [])
+140.006 TC954 done served by CS3(Q: [])
+140.040 TC956 done served by CS4(Q: [])
+140.398 TC957 arrives
+140.398 TC957 served by CS3(Q: [])
+140.564 TC958 arrives
+140.564 TC958 leaves
+140.740 GC800 served by HS1(Q: [TC821, GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947])
+140.780 TC957 done served by CS3(Q: [])
+141.302 GC959 arrives
+141.302 GC959 served by CS3(Q: [])
+141.572 GC960 arrives
+141.572 GC960 served by CS4(Q: [])
+141.605 TC961 arrives
+141.605 TC961 waits for CS3(Q: [TC961])
+141.661 GC959 done served by CS3(Q: [TC961])
+141.661 TC961 served by CS3(Q: [])
+141.775 GC800 done served by HS1(Q: [TC821, GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947])
+141.874 GC747 done served by HS2(Q: [GC753, TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953])
+141.901 TC962 arrives
+141.901 TC962 waits for CS3(Q: [TC962])
+141.960 TC821 served by HS1(Q: [GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947])
+141.966 TC961 done served by CS3(Q: [TC962])
+141.966 TC962 served by CS3(Q: [])
+142.128 GC963 arrives
+142.128 GC963 waits for HS1(Q: [GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947, GC963])
+142.206 TC769 done served by HS0(Q: [GC782, GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910, TC951])
+142.397 GC960 done served by CS4(Q: [])
+142.413 GC964 arrives
+142.413 GC964 served by CS4(Q: [])
+142.418 TC965 arrives
+142.418 TC965 waits for CS3(Q: [TC965])
+142.524 GC966 arrives
+142.524 GC966 waits for CS4(Q: [GC966])
+142.559 GC753 served by HS2(Q: [TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953])
+142.611 GC964 done served by CS4(Q: [GC966])
+142.611 GC966 served by CS4(Q: [])
+142.679 GC967 arrives
+142.679 GC967 waits for HS1(Q: [GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+142.894 TC962 done served by CS3(Q: [TC965])
+142.894 TC965 served by CS3(Q: [])
+142.899 TC965 done served by CS3(Q: [])
+143.148 GC968 arrives
+143.148 GC968 served by CS3(Q: [])
+143.295 GC966 done served by CS4(Q: [])
+143.313 GC969 arrives
+143.313 GC969 served by CS4(Q: [])
+143.406 GC970 arrives
+143.406 GC970 waits for CS3(Q: [GC970])
+143.592 GC971 arrives
+143.592 GC971 waits for CS4(Q: [GC971])
+143.604 TC972 arrives
+143.604 TC972 waits for HS2(Q: [TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953, TC972])
+143.813 GC968 done served by CS3(Q: [GC970])
+143.813 GC970 served by CS3(Q: [])
+143.880 GC973 arrives
+143.880 GC973 waits for CS3(Q: [GC973])
+143.885 GC974 arrives
+143.885 GC974 leaves
+143.904 GC753 done served by HS2(Q: [TC764, GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953, TC972])
+143.910 TC975 arrives
+143.910 TC975 waits for CS3(Q: [GC973, TC975])
+143.975 GC969 done served by CS4(Q: [GC971])
+143.975 GC971 served by CS4(Q: [])
+144.048 GC976 arrives
+144.048 GC976 leaves
+144.130 GC970 done served by CS3(Q: [GC973, TC975])
+144.130 GC973 served by CS3(Q: [TC975])
+144.213 TC977 arrives
+144.213 TC977 leaves
+144.307 GC971 done served by CS4(Q: [])
+144.338 GC978 arrives
+144.338 GC978 served by CS4(Q: [])
+144.339 GC979 arrives
+144.339 GC979 waits for CS4(Q: [GC979])
+144.476 TC980 arrives
+144.476 TC980 leaves
+144.513 GC978 done served by CS4(Q: [GC979])
+144.513 GC979 served by CS4(Q: [])
+144.540 GC782 served by HS0(Q: [GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910, TC951])
+144.749 TC821 done served by HS1(Q: [GC843, GC871, TC876, TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+144.862 GC973 done served by CS3(Q: [TC975])
+144.862 TC975 served by CS3(Q: [])
+144.954 TC975 done served by CS3(Q: [])
+145.023 GC979 done served by CS4(Q: [])
+145.034 TC981 arrives
+145.034 TC981 served by CS3(Q: [])
+145.063 TC981 done served by CS3(Q: [])
+145.087 TC982 arrives
+145.087 TC982 served by CS3(Q: [])
+145.580 GC983 arrives
+145.580 GC983 waits for HS0(Q: [GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+145.599 GC984 arrives
+145.599 GC984 served by CS4(Q: [])
+145.606 GC984 done served by CS4(Q: [])
+145.659 TC985 arrives
+145.659 TC985 served by CS4(Q: [])
+145.671 TC986 arrives
+145.671 TC986 waits for CS3(Q: [TC986])
+145.813 GC987 arrives
+145.813 GC987 waits for CS4(Q: [GC987])
+145.827 GC988 arrives
+145.827 GC988 waits for CS3(Q: [TC986, GC988])
+145.888 TC982 done served by CS3(Q: [TC986, GC988])
+145.888 TC986 served by CS3(Q: [GC988])
+145.890 TC764 served by HS2(Q: [GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953, TC972])
+145.923 TC989 arrives
+145.923 TC989 waits for HS2(Q: [GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+145.953 TC990 arrives
+145.953 TC990 leaves
+146.155 TC986 done served by CS3(Q: [GC988])
+146.155 GC988 served by CS3(Q: [])
+146.197 TC991 arrives
+146.197 TC991 waits for CS3(Q: [TC991])
+146.203 GC988 done served by CS3(Q: [TC991])
+146.203 TC991 served by CS3(Q: [])
+146.288 TC991 done served by CS3(Q: [])
+146.635 TC985 done served by CS4(Q: [GC987])
+146.635 GC987 served by CS4(Q: [])
+146.701 GC987 done served by CS4(Q: [])
+146.744 TC992 arrives
+146.744 TC992 served by CS3(Q: [])
+146.803 TC992 done served by CS3(Q: [])
+146.808 TC993 arrives
+146.808 TC993 served by CS3(Q: [])
+146.871 TC994 arrives
+146.871 TC994 leaves
+146.906 GC995 arrives
+146.906 GC995 leaves
+146.923 TC996 arrives
+146.923 TC996 leaves
+146.941 GC997 arrives
+146.941 GC997 served by CS4(Q: [])
+147.008 TC764 done served by HS2(Q: [GC783, GC808, TC857, TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+147.036 TC998 arrives
+147.036 TC998 leaves
+147.115 GC999 arrives
+147.115 GC999 waits for CS3(Q: [GC999])
+147.188 GC782 done served by HS0(Q: [GC797, TC805, GC818, TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+147.361 GC997 done served by CS4(Q: [])
+147.642 TC993 done served by CS3(Q: [GC999])
+147.642 GC999 served by CS3(Q: [])
+147.866 GC999 done served by CS3(Q: [])
+148.131 GC797 served by HS0(Q: [TC805, GC818, TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+148.922 GC843 served by HS1(Q: [GC871, TC876, TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+149.466 GC797 done served by HS0(Q: [TC805, GC818, TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+149.972 GC843 done served by HS1(Q: [GC871, TC876, TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+150.143 TC805 served by HS0(Q: [GC818, TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+150.411 GC783 served by HS2(Q: [GC808, TC857, TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+151.748 GC783 done served by HS2(Q: [GC808, TC857, TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+152.038 GC871 served by HS1(Q: [TC876, TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+152.573 GC808 served by HS2(Q: [TC857, TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+153.374 TC805 done served by HS0(Q: [GC818, TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+153.615 GC818 served by HS0(Q: [TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+154.201 GC871 done served by HS1(Q: [TC876, TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+155.515 TC876 served by HS1(Q: [TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+155.568 GC808 done served by HS2(Q: [TC857, TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+155.998 GC818 done served by HS0(Q: [TC841, TC861, GC870, TC886, TC910, TC951, GC983])
+156.132 TC841 served by HS0(Q: [TC861, GC870, TC886, TC910, TC951, GC983])
+156.206 TC857 served by HS2(Q: [TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+156.681 TC876 done served by HS1(Q: [TC887, GC912, GC925, GC934, GC947, GC963, GC967])
+156.893 TC887 served by HS1(Q: [GC912, GC925, GC934, GC947, GC963, GC967])
+157.746 TC857 done served by HS2(Q: [TC879, TC894, GC920, TC939, TC953, TC972, TC989])
+158.253 TC887 done served by HS1(Q: [GC912, GC925, GC934, GC947, GC963, GC967])
+158.506 GC912 served by HS1(Q: [GC925, GC934, GC947, GC963, GC967])
+158.767 TC879 served by HS2(Q: [TC894, GC920, TC939, TC953, TC972, TC989])
+159.168 TC841 done served by HS0(Q: [TC861, GC870, TC886, TC910, TC951, GC983])
+159.204 TC861 served by HS0(Q: [GC870, TC886, TC910, TC951, GC983])
+159.989 GC912 done served by HS1(Q: [GC925, GC934, GC947, GC963, GC967])
+161.421 GC925 served by HS1(Q: [GC934, GC947, GC963, GC967])
+161.812 TC879 done served by HS2(Q: [TC894, GC920, TC939, TC953, TC972, TC989])
+162.078 TC894 served by HS2(Q: [GC920, TC939, TC953, TC972, TC989])
+162.944 TC861 done served by HS0(Q: [GC870, TC886, TC910, TC951, GC983])
+162.950 GC870 served by HS0(Q: [TC886, TC910, TC951, GC983])
+163.468 TC894 done served by HS2(Q: [GC920, TC939, TC953, TC972, TC989])
+163.495 GC925 done served by HS1(Q: [GC934, GC947, GC963, GC967])
+163.884 GC920 served by HS2(Q: [TC939, TC953, TC972, TC989])
+164.017 GC934 served by HS1(Q: [GC947, GC963, GC967])
+165.149 GC920 done served by HS2(Q: [TC939, TC953, TC972, TC989])
+165.530 GC934 done served by HS1(Q: [GC947, GC963, GC967])
+165.547 GC870 done served by HS0(Q: [TC886, TC910, TC951, GC983])
+165.779 TC939 served by HS2(Q: [TC953, TC972, TC989])
+167.722 GC947 served by HS1(Q: [GC963, GC967])
+168.080 TC886 served by HS0(Q: [TC910, TC951, GC983])
+169.351 TC886 done served by HS0(Q: [TC910, TC951, GC983])
+169.355 GC947 done served by HS1(Q: [GC963, GC967])
+170.154 GC963 served by HS1(Q: [GC967])
+171.172 TC910 served by HS0(Q: [TC951, GC983])
+171.705 TC939 done served by HS2(Q: [TC953, TC972, TC989])
+171.777 GC963 done served by HS1(Q: [GC967])
+172.076 GC967 served by HS1(Q: [])
+172.209 TC910 done served by HS0(Q: [TC951, GC983])
+172.748 TC953 served by HS2(Q: [TC972, TC989])
+174.034 TC953 done served by HS2(Q: [TC972, TC989])
+174.251 TC951 served by HS0(Q: [GC983])
+174.613 GC967 done served by HS1(Q: [])
+174.938 TC972 served by HS2(Q: [TC989])
+175.407 TC951 done served by HS0(Q: [GC983])
+176.020 TC972 done served by HS2(Q: [TC989])
+176.242 TC989 served by HS2(Q: [])
+178.625 TC989 done served by HS2(Q: [])
+179.383 GC983 served by HS0(Q: [])
+181.058 GC983 done served by HS0(Q: [])
+6.126 795 205
+

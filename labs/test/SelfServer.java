@@ -1,0 +1,2 @@
+class SelfServer extends Server {
+}

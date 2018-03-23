@@ -1,7 +1,7 @@
 package cs2030.simulator;
 /**
  * BackEvent encapsulates a customer back from rest event. 
- Abstract Event is the parent.
+ * Abstract Event is the parent.
  * 
  * @author Low Yew Woei
  * @version CS2030 AY17/18 Sem 2 LabTwoA

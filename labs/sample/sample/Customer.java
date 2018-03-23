@@ -1,36 +1,37 @@
-package cs2030.simulator;
-
 /**
- * Encapsulates a customer for the shop.
- * Keeps track of the customer ID and the customer done time.
+ * The Customer class encapsulates information and methods pertaining to a
+ * Customer in a simulation.  A customer in the simulator goes through either
+ * one of the following two paths: (i) arrives and leaves, or (ii) arrives,
+ * waits, starts service, ends service, and leaves.
  *
- * @author Low Yew Woei
- * @version CS2030 AY17/18 Sem 2 LabTwoA
+ * @author Ooi Wei Tsang
+ * @author Evan Tay
+ * @version CS2030 AY17/18 Sem 2 Lab 1b
  */
-
 class Customer {
-  /** keeps track of the number of customers created so far. */
-  private static int Id;
-  /** the id of the instantiated customer. */
-  protected final int customerId;
-  /** the arrival time of the customer. */
-  protected final double arrivalTime;
-  /** the amount of time required to serve the customer. */
-  protected final double serviceTime;
-  /** the amount of time the customer spent waiting. */
-  protected double waitTime;
+  /** The unique ID of the last created customer.  */
+  private static int lastCustomerId = 0;
 
-  /** 
-   * Constructs a customer object.
-   * @param arrivalTime the arrival time of the customer
+  /** The unique ID of this customer. */
+  private final int id;
+
+  /** The time this customer arrives. */
+  private double timeArrived;
+
+  /**
+   * Create and initalize a new customer.  The {@code id} of the customer
+   * is set.
    */
-  public Customer(double arrivalTime) {
-    this.customerId = Id;
-    Id++;
-    this.arrivalTime = arrivalTime;
-    this.serviceTime = Shop.randomTime.genServiceTime();
+  public Customer() {
+    this.id = Customer.lastCustomerId;
+    Customer.lastCustomerId++;
   }
 
+  /**
+   * Mark the arrival of the customer at the given time.
+   *
+   * @param time The time at which this customer arrives.
+   */
   public void arrive(double time) {
     this.timeArrived = time;
     System.out.printf("%6.3f %s arrives\n", time, this);

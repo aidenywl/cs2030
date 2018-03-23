@@ -101,7 +101,7 @@ class Shop {
       if (currentServer.hasSpaceToWait() && validServerForCustomer(currentServer, customer)) {
         if (!customer.isGreedy()) {
           availableServer = currentServer;
-          break; 
+          return availableServer;
         } else {
           // customer is greedy
           if (availableServer == null) {
