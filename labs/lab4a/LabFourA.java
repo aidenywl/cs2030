@@ -1,10 +1,12 @@
 import cs2030.simulator.Simulator;
 import cs2030.simulator.SimState;
-import cs2030.simulator.ArrivalEvent;
+import cs2030.simulator.Event;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
+
+import java.util.stream.Stream;
 
 /**
  * The LabOFourA class is the entry point into Lab 4a.
@@ -32,9 +34,15 @@ class LabFourA {
     int numOfServers = scanner.nextInt();
     Simulator sim = new Simulator(numOfServers);
 
+    // Stream<String> eventParamStream = scanner.tokens();
+
+    // Binary Operator for the accumulator
     while (scanner.hasNextDouble()) {
       double arrivalTime = scanner.nextDouble();
-      sim.state = sim.state.addEvent(new ArrivalEvent(arrivalTime));
+
+      // arrivalTime is captured by the lambda expression.
+      sim.state = sim.state.addEvent(new Event(arrivalTime,
+                        sims -> sims.simulateArrival(arrivalTime)));
     }
 
     scanner.close();

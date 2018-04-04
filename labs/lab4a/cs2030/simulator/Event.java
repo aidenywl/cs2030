@@ -1,26 +1,30 @@
 package cs2030.simulator;
 
+import java.util.function.Function;
 /**
  * The Event class encapsulates information and methods pertaining to a
  * Simulator event.  This is an abstract class that should be subclassed
  * into a specific event in the simulator.  The {@code simulate} method
  * must be written.
  *
- * @author Ooi Wei Tsang
- * @author Evan Tay
- * @version CS2030 AY17/18 Sem 2 Lab 1b
+ * @author Low Yew Woei
+ * @version CS2030 AY17/18 Sem 2 Lab 4b
  */
-public abstract class Event implements Comparable<Event> {
+public class Event implements Comparable<Event> {
   /** The time this event occurs at. */
   protected double time;
+
+  /** The event simulate type. All the event essentials work on variable capture. */
+  private final Function<SimState, SimState> simulateType;
 
   /**
    * Creates an event and initializes it.
    *
    * @param time The time of occurrence.
    */
-  public Event(double time) {
+  public Event(double time, Function<SimState, SimState> simulateType) {
     this.time = time;
+    this.simulateType = simulateType;
   }
 
   /**
@@ -37,10 +41,12 @@ public abstract class Event implements Comparable<Event> {
 
 
   /**
-   * The abstract method that simulates this event.
+   * The method that simulates this event.
    *
    * @param sim The simulator.
    * @return The updated state after simulating this event.
    */
-  abstract SimState simulate(SimState sim);
+  public SimState simulate(SimState sim) {
+    return simulateType.apply(sim);
+  }
 }

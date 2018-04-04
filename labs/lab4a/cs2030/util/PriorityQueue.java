@@ -10,7 +10,7 @@ public class PriorityQueue<T> {
   }
 
   /**
-   * Private constructor to make a copy of all references from an input priorityQueue
+   * Private constructor to make a copy of all references from an input priorityQueue.
    * 
    * @param  source the input priorityQueue
    */

@@ -27,6 +27,7 @@ public class SimState {
 
   /** The final string to be printed. */
   private final String log;
+
   /**
    * Constructor for creating the simulation state from scratch.
    * @param numOfServers The number of servers.
@@ -105,7 +106,7 @@ public class SimState {
     Statistics newStats = stats.serveOneCustomer()
                                .customerWaitedFor(time - c.timeArrived());
 
-    return updateLog(String.format("%6.3f %s waits for %s\n", time, c, s))
+    return updateLog(String.format("%6.3f %s served by %s\n", time, c, s))
                     .updateStats(newStats);  
   }
 
@@ -160,14 +161,18 @@ public class SimState {
     Optional<Server> s = shop.findIdleServer();
     // System.out.println("servedOrLeave");
     // not lazily evaluated?
-    // Function<Server, SimState> servingCustomer = server -> serveCustomer(time, server, customer);
+    // Function<Server, SimState> servingCustomer = server -> 
+    // serveCustomer(time, server, customer);
     // System.out.println(s.map(servingCustomer));
-    Supplier<Optional<SimState>> waitSupplier = () -> shop.findServerWithNoWaitingCustomer().map(server -> makeCustomerWait(time, server, customer));
+    Supplier<Optional<SimState>> waitSupplier = 
+              () -> shop.findServerWithNoWaitingCustomer()
+                        .map(server -> makeCustomerWait(time, server, customer));
+
     SimState newSimState = s.map(server -> serveCustomer(time, server, customer))
                 .or(waitSupplier)
                 .or(() -> Optional.of(customerLeaves(time, customer))).get(); 
     return newSimState;
-               // WHY can't i use two orElse at the same level???
+    // WHY can't i use two orElse at the same level???
   }
 
   /**
@@ -179,8 +184,8 @@ public class SimState {
    * @return A new state of the simulation.
    */
   public SimState simulateDone(double time, Server server, Customer customer) {
-    SimState newSimState =  customerDone(time, server, customer)
-              .serveNextOrIdle(time, server);
+    SimState newSimState = customerDone(time, server, customer)
+                              .serveNextOrIdle(time, server);
     return newSimState;
   }
 
@@ -199,7 +204,7 @@ public class SimState {
     // either return a simState where the server serves a customer or where the server is made
     // idle.
     return c.map(customer -> 
-                    serveCustomer(time, server.removeWaitingCustomer() , customer))
+                    serveCustomer(time, server.removeWaitingCustomer(), customer))
             .orElse(updateServer(server.makeIdle())); // idle server
   }
 
@@ -213,7 +218,10 @@ public class SimState {
    */
   private SimState serveCustomer(double time, Server server, Customer customer) {
     double doneTime = time + Simulator.SERVICE_TIME;
-    SimState newSimState = addEvent(new DoneEvent(doneTime, server, customer))
+    // creating a done event.
+    Event doneEvent = new Event(doneTime, sims -> sims.simulateDone(doneTime, server, customer));
+    // the new simulation state.
+    SimState newSimState = addEvent(doneEvent)
                    .updateServer(server.serve(customer))
                    .customerServed(time, server, customer);
     return newSimState;
@@ -243,7 +251,7 @@ public class SimState {
 
   /**
    * Updates the simState when the statistics changed.
-   * @param  stats the stats that has changed.
+   * @param  newStats the stats that has changed.
    * @return       The new simulation state.
    */
   private SimState updateStats(Statistics newStats) {
@@ -252,7 +260,7 @@ public class SimState {
 
   /**
    * Updates the log to be printed to the console when the simulation is over.
-   * @param  newLog the new updated String.
+   * @param  moreLog the new updated String.
    * @return        an updated Simulation State.
    */
   private SimState updateLog(String moreLog) {

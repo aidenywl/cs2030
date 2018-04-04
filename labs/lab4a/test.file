@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+basedir=`pwd`
+echo Compiling...
+find | grep \.java | xargs javac
+set +e
+tmp=`ls *.java`
+class=${tmp%.*}
+for i in ./TESTDATA*; do
+  echo Running test case $i
+  java $class < $i > /tmp/$i
+  echo Testing $i
+  diff -s ${i/TESTDATA/OUTPUT} /tmp/$i
+done
