@@ -1,0 +1,12 @@
+This week.
+Halfway done functional style.
+
+we don't use the standard priority queue, but the standard 2030 priorityqueue.
+it should return a new queue everytime.
+
+Simulator:
+  initialised with the number of servers.
+  if something can be optional, do it. We don't check if something is null in functional programming.
+
+
+
