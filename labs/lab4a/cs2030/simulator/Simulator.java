@@ -33,9 +33,8 @@ public class Simulator {
    */
   public SimState run() {
     Pair<Event, SimState> p = state.nextEvent();
-    
+
     while (p.first.isPresent()) {
-      System.out.println("runnning");
       p = p.first.get().simulate(p.second).nextEvent();
     }
     return p.second;

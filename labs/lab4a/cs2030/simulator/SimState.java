@@ -25,6 +25,8 @@ public class SimState {
   /** The shop of servers. */
   private final Shop shop;
 
+  /** The final string to be printed. */
+  private final String log;
   /**
    * Constructor for creating the simulation state from scratch.
    * @param numOfServers The number of servers.
@@ -33,12 +35,14 @@ public class SimState {
     this.shop = new Shop(numOfServers);
     this.stats = new Statistics();
     this.events = new PriorityQueue<Event>();
+    this.log = "";
   }
 
-  private SimState(PriorityQueue<Event> events, Statistics stats, Shop shop) {
+  private SimState(PriorityQueue<Event> events, Statistics stats, Shop shop, String log) {
     this.events = events;
     this.stats = stats;
     this.shop = shop;
+    this.log = log;
   }
 
   /**
@@ -48,7 +52,7 @@ public class SimState {
    */
   public SimState addEvent(Event e) {
     PriorityQueue<Event> newEvents = events.add(e);
-    return new SimState(newEvents, this.stats, this.shop);
+    return new SimState(newEvents, this.stats, this.shop, this.log);
   }
 
   /**
@@ -63,7 +67,7 @@ public class SimState {
     // second holds the new priorityQueue.
     Pair<Event, PriorityQueue<Event>> result = this.events.poll();
     Optional<Event> opEvent = result.first;
-    SimState nextSimState = new SimState(result.second, this.stats, this.shop);
+    SimState nextSimState = new SimState(result.second, this.stats, this.shop, this.log);
     return new Pair<>(opEvent, nextSimState);
   }
 
@@ -74,8 +78,7 @@ public class SimState {
    * @return A new state of the simulation after the customer arrives.
    */
   private SimState customerArrives(double time, Customer c) {
-    System.out.printf("%6.3f %s arrives\n", time, c);
-    return this;
+    return updateLog(String.format("%6.3f %s arrives\n", time, c));
   }
 
   /**
@@ -87,8 +90,7 @@ public class SimState {
    * @return A new state of the simulation after the customer waits.
    */
   private SimState customerWaits(double time, Server s, Customer c) {
-    System.out.printf("%6.3f %s waits for %s\n", time, c, s);
-    return this;
+    return updateLog(String.format("%6.3f %s waits for %s\n", time, c, s));  
   }
 
   /**
@@ -100,10 +102,11 @@ public class SimState {
    * @return A new state of the simulation after the customer is served.
    */
   private SimState customerServed(double time, Server s, Customer c) {
-    System.out.printf("%6.3f %s served by %s\n", time, c, s);
     Statistics newStats = stats.serveOneCustomer()
                                .customerWaitedFor(time - c.timeArrived());
-    return updateStats(newStats);
+
+    return updateLog(String.format("%6.3f %s waits for %s\n", time, c, s))
+                    .updateStats(newStats);  
   }
 
   /**
@@ -116,8 +119,7 @@ public class SimState {
    *     served.
    */
   private SimState customerDone(double time, Server s, Customer c) {
-    System.out.printf("%6.3f %s done served by %s\n", time, c, s);
-    return this;
+    return updateLog(String.format("%6.3f %s done served by %s\n", time, c, s));  
   }
 
   /**
@@ -128,9 +130,9 @@ public class SimState {
    * @return A new state of the simulation.
    */
   private SimState customerLeaves(double time, Customer customer) {
-    System.out.printf("%6.3f %s leaves\n", time, customer);
     Statistics newStats = stats.lostOneCustomer();
-    return updateStats(newStats);
+    return updateLog(String.format("%6.3f %s leaves\n", time, customer))
+                    .updateStats(newStats);
   }
 
   /**
@@ -161,9 +163,10 @@ public class SimState {
     // Function<Server, SimState> servingCustomer = server -> serveCustomer(time, server, customer);
     // System.out.println(s.map(servingCustomer));
     Supplier<Optional<SimState>> waitSupplier = () -> shop.findServerWithNoWaitingCustomer().map(server -> makeCustomerWait(time, server, customer));
-    return s.map(server -> serveCustomer(time, server, customer))
+    SimState newSimState = s.map(server -> serveCustomer(time, server, customer))
                 .or(waitSupplier)
                 .or(() -> Optional.of(customerLeaves(time, customer))).get(); 
+    return newSimState;
                // WHY can't i use two orElse at the same level???
   }
 
@@ -176,8 +179,9 @@ public class SimState {
    * @return A new state of the simulation.
    */
   public SimState simulateDone(double time, Server server, Customer customer) {
-    return customerDone(time, server, customer)
+    SimState newSimState =  customerDone(time, server, customer)
               .serveNextOrIdle(time, server);
+    return newSimState;
   }
 
   /**
@@ -209,9 +213,10 @@ public class SimState {
    */
   private SimState serveCustomer(double time, Server server, Customer customer) {
     double doneTime = time + Simulator.SERVICE_TIME;
-    return addEvent(new DoneEvent(doneTime, server, customer))
+    SimState newSimState = addEvent(new DoneEvent(doneTime, server, customer))
                    .updateServer(server.serve(customer))
                    .customerServed(time, server, customer);
+    return newSimState;
   }
 
   /**
@@ -233,7 +238,7 @@ public class SimState {
    * @return   the new simulation state.
    */
   private SimState updateServer(Server s) {
-    return new SimState(this.events, this.stats, this.shop.updateShop(s));
+    return new SimState(this.events, this.stats, this.shop.updateShop(s), this.log);
   }
 
   /**
@@ -241,8 +246,17 @@ public class SimState {
    * @param  stats the stats that has changed.
    * @return       The new simulation state.
    */
-  private SimState updateStats(Statistics stats) {
-    return new SimState(this.events, stats, this.shop);
+  private SimState updateStats(Statistics newStats) {
+    return new SimState(this.events, newStats, this.shop, this.log);
+  }
+
+  /**
+   * Updates the log to be printed to the console when the simulation is over.
+   * @param  newLog the new updated String.
+   * @return        an updated Simulation State.
+   */
+  private SimState updateLog(String moreLog) {
+    return new SimState(this.events, this.stats, this.shop, this.log + moreLog);
   }
 
   /**
@@ -251,6 +265,8 @@ public class SimState {
    * @return A string representation of the simulation.
    */
   public String toString() {
-    return stats.toString();
+    return this.log + this.stats.toString();
   }
+
+
 }

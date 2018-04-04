@@ -35,7 +35,6 @@ public class DoneEvent extends Event {
    * @param sim The simulator.
    */
   public SimState simulate(SimState sim) {
-    sim.simulateDone(time, server, customer);
-    return sim;
+    return sim.simulateDone(time, server, customer);
   }
 }

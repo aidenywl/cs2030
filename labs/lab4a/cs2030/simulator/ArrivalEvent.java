@@ -23,7 +23,6 @@ public class ArrivalEvent extends Event {
    * @param sim The simulator
    */
   public SimState simulate(SimState sim) {
-    sim.simulateArrival(time);
-    return sim;
+    return sim.simulateArrival(time);
   }
 }

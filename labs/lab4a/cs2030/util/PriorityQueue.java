@@ -3,7 +3,7 @@ package cs2030.util;
 import java.util.Optional;
 
 public class PriorityQueue<T> {
-  private final java.util.PriorityQueue<T> pq;
+  public final java.util.PriorityQueue<T> pq;
 
   public PriorityQueue() {
     pq = new java.util.PriorityQueue<T>();

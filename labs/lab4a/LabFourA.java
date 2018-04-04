@@ -40,9 +40,9 @@ class LabFourA {
     scanner.close();
 
     // After data input is handled, run the simulator
-    sim.run();
 
-    System.out.println(sim.state);
+
+    System.out.println(sim.run());
   }
 
   /**
