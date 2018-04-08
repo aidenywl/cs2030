@@ -34,50 +34,50 @@ class LabFourB {
     scanner.ifPresent(
       reader -> {
 
-    // Read the first line of input as number of servers in the shop
-    int numOfServers = reader.nextInt();
-    Simulator sim = new Simulator(numOfServers);
+        // Read the first line of input as number of servers in the shop
+        int numOfServers = reader.nextInt();
+        Simulator sim = new Simulator(numOfServers);
 
-    Stream<Double> eventParamStream = reader.tokens().map(Double::parseDouble);
-    Function<Double, Event> arrivalEventCreator = time -> 
-                              new Event(time, sims -> 
-                                    sims.simulateArrival(time));
-    Stream<Event> eventStream = eventParamStream.map(arrivalEventCreator);
-
-
-    // what was that about streams only being able to be used once????
-    
-
-    // SETTING UP REDUCE PARAMETERS.
-    // identity priorityQueue
-    // This part can't infer on it's own? It needs me to state <Event>. ???
-    PriorityQueue<Event> identity = new PriorityQueue<Event>();
-    // accumulator.
-    BiFunction<PriorityQueue<Event>, Event, PriorityQueue<Event>> eventAccumulator 
-                  = (pq, event) -> pq.add(event);
-    // combiner
-    BinaryOperator<PriorityQueue<Event>> combiner = (pq1, pq2) -> pq1.addAll(pq2);
-    PriorityQueue<Event> arrivalPQ 
-                  = eventStream.reduce(identity, eventAccumulator, combiner);
-
-    sim.state = sim.state.addEvents(arrivalPQ);
-    /*
-    // Binary Operator for the accumulator
-    while (scanner.hasNextDouble()) {
-      double arrivalTime = scanner.nextDouble();
-
-      // arrivalTime is captured by the lambda expression.
-      sim.state = sim.state.addEvent(new Event(arrivalTime,
-                        sims -> sims.simulateArrival(arrivalTime)));
-    }
-    */
-    reader.close();
-
-    // After data input is handled, run the simulator
+        Stream<Double> eventParamStream = reader.tokens().map(Double::parseDouble);
+        Function<Double, Event> arrivalEventCreator = time -> 
+                                  new Event(time, sims -> 
+                                        sims.simulateArrival(time));
+        Stream<Event> eventStream = eventParamStream.map(arrivalEventCreator);
 
 
-    System.out.println(sim.run());
-    });
+        // what was that about streams only being able to be used once????
+        
+
+        // SETTING UP REDUCE PARAMETERS.
+        // identity priorityQueue
+        // This part can't infer on it's own? It needs me to state <Event>. ???
+        PriorityQueue<Event> identity = new PriorityQueue<Event>();
+        // accumulator.
+        BiFunction<PriorityQueue<Event>, Event, PriorityQueue<Event>> eventAccumulator 
+                      = (pq, event) -> pq.add(event);
+        // combiner
+        BinaryOperator<PriorityQueue<Event>> combiner = (pq1, pq2) -> pq1.addAll(pq2);
+        PriorityQueue<Event> arrivalPQ 
+                      = eventStream.reduce(identity, eventAccumulator, combiner);
+
+        sim.state = sim.state.addEvents(arrivalPQ);
+        /*
+        // Binary Operator for the accumulator
+        while (scanner.hasNextDouble()) {
+          double arrivalTime = scanner.nextDouble();
+
+          // arrivalTime is captured by the lambda expression.
+          sim.state = sim.state.addEvent(new Event(arrivalTime,
+                            sims -> sims.simulateArrival(arrivalTime)));
+        }
+        */
+        reader.close();
+
+        // After data input is handled, run the simulator
+
+
+        System.out.println(sim.run());
+      });
   }
 
   /**
@@ -86,7 +86,7 @@ class LabFourB {
    * create a scanner that reads from standard input.
    *
    * @param args The arguments provided for simulation.
-   * @return A scanner or {@code null} if a filename is provided but the file
+   * @return A scanner or {@code Optional.empty()} if a filename is provided but the file
    *     cannot be open.
    */
   private static Optional<Scanner> createScanner(String[] args) {
