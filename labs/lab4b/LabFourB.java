@@ -11,6 +11,7 @@ import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 
 import java.util.stream.Stream;
+import java.util.Optional;
 
 /**
  * The LabOFourA class is the entry point into Lab 4a.
@@ -29,16 +30,15 @@ class LabFourB {
    */
   public static void main(String[] args) {
 
-    Scanner scanner = createScanner(args);
-    if (scanner == null) {
-      return;
-    }
+    Optional<Scanner> scanner = createScanner(args);
+    scanner.ifPresent(
+      reader -> {
 
     // Read the first line of input as number of servers in the shop
-    int numOfServers = scanner.nextInt();
+    int numOfServers = reader.nextInt();
     Simulator sim = new Simulator(numOfServers);
 
-    Stream<Double> eventParamStream = scanner.tokens().map(Double::parseDouble);
+    Stream<Double> eventParamStream = reader.tokens().map(Double::parseDouble);
     Function<Double, Event> arrivalEventCreator = time -> 
                               new Event(time, sims -> 
                                     sims.simulateArrival(time));
@@ -71,12 +71,13 @@ class LabFourB {
                         sims -> sims.simulateArrival(arrivalTime)));
     }
     */
-    scanner.close();
+    reader.close();
 
     // After data input is handled, run the simulator
 
 
     System.out.println(sim.run());
+    });
   }
 
   /**
@@ -88,7 +89,7 @@ class LabFourB {
    * @return A scanner or {@code null} if a filename is provided but the file
    *     cannot be open.
    */
-  private static Scanner createScanner(String[] args) {
+  private static Optional<Scanner> createScanner(String[] args) {
     Scanner scanner = null;
 
     try {
@@ -106,6 +107,6 @@ class LabFourB {
       System.err.println("Unable to open file " + args[0] + " "
           + exception);
     }
-    return scanner;
+    return Optional.of(scanner);
   }
 }
