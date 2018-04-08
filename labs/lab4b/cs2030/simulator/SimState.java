@@ -32,6 +32,7 @@ public class SimState {
 
   /**
    * Constructor for creating the simulation state from scratch.
+   * 
    * @param numOfServers The number of servers.
    */
   public SimState(int numOfServers) {
@@ -42,8 +43,22 @@ public class SimState {
     this.customerID = 0;
   }
 
-  // what is a good way to make this shorter?
-  private SimState(PriorityQueue<Event> events, Statistics stats, Shop shop, String log, int newCustID) {
+
+  /**
+   * @help ??? what is a good way to make this shorter???? 
+   * @help This is an intended javadoc infringement for educational purposes. Please help.
+   * Private constructor used to create a new Simulation State 
+   * whenever any contents of the simulation state has to be changed.
+   * 
+   * @param  events    the events pq
+   * @param  stats     the statistics of the simulation. 
+   * @param  shop      the shop containing all the servers.
+   * @param  log       the log to be printed.
+   * @param  newCustID the ID of the next incoming customer.
+   */
+  private SimState(PriorityQueue<Event> events, 
+                  Statistics stats, Shop shop, 
+                  String log, int newCustID) {
     this.events = events;
     this.stats = stats;
     this.shop = shop;
@@ -166,7 +181,8 @@ public class SimState {
    */
   public SimState simulateArrival(double time) {
     Customer customer = new Customer(time, customerID);
-    SimState newSimState =  incrementCustomer().customerArrives(time, customer).servedOrLeave(time, customer);
+    SimState newSimState =  incrementCustomer().customerArrives(time, customer)
+                                               .servedOrLeave(time, customer);
     // System.out.println("endofarrival");
     return newSimState;
   }

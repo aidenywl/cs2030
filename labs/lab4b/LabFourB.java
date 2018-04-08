@@ -39,7 +39,9 @@ class LabFourB {
     Simulator sim = new Simulator(numOfServers);
 
     Stream<Double> eventParamStream = scanner.tokens().map(Double::parseDouble);
-    Function<Double, Event> arrivalEventCreator = time -> new Event(time, sims -> sims.simulateArrival(time));
+    Function<Double, Event> arrivalEventCreator = time -> 
+                              new Event(time, sims -> 
+                                    sims.simulateArrival(time));
     Stream<Event> eventStream = eventParamStream.map(arrivalEventCreator);
 
 
@@ -51,13 +53,15 @@ class LabFourB {
     // This part can't infer on it's own? It needs me to state <Event>. ???
     PriorityQueue<Event> identity = new PriorityQueue<Event>();
     // accumulator.
-    BiFunction<PriorityQueue<Event>, Event, PriorityQueue<Event>> eventAccumulator = (pq, event) -> pq.add(event);
+    BiFunction<PriorityQueue<Event>, Event, PriorityQueue<Event>> eventAccumulator 
+                  = (pq, event) -> pq.add(event);
     // combiner
     BinaryOperator<PriorityQueue<Event>> combiner = (pq1, pq2) -> pq1.addAll(pq2);
-    PriorityQueue<Event> arrivalPQ = eventStream.reduce(identity, eventAccumulator, combiner);
+    PriorityQueue<Event> arrivalPQ 
+                  = eventStream.reduce(identity, eventAccumulator, combiner);
 
     sim.state = sim.state.addEvents(arrivalPQ);
-/*
+    /*
     // Binary Operator for the accumulator
     while (scanner.hasNextDouble()) {
       double arrivalTime = scanner.nextDouble();
@@ -66,7 +70,7 @@ class LabFourB {
       sim.state = sim.state.addEvent(new Event(arrivalTime,
                         sims -> sims.simulateArrival(arrivalTime)));
     }
-*/
+    */
     scanner.close();
 
     // After data input is handled, run the simulator

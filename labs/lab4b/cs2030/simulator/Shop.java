@@ -33,6 +33,13 @@ class Shop {
     this.servers = finalServerStream.collect(Collectors.toList());
   }
 
+  /**
+   * Private constructor for a shop. Used to construct new shops instead 
+   * of mutating shops when a server is updated.
+   * 
+   * @param  server  the server to be updated.
+   * @param  oldShop the previous shop.
+   */
   private Shop(Server server, Shop oldShop) {
     this.servers = new ArrayList<>();
     this.servers.addAll(oldShop.servers);
