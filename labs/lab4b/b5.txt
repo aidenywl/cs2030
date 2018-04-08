@@ -334,4 +334,4 @@
 97.945 C99 arrives
 97.945 C99 served by S0 (Q: -)
 98.945 C99 done served by S0 (Q: -)
-0.210 99 1
+0.306 68 1

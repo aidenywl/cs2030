@@ -112,7 +112,7 @@ class Server {
    */
   public String toString() {
     return "S" + this.id + " (Q: " +
-        ((waitingCustomer.isPresent()) ? waitingCustomer.toString() : "-") + ")";
+        ((waitingCustomer.isPresent()) ? waitingCustomer.get().toString() : "-") + ")";
   }
 
   /**

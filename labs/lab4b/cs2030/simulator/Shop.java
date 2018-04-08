@@ -11,8 +11,7 @@ import java.util.Optional;
  * A shop object maintains the list of servers and support queries
  * for server.
  *
- * @author weitsang
- * @author atharvjoshi
+ * @author Low Yew Woei
  * @version CS2030 AY17/18 Sem 2 Lab 4b
  */
 class Shop {
@@ -55,6 +54,17 @@ class Shop {
     return this.servers.stream()
         .filter(predicate)
         .findFirst();
+  }
+
+  /**
+   * Method to find the most recent version of the server. Used for simulateDone.
+   * @param  server The server which we want to find the updated version of.
+   * @return        The updated server.
+   */
+  public Server findRecentServer(Server server) {
+    int hash = server.hashCode();
+    Predicate<Server> hashTest = s -> s.hashCode() == hash;
+    return findServer(hashTest).get();
   }
 
   /**

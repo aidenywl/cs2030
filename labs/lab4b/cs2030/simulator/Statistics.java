@@ -50,7 +50,7 @@ class Statistics {
    * @return A new Statistics object with updated stats
    */
   public Statistics lostOneCustomer() {
-    return new Statistics(this.totalWaitingTime, this.totalNumOfLostCustomers, 
+    return new Statistics(this.totalWaitingTime, this.totalNumOfServedCustomers, 
           this.totalNumOfLostCustomers + 1);
   }
 

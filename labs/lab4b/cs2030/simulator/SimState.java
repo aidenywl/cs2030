@@ -206,8 +206,9 @@ public class SimState {
    * @return A new state of the simulation.
    */
   public SimState simulateDone(double time, Server server, Customer customer) {
-    SimState newSimState = customerDone(time, server, customer)
-                              .serveNextOrIdle(time, server);
+    Server currentServerState = shop.findRecentServer(server);
+    SimState newSimState = customerDone(time, currentServerState, customer)
+                              .serveNextOrIdle(time, currentServerState);
     return newSimState;
   }
 
