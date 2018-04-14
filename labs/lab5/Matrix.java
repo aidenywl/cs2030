@@ -219,6 +219,7 @@ class Matrix {
    * @return The resulting matrix m1 * m2
    */
   public static Matrix multiplyParallely(Matrix m1, Matrix m2) {
-    return Matrix.multiplyRecursively(m1, m2, 0, 0, 0, 0, m1.dimension);
+    MatrixMultiplication parallelMultiply = new MatrixMultiplication(m1, m2, 0, 0, 0, 0, m1.dimension);
+    return parallelMultiply.compute();
   }
 }

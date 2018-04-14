@@ -1,0 +1,17 @@
+Fork Join Task
+- Use either Recursive action or recursive task
+
+Recursive ACtion
+
+Submit recursive actions to fork join pool.
+
+
+left fork then right compute is more efficient than
+
+left fork left join right compute. 
+This is because left join will run the asynchronous task before running the compute task.
+you can split one thread into many threads then combine them together.
+
+Trying to split it into many cells is not efficient too. Every fork and join has overhead.
+
+You need to decide how many to split them into to make it efficient.
