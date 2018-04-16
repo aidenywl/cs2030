@@ -2,7 +2,7 @@
  * A Square object encapsulates a square in 2D space.
  * A square object extends a rectangle as it is a special rectangle
  */
-class Square  {
+class Square {
   private double length;
   private double width;
   public Square (int length, int width) {

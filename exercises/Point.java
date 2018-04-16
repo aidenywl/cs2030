@@ -38,4 +38,17 @@ class Point implements Printable  {
   public void print() {
     System.out.printf("The center is: (%f, %f).", this.x, this.y);
   }
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj instanceof Point) {
+      Point pt = (Point) obj;
+      return (this.x == pt.x) && (this.y == pt.y);
+    } else {
+      return false;
+    }
+
+  }
 }
