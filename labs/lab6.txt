@@ -1,0 +1,15 @@
+Completable future is a monad and a functor.
+  You put the task in a box and it runs asynchronously.
+  Completabblefuture.runAsync( () -> ) if it returns void,
+  you need CompletableFuture(Void -> Void) so you can call join on it. if not there's nothing to call
+  join to.
+  The Void is actually a class.
+  
+Recall left.compute + right.join, completable future does something similar.
+  CF.runAsync(() -> ..)
+  ...
+  ... program running ...
+  ...
+  However, your program will keep running and if it exits, your CF will have no output.
+
+
