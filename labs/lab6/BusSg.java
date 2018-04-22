@@ -33,12 +33,12 @@ class BusSg {
       CompletableFuture<Set<BusService>> allServicesHelp = CompletableFuture
               .supplyAsync(() -> stop.getBusServices())
               .handle((result, exception) -> { // handling HTTP exceptions.
-                  if (result != null) {
-                    return result;
-                  } else {
-                    System.err.println(exception);
-                    return Collections.<BusService>emptySet();
-                  }
+                if (result != null) {
+                  return result;
+                } else {
+                  System.err.println(exception);
+                  return Collections.<BusService>emptySet();
+                }
               });
 
 
@@ -82,7 +82,8 @@ class BusSg {
                 return Collections.<BusStop>emptySet();
               }
             });
-          tasks.add(futureStop); // add the future to the queue.
+            
+        tasks.add(futureStop); // add the future to the queue.
 
       }
       // iterator to be used to aid the bus Services.
