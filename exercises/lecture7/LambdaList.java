@@ -27,7 +27,7 @@ class LambdaList<T> {
     for (int i = 0; i < count; i++) {
       list.add(s.get());
     }
-    return LamdaList.of(list);
+    return new LambdaList<T>(list);
   }
 
   public <V> LambdaList<V> map(Function<? super T, ? extends V> f) {
@@ -39,17 +39,27 @@ class LambdaList<T> {
   }
 
   public <U> U reduce(U identity, BiFunction<? super U, ? super T, ? extends U> accumulator) {
-    // TODO
-    return null;
+    U result = identity;
+    for (T i : list) {
+      result = accumulator.apply(result, i);
+    }
+    return result;
   }
 
   public LambdaList<T> filter(Predicate<? super T> predicate) {
-    // TODO
-    return null;
+    List<T> newList = new ArrayList<T>();
+    for (T i : list) {
+      if (predicate.test(i)) {
+        newList.add(i);
+      }
+    }
+    return new LambdaList<T>(newList);
   }
 
   public void forEach(Consumer<? super T> action) {
-    // TODO
+    for (T i : list) {
+      action.accept(i);
+    }
   }
 
   public String toString() {
