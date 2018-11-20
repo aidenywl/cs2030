@@ -1,5 +1,7 @@
-# cs2030
-Repository for programs from CS2030: Programming Methodology II
+# CS2030
+Repository for programs from CS2030: Programming Methodology II.
+
+The module page is [here](https://nus-cs2030.github.io/1718-s2/).
 
 # Highlights
 
